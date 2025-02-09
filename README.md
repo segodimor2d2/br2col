@@ -324,20 +324,22 @@ As marcas brasileiras são muito valorizadas nos salões de beleza do Brasil dev
 
 ---
 
+# Projeto
+
 eu quero comercializar produtos de cabelo produzidos no Brasil para ser vendidos na Colômbia, a principal ideia é obter o máximo lucro em curto prazo.
 
 para isso eu estou coletando informações sobre:
 
-quais são os produtos mais usados nos salões de beleza
-quis são os produtos mais caros nos salões de beleza
-quis são as marcas mais usadas nos salões de beleza
-quais são os produtos mais vendidos na Colômbia que são produzidos no Brasil
-estou pensando minerar os dados dos produtos no Mercado Livre Colômbia para saber quais seriam os produtos mais vendidos
-também comparar os preços dos produtos no Mercado do Brasil com os do Mercado Livre na Colômbia
+- quais são os produtos mais usados nos salões de beleza
+- quis são os produtos mais caros nos salões de beleza
+- quis são as marcas mais usadas nos salões de beleza
+- quais são os produtos mais vendidos na Colômbia que são produzidos no Brasil
+- estou pensando minerar os dados dos produtos no Mercado Livre Colômbia para saber quais seriam os produtos mais vendidos
+- também comparar os preços dos produtos no Mercado do Brasil com os do Mercado Livre na Colômbia
 
 Quero averiguar como eu consigo enviar os produtos dede Brasil para a Colômbia e entender todos os detalhes de exportação e importação nos países.
 
-Qúe outros detalhes seria bom abalizar para este projeto?
+O que outros detalhes seria bom abalizar para este projeto?
 
 ---
 
