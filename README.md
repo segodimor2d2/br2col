@@ -1,6 +1,25 @@
 # BR2COL GODIMARKET
 
 ---
+## API do Mercado Livre
+https://developers.mercadolivre.com.br/pt_br/itens-e-buscas
+
+
+[v] listar produtos via API no MLBr
+
+[x] listar produtos via API no MLCol
+    [x] pprint do produto para ver atributos importantes nome, preço, link, numVendidos, avaliações, estado
+    [x] criar dicionario com os atributos
+    [x] add lista num pandas dataframe
+
+[x] selecionar produtos interessantes
+    [x] quais são os critérios de escolha?
+        > os mais vendidos+caros?
+        > a melhor diferença entre Br e Col?
+        > buscar por marca os mas vendidos na Col
+
+
+---
 
 # Quero exportar produtos de beleza e cabelo para Colômbia...a ideia é minerar dados do mercado livre da colombia e do brasil para descobrir quais produtos brasileiros são os mais vendidos e enviar esses produtos. Lá, uma pessoa irá receber esses produtos e fazer a distribuição. Você acha que essa ideia é viável??? É lucrativo??? Vc teria uma ideia melhor
 

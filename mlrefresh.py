@@ -1,6 +1,6 @@
 import requests
 
-refresh_token = "TG-67b27872c398ae000132fb28-189502404"
+refresh_token = "TG-67b8fe5b76d1e3000107166f-189502404"
 
 url = "https://api.mercadolibre.com/oauth/token"
 
