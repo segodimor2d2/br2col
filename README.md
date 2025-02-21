@@ -5,18 +5,16 @@
 https://developers.mercadolivre.com.br/pt_br/itens-e-buscas
 
 
-[v] listar produtos via API no MLBr
-
-[x] listar produtos via API no MLCol
-    [x] pprint do produto para ver atributos importantes nome, preço, link, numVendidos, avaliações, estado
-    [x] criar dicionario com os atributos
-    [x] add lista num pandas dataframe
-
-[x] selecionar produtos interessantes
-    [x] quais são os critérios de escolha?
-        > os mais vendidos+caros?
-        > a melhor diferença entre Br e Col?
-        > buscar por marca os mas vendidos na Col
+- [v] listar produtos via API no MLBr
+- [x] listar produtos via API no MLCol
+    - [x] pprint do produto para ver atributos importantes nome, preço, link, numVendidos, avaliações, estado
+    - [x] criar dicionario com os atributos
+    - [x] add lista num pandas dataframe
+- [x] selecionar produtos interessantes
+    - [x] quais são os critérios de escolha?
+        - > os mais vendidos+caros?
+        - > a melhor diferença entre Br e Col?
+        - > buscar por marca os mas vendidos na Col
 
 
 ---
