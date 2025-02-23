@@ -16,6 +16,11 @@ https://developers.mercadolivre.com.br/pt_br/itens-e-buscas
         - > a melhor diferença entre Br e Col?
         - > buscar por marca os mas vendidos na Col
 
+buscar por marcas Br na Col e ver que produtos são os mais
+    vendidos
+    repetidos
+    avaliados
+    mais caros
 
 ---
 

@@ -1,21 +1,4 @@
 
-https://github.com/segodimor2d2/br2col
-https://github.com/segodimor2d2/br2col?code=TG-67b276bb45f9fb00015cb527-189502404
-
----
-
-293958870459442
-
-1ulhZ4xSNa2xxPXuoynIYfWvuxjdV1cH
-
-
----
-
-# GERAR CODE
-- logado no ML
-
-https://auth.mercadolivre.com.br/authorization?response_type=code&client_id=$1735423776486220&redirect_uri=$https://github.com/segodimor2d2/br2col&code_challenge=$CODE_CHALLENGE&code_challenge_method=$CODE_METHOD
-
 https://auth.mercadolivre.com.br/authorization?response_type=code&client_id=293958870459442&redirect_uri=https://github.com/segodimor2d2/br2col
 
 
@@ -101,7 +84,70 @@ print(response.text)
 ```
 
 
+---
 
+
+---
+
+# interesantes:
+
+'id': 'MLB1583256293',
+'title': 'Plastica Dos Fios Cadiveu Combo 2 Unid. Passo 2',
+'price': 59.85,
+'vendidos': '+100 vendidos',
+'status': 'active',
+'rating_average' = reviews_data.get("rating_average", 0)  # Pontuação média
+'total_reviews' = reviews_data.get("paging", {}).get("total", 0)  # Número de avaliações
+'seller_id': 1966265164,
+'permalink': 'https://produto.mercadolivre.com.br/MLB-5056957218-plastica-dos-fios-cadiveu-combo-2-unid-passo-2-_JM',
+
+---
+#### dados extranho
+https://www.mercadolivre.com.br/nutri-glow-leave-in-professional-creme-150ml-cadiveu/p/MLB20187465#wid=MLB3899052665&sid=unknown
+product_id = "MLB3899052665"
+
+---
+https://produto.mercadolivre.com.br/MLB-1583256293-kit-plastica-dos-fios-ativo-1-lt-sh-masc-300ml-original-_JM#polycard_client=search-nordic&position=55&search_layout=grid&type=item&tracking_id=710c85fe-995b-4fbf-8809-446bb81cf81f
+
+
+---
+
+MLB26839777
+MLB26839777
+MLB5162646898
+https://www.mercadolivre.com.br/cadiveu-professional-glamour-mascara-de-nutrico-200ml/p/MLB26839777#polycard_client=search-nordic&searchVariation=MLB26839777&wid=MLB5162646898&position=26&search_layout=grid&type=product&tracking_id=710c85fe-995b-4fbf-8809-446bb81cf81f&sid=search
+Novo  |  +100 vendidos
+
+MLB-3477406254
+https://produto.mercadolivre.com.br/MLB-3477406254-cadiveu-kit-blonde-reconstructor-4-produtos-home-care-_JM#is_advertising=true&position=19&search_layout=grid&type=pad&tracking_id=710c85fe-995b-4fbf-8809-446bb81cf81f&is_advertising=true&ad_domain=VQCATCORE_LST&ad_position=19&ad_click_id=N2E0YTViODUtZDkyMS00YzEzLTg0ZDEtNmEyMDFjZTQ3ZWVl
+Novo  |  +100 vendidos
+
+MLB20187465
+MLB20187465
+MLB3899052665
+https://www.mercadolivre.com.br/nutri-glow-leave-in-professional-creme-150ml-cadiveu/p/MLB20187465#polycard_client=search-nordic&searchVariation=MLB20187465&wid=MLB3899052665&position=18&search_layout=grid&type=product&tracking_id=710c85fe-995b-4fbf-8809-446bb81cf81f&sid=search
+Novo  |  +500 vendidos
+
+MLB-1583256293
+https://produto.mercadolivre.com.br/MLB-1583256293-kit-plastica-dos-fios-ativo-1-lt-sh-masc-300ml-original-_JM#polycard_client=search-nordic&position=55&search_layout=grid&type=item&tracking_id=710c85fe-995b-4fbf-8809-446bb81cf81f
+Novo  |  +10mil vendidos
+
+
+---
+
++100 vendidos.
++500 vendidos
++10mil vendidos
+
+eu quero obter o numero de vendidos tipo +100 vendidos, +500 vendidos, +10mil vendidos, fazendo a requisição do mercado livre sem usar a API e sim usando tecnicas scraping 
+
+minha url de exemplo é:
+
+https://www.mercadolivre.com.br/nutri-glow-leave-in-professional-creme-150ml-cadiveu/p/MLB20187465#polycard_client=search-nordic&searchVariation=MLB20187465&wid=MLB3899052665&position=18&search_layout=grid&type=product&tracking_id=710c85fe-995b-4fbf-8809-446bb81cf81f&sid=search
+
+---
+
+pip install requests beautifulsoup4
 
 
 
