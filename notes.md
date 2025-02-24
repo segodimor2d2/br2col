@@ -204,7 +204,7 @@ access_token = 'APP_USR-293958870459442-022318-f55eb1371781b897c5b2846ba9b46495-
 'price'
 'rating_aqverage' nota
 'total_reviews' numero de comentarios
-'permalink'
+'permalink' link
 
 ## baseado en el total_reviews y rating_aqverage vamos a requisitar los produtos para encontrar:
 
@@ -214,6 +214,11 @@ access_token = 'APP_USR-293958870459442-022318-f55eb1371781b897c5b2846ba9b46495-
 'seller_id'
 
 
+Novo  |  +500 vendidos
+Novo  |  +100 vendidos
+Novo  |  +50 vendidos
+Novo  |  +100 vendidos
+Novo  |  +50 vendidos
 
 
 

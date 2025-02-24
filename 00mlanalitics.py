@@ -2,10 +2,16 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import pandas as pd
+import time
 
-def scrape_mercado_livre(search_query, until=1):
-    base_url = "https://lista.mercadolivre.com.br"
-    # base_url = "https://listado.mercadolibre.com.co"
+def scrape_mercado_livre(search_query, until=1, country='co'):
+    if country == 'co':
+        base_url = "https://listado.mercadolibre.com.co"
+    elif country == 'br':
+        base_url = "https://lista.mercadolivre.com.br"
+    else:
+        raise ValueError("Country must be 'co' or 'br'")
+
 
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
@@ -88,6 +94,45 @@ def scrape_mercado_livre(search_query, until=1):
 
     return all_products
 
+
+def scrape_by_link(link):
+
+    # URL do produto
+    url = link
+
+    # Headers para simular uma requisição de navegador
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    }
+
+    # Fazendo a requisição
+    response = requests.get(url, headers=headers)
+
+    # import ipdb; ipdb.set_trace()
+
+    # Verificando se a requisição foi bem-sucedida
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        # Procurando o elemento que contém o número de vendidos
+        vendidos_element = soup.find('span', class_='ui-pdp-subtitle')
+
+        if vendidos_element:
+            vendidos_text = vendidos_element.text.strip()
+            # print(f"Número de vendidos: {vendidos_text}")
+            return vendidos_text
+        else:
+            # print("Elemento de vendidos não encontrado.")
+            return None
+    else:
+        print(f"Erro ao acessar a página: {response.status_code}")
+        return None
+
+
+
+
+
+
 # Exemplo de uso
 # search_query = 'fone%20tranya'
 # search_query = 'tranya'
@@ -95,32 +140,60 @@ def scrape_mercado_livre(search_query, until=1):
 # search_query = 'xiaomi-poco-f6-pro'
 search_query = 'esp32s3'
 
-produtos = scrape_mercado_livre(search_query)
+# Solicita ao usuário que insira
+in_search = input("\nserach: ")
+search_query = in_search.replace(' ', '%20')
+pags = int(input("\npags: "))
+country = input("\ncounty: ")
+
+produtos = scrape_mercado_livre(search_query, pags, country)
 print(f'\nProdutos no total {len(produtos)}')
 
 # Exibir os dados coletados
 # for produto in produtos:
 #     print(produto)
 
-
-# Convert to DataFrame and save to CSV
+# Convert to DataFrame
 df = pd.DataFrame(produtos)
-print(df.iloc[0])
-
+# print(df.iloc[0])
 
 # Ordenando o DataFrame pela coluna 'total_reviews' em ordem decrescente
 df_ordenado = df.sort_values(by='total_reviews', ascending=False)
 
 # Redefinir o índice
 df_ordenado = df_ordenado.reset_index(drop=True)
+# ordenar o original df.sort_values(by='total_reviews', ascending=False, inplace=True)
 
-print(df_ordenado.iloc[0])
+# print(df_ordenado.iloc[0])
 
-# ordenar o original
-# df.sort_values(by='total_reviews', ascending=False, inplace=True)
+# Adicionando a nova coluna vazia
+# df_ordenado['sold_num'] = np.nan  # Ou pd.NA, ou np.nan, dependendo do caso
 
+df_ordenado['sold_num'] = None  # Ou pd.NA, ou np.nan, dependendo do caso
 
+print()
+print(df_ordenado)
 
-import ipdb; ipdb.set_trace()
+# Função para processar cada linha
+def processar_linha(row):
+    link = row['permalink']
 
+    try:
+        time.sleep(0.2)
+        res = scrape_by_link(link)
+        numeros = re.findall(r'\d+', res)
+        return int(numeros[0]) if numeros else None
 
+    except Exception as e:
+        print(f"Erro ao processar o link {link}: {e}")
+        return None
+
+# Solicita ao usuário que insira o valor de open_num
+open_num = int(input("\nDigite até que linhas que deseja processar: "))
+
+# Aplica a função às primeiras linhas
+df_ordenado['sold_num'] = df_ordenado.head(open_num).apply(processar_linha, axis=1)
+
+# Exibe o DataFrame atualizado
+print()
+print(df_ordenado)
