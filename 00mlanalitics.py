@@ -1,15 +1,18 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+import pandas as pd
 
-def scrape_mercado_livre(search_query):
+def scrape_mercado_livre(search_query, until=1):
     base_url = "https://lista.mercadolivre.com.br"
+    # base_url = "https://listado.mercadolibre.com.co"
+
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
     }
     all_products = []
-    page = 1
     link = ''
+    page = 1
 
     while True:
         print(f"Coletando dados da página {page}...")
@@ -74,15 +77,50 @@ def scrape_mercado_livre(search_query):
             print("Não há mais páginas. Encerrando...")
             break
 
-        link = next_button.find('a', class_='andes-pagination__link').get('href')
         page += 1
+
+        if page > until:
+
+            print("Número máximo de páginas atingido. Encerrando...")
+            break
+
+        link = next_button.find('a', class_='andes-pagination__link').get('href')
 
     return all_products
 
 # Exemplo de uso
-search_query = 'fone%20tranya'
+# search_query = 'fone%20tranya'
+# search_query = 'tranya'
+# search_query = 'xiaomi%20poco%20F5%20pro'
+# search_query = 'xiaomi-poco-f6-pro'
+search_query = 'esp32s3'
+
 produtos = scrape_mercado_livre(search_query)
+print(f'\nProdutos no total {len(produtos)}')
 
 # Exibir os dados coletados
-for produto in produtos:
-    print(produto)
+# for produto in produtos:
+#     print(produto)
+
+
+# Convert to DataFrame and save to CSV
+df = pd.DataFrame(produtos)
+print(df.iloc[0])
+
+
+# Ordenando o DataFrame pela coluna 'total_reviews' em ordem decrescente
+df_ordenado = df.sort_values(by='total_reviews', ascending=False)
+
+# Redefinir o índice
+df_ordenado = df_ordenado.reset_index(drop=True)
+
+print(df_ordenado.iloc[0])
+
+# ordenar o original
+# df.sort_values(by='total_reviews', ascending=False, inplace=True)
+
+
+
+import ipdb; ipdb.set_trace()
+
+

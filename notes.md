@@ -202,8 +202,8 @@ access_token = 'APP_USR-293958870459442-022318-f55eb1371781b897c5b2846ba9b46495-
 
 'title'
 'price'
-'rating_aqverage'
-'total_reviews'
+'rating_aqverage' nota
+'total_reviews' numero de comentarios
 'permalink'
 
 ## baseado en el total_reviews y rating_aqverage vamos a requisitar los produtos para encontrar:
