@@ -143,8 +143,8 @@ search_query = 'esp32s3'
 # Solicita ao usuário que insira
 in_search = input("\nserach: ")
 search_query = in_search.replace(' ', '%20')
-pags = int(input("\npags: "))
-country = input("\ncounty: ")
+pags = int(input("pags: "))
+country = input("county: ")
 
 produtos = scrape_mercado_livre(search_query, pags, country)
 print(f'\nProdutos no total {len(produtos)}')

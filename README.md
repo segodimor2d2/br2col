@@ -1,26 +1,58 @@
 # BR2COL GODIMARKET
 
 ---
+# progresso
+
+- a ideia inicial é ter um programa que consiga identificar os produtos mais vendidos na busca e depois gerar um arquivo csv para ser analisado posteriormente.
+
+- assim vamos ir descobrindo quais são os produtos mas vendidos por marca e tipo de produto nos dois países principalmente na col
+    - podemos iniciar buscas somente por marca e analisar mas vendidos/avaliados
+    - buscar por marca y tipo de produto e analisar mas vendidos/avaliados
+    - quais podem ser os critérios de busca?
+        - recomendados deepseek, chatgpt
+        - mais avaliados
+        - mais vendidos
+        - mais caros
+
+    - quais são os critérios de escolha de produtos?
+        - mais avaliados
+        - mais vendidos
+        - mais caros
+        - comparar os preços dos produtos mais vendidos
+            - a melhor diferença entre Br e Col?
+
+- selecionando os produtos que fazem mas sentido comercializar podemos
+    - preguntar para el mercado si faz sentido enviar esses produtos
+    - conversar com a empresa e perguntar custos de compra/venda de stoque
+    - averiguar custos de envio via área
+    - pode ser interessante ver quais são os vendedores deses produtos na col e tentar desaurir a a forma em que ele importou na col
+        - custos de compra num ponto de distribuição na col
+        - averiguar como funciona ser uma franquia do produto
+        - existe DCs em col do produto?
+
+---
+# programa para buscar produtos e gerar um arquivo csv
+
+Criei um programa que captura os dados via scraping os resultados de cada produtos com os atributos:
+
+- 'title'
+- 'price'
+- 'permalink' (ulr)
+- 'rating_aqverage' (nota geral)
+- 'total_reviews' (num de avaliações)
+- 'sold_num' (num de vendidos)
+
+#### 'seller_id' (interessante incluir para analisar os vendedores)
+
+- o programa vai pedir una string de serach, as paginas que vão ser analisadas por consulta e o country (br/co)
+- apos analisar a busca, vai gerar uma lista ordenada pelo numero de avaliações em pandas
+- em seguida vai pedir até que linha vai querer obter os dados dos vendidos
+- finalmente imprime a tabela ordenada com os campos inseridos
+- FALTA: gerar um arquivo csv com os dados
+
+---
 ## API do Mercado Livre
 https://developers.mercadolivre.com.br/pt_br/itens-e-buscas
-
-
-- [v] listar produtos via API no MLBr
-- [x] listar produtos via API no MLCol
-    - [x] pprint do produto para ver atributos importantes nome, preço, link, numVendidos, avaliações, estado
-    - [x] criar dicionario com os atributos
-    - [x] add lista num pandas dataframe
-- [x] selecionar produtos interessantes
-    - [x] quais são os critérios de escolha?
-        - > os mais vendidos+caros?
-        - > a melhor diferença entre Br e Col?
-        - > buscar por marca os mas vendidos na Col
-
-buscar por marcas Br na Col e ver que produtos são os mais
-    vendidos
-    repetidos
-    avaliados
-    mais caros
 
 ---
 
