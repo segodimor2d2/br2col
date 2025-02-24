@@ -350,4 +350,47 @@ Número de vendidos: 0
 Pontuação média: 4.6
 Número de avaliações: 1266
 
+#---
+
+
+title_element = product.find('h2', class_='ui-search-item__title')
+title_element = product.find('h3', class_='poly-component__title-wrapper')
+
+product_data['title'] = title_element.text.strip() if title_element else ''
+
+# Price
+price_element = product.find('span', class_='price-tag-fraction')
+product_data['price'] = float(price_element.text.replace('.', '').replace(',', '.')) if price_element else 0.0
+
+# Vendidos
+vendidos_element = product.find('span', class_='ui-search-item__group__element ui-search-item__sold')
+product_data['vendidos'] = vendidos_element.text.strip() if vendidos_element else ''
+
+# Rating Average
+rating_element = product.find('span', class_='ui-search-reviews__rating-number')
+product_data['rating_average'] = float(rating_element.text.replace(',', '.')) if rating_element else 0.0
+
+# Total Reviews
+reviews_element = product.find('span', class_='ui-search-reviews__amount')
+if reviews_element:
+    reviews_text = reviews_element.text.strip()
+    product_data['total_reviews'] = int(re.sub(r'\D', '', reviews_text))
+else:
+    product_data['total_reviews'] = 0
+
+# Permalink
+link_element = product.find('a', class_='ui-search-link')
+product_data['permalink'] = link_element.get('href', '') if link_element else ''
+
+
+
+
+
+
+
+
 ```
+
+
+
+

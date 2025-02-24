@@ -29,7 +29,7 @@ if response.status_code == 200:
     # pprint(produtos[1])
 
 
-    import ipdb; ipdb.set_trace()
+    # import ipdb; ipdb.set_trace()
 
     for produto in produtos:
         print(f"Título: {produto['title']}")

@@ -89,17 +89,6 @@ print(response.text)
 
 ---
 
-# interesantes:
-
-'id': 'MLB1583256293',
-'title': 'Plastica Dos Fios Cadiveu Combo 2 Unid. Passo 2',
-'price': 59.85,
-'vendidos': '+100 vendidos',
-'status': 'active',
-'rating_average' = reviews_data.get("rating_average", 0)  # Pontuação média
-'total_reviews' = reviews_data.get("paging", {}).get("total", 0)  # Número de avaliações
-'seller_id': 1966265164,
-'permalink': 'https://produto.mercadolivre.com.br/MLB-5056957218-plastica-dos-fios-cadiveu-combo-2-unid-passo-2-_JM',
 
 ---
 #### dados extranho
@@ -148,6 +137,87 @@ https://www.mercadolivre.com.br/nutri-glow-leave-in-professional-creme-150ml-cad
 ---
 
 pip install requests beautifulsoup4
+
+---
+
+# fluxo
+
+chamar a função de busca e ver o máximo de produtos
+
+
+
+
+# interesantes
+
+'id': 'MLB1583256293',
+'title': 'Plastica Dos Fios Cadiveu Combo 2 Unid. Passo 2',
+'price': 59.85,
+'vendidos': '+100 vendidos',
+'rating_average' = reviews_data.get("rating_average", 0)  # Pontuação média
+'total_reviews' = reviews_data.get("paging", {}).get("total", 0)  # Número de avaliações
+'status': 'active',
+'seller_id': 1966265164,
+'permalink': 'https://produto.mercadolivre.com.br/MLB-5056957218-plastica-dos-fios-cadiveu-combo-2-unid-passo-2ima.png
+
+---ils
+'status': 'active',
+
+
+'seller_id': 1966265164,
+
+
+eu quero obter o resultado de uma busca de produtos no mercado livre fazendo a requisição do mercado livre sem usar a API, usando Python com as bibliotecas requests e BeautifulSoup para fazer o scraping, eu também quero os resultados das seguintes paginas que tiver na busca.
+
+os dados que eu quero coletar são:
+
+'id'
+'title'
+'price' 59.85,
+'vendidos' exemplo '+100 vendidos',
+'rating_average' Pontuação média se tiver
+'total_reviews' Número de avaliações se tiver
+'permalink'
+
+
+'id'
+'title'
+'price'
+'vendidos'
+'rating_aqverage'
+'total_reviews'
+'permalink'
+
+'status'
+'seller_id'
+
+
+
+search_query = 'fone%20tranya'
+
+access_token = 'APP_USR-293958870459442-022318-f55eb1371781b897c5b2846ba9b46495-189502404'
+
+---
+
+## consegui capturar los seguintes atributos:
+
+'title'
+'price'
+'rating_aqverage'
+'total_reviews'
+'permalink'
+
+## baseado en el total_reviews y rating_aqverage vamos a requisitar los produtos para encontrar:
+
+### 'vendidos' (numero de vendidos)
+
+'status'
+'seller_id'
+
+
+
+
+
+
 
 
 
