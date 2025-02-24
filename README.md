@@ -1,6 +1,17 @@
 # BR2COL GODIMARKET
 
 ---
+
+# reunião
+
+- proposta da Daily
+- Fluxo de analises
+- Programa de busca ML
+- Itens que fui buscando en DeepSeek y ChatGPT
+- traduzir documento para ES
+
+---
+
 # progresso
 
 - a ideia inicial é ter um programa que consiga identificar os produtos mais vendidos na busca e depois gerar um arquivo csv para ser analisado posteriormente.
