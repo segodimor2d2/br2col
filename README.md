@@ -42,6 +42,37 @@
                  - Analise os produtos brasileiros já listados e seus volumes de vendas.
                  - Identifique lacunas no mercado (produtos com alta demanda e pouca oferta).
                  - Compare preços e avalie a viabilidade de competir.
+
+
+            - Marcas com Produção no Brasil:
+                1. **L'Oréal Professionnel**:
+                   - **Produção**: A L'Oréal possui fábricas no Brasil, onde produz uma variedade de produtos para o mercado local.
+
+                2. **Wella Professionals**:
+                   - **Produção**: A Wella, que faz parte do grupo Coty, também tem produção no Brasil.
+
+                3. **Schwarzkopf Professional**:
+                   - **Produção**: A Schwarzkopf, pertencente ao grupo Henkel, produz muitos de seus produtos no Brasil.
+
+                4. **Matrix**:
+                   - **Produção**: Matrix, uma marca do grupo L'Oréal, também tem produção local no Brasil.
+
+                5. **Natura**:
+                   - **Produção**: Natura é uma marca brasileira e todos os seus produtos são produzidos no Brasil.
+
+                6. **Salonline**:
+                   - **Produção**: Salonline é uma marca brasileira, com produção local.
+
+                - **Produtos Mais Caros nos Salões de Beleza**:
+                   - **No Brasil**:
+                     - Máscaras de tratamento premium (com queratina, óleos vegetais e ingredientes naturais).
+                     - Óleos capilares de luxo (como óleo de argan, marula ou macadâmia).
+                     - Linhas profissionais de marcas como Kérastase, L'Oréal Professionnel e Redken.
+                     - Produtos para alisamento e reconstrução capilar.
+                   - **Na Colômbia**:
+                     - Produtos importados de marcas internacionais (como Moroccanoil, Olaplex, ou Kérastase).
+                     - Produtos para tratamentos específicos, como reconstrução ou proteção térmica.
+
         - explorar mais perguntas para o deepseek e chatgpt
         - mais avaliados
         - mais vendidos
