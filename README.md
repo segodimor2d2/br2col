@@ -4,11 +4,11 @@
 
 # reunião
 
-- proposta da Daily
-- Fluxo de analises
-- Programa de busca ML
-- Itens que fui buscando en DeepSeek y ChatGPT
-- traduzir documento para ES
+- proposta da daily
+- traduzir documento para es
+- itens que fui buscando en deepseek y chatgpt
+- fluxo de analises
+- programa de busca ML
 
 ---
 

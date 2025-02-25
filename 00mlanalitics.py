@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import re
 import pandas as pd
 import time
+from datetime import datetime
 
 def scrape_mercado_livre(search_query, until=1, country='co'):
     if country == 'co':
@@ -197,3 +198,26 @@ df_ordenado['sold_num'] = df_ordenado.head(open_num).apply(processar_linha, axis
 # Exibe o DataFrame atualizado
 print()
 print(df_ordenado)
+
+# Caminho para a pasta onde você quer salvar o arquivo CSV
+caminho_da_pasta = 'outcsv/'
+
+# Nome do arquivo CSV
+time_atual = datetime.now().strftime('%Y%m%d%H%M%S')
+nomfile = f'{time_atual}_{country}'
+nomarquivo = f'{nomfile}.csv'
+
+# Caminho completo para o arquivo CSV
+caminho_completo = caminho_da_pasta + nomarquivo
+
+# Exportando o DataFrame para CSV
+df.to_csv(caminho_completo, index=False)
+
+# string para outcsv/info
+infostring = f'{nomarquivo}: result = {len(df_ordenado)}: {in_search}'
+
+with open('outcsv/info.md', 'a', encoding='utf-8') as arquivo:
+    arquivo.write(infostring + '\n')
+
+
+
