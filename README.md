@@ -21,6 +21,28 @@
     - buscar por marca y tipo de produto e analisar mas vendidos/avaliados
     - quais podem ser os critérios de busca?
         - recomendados deepseek, chatgpt
+            - **Marcas Mais Usadas nos Salões de Beleza**:
+               - **No Brasil**:
+                 - Natura (linhas Ekos e Lumina).
+                 - Embelleze (produtos para alisamento e reconstrução).
+                 - Cadiveu (óleos e máscaras de tratamento).
+                 - Salonline (produtos para styling).
+                 - Niely (tinturas e descolorantes).
+               - **Na Colômbia**:
+                 - Marcas internacionais como L'Oréal Professionnel, Schwarzkopf, e Wella.
+                 - Marcas locais ou regionais que atendem a demandas específicas do mercado colombiano.
+
+            - **Produtos Mais Vendidos na Colômbia que São Produzidos no Brasil**:
+               - **Possíveis Produtos**:
+                 - Óleos capilares (como os da Cadiveu ou Natura).
+                 - Máscaras de tratamento (especialmente para cabelos danificados ou cacheados).
+                 - Produtos para styling (ceras e pomadas da Salonline).
+                 - Tinturas e descolorantes (Niely ou Embelleze).
+               - **Minerar Dados no Mercado Livre Colômbia**:
+                 - Analise os produtos brasileiros já listados e seus volumes de vendas.
+                 - Identifique lacunas no mercado (produtos com alta demanda e pouca oferta).
+                 - Compare preços e avalie a viabilidade de competir.
+        - explorar mais perguntas para o deepseek e chatgpt
         - mais avaliados
         - mais vendidos
         - mais caros
@@ -34,12 +56,23 @@
 
 - selecionando os produtos que fazem mas sentido comercializar podemos
     - preguntar para el mercado si faz sentido enviar esses produtos
+
     - conversar com a empresa e perguntar custos de compra/venda de stoque
     - averiguar custos de envio via área
     - pode ser interessante ver quais são os vendedores deses produtos na col e tentar desaurir a a forma em que ele importou na col
         - custos de compra num ponto de distribuição na col
         - averiguar como funciona ser uma franquia do produto
         - existe DCs em col do produto?
+
+- abrir novo mercado (possibilidade)
+    - descobrir produtos muitos usados aqui no br que não estão na col
+
+- modelo dropshipping (venta internacional)
+    - ver a possibilidade fazer vendas internacionais como si foce comprando da china
+
+
+
+
 
 ---
 # programa para buscar produtos e gerar um arquivo csv
