@@ -22,7 +22,7 @@ def scrape_mercado_livre(search_query, until=1, country='co'):
     page = 1
 
     while True:
-        print(f"Coletando dados da página {page}...")
+        print(f"\nColetando dados da página {page}...")
         # url = f"{base_url}/{search_query}_Desde_{(page - 1) * 50 + 1}"
 
         url = link
@@ -118,18 +118,20 @@ def scrape_by_link(link):
         # Procurando o elemento que contém o número de vendidos
         vendidos_element = soup.find('span', class_='ui-pdp-subtitle')
 
+        # Seller
+        seller = soup.find(class_='ui-seller-data-header__title-container')
+        seller = seller.text.strip().replace('Vendido por ', '') if seller else ''
+
         if vendidos_element:
             vendidos_text = vendidos_element.text.strip()
             # print(f"Número de vendidos: {vendidos_text}")
-            return vendidos_text
+            return [vendidos_text, seller]
         else:
             # print("Elemento de vendidos não encontrado.")
             return None
     else:
         print(f"Erro ao acessar a página: {response.status_code}")
         return None
-
-
 
 
 
@@ -167,33 +169,46 @@ df_ordenado = df_ordenado.reset_index(drop=True)
 
 # print(df_ordenado.iloc[0])
 
-# Adicionando a nova coluna vazia
-# df_ordenado['sold_num'] = np.nan  # Ou pd.NA, ou np.nan, dependendo do caso
-
-df_ordenado['sold_num'] = None  # Ou pd.NA, ou np.nan, dependendo do caso
 
 print()
 print(df_ordenado)
 
+
+# Adicionando a nova coluna vazia
+# df_ordenado['sold_num'] = np.nan  # Ou pd.NA, ou np.nan, dependendo do caso
+
+df_ordenado['sold_num'] = None  # Ou pd.NA, ou np.nan, dependendo do caso
+df_ordenado['seller'] = None
+
 # Função para processar cada linha
 def processar_linha(row):
+    print(row['title'])
+
     link = row['permalink']
 
     try:
         time.sleep(0.2)
         res = scrape_by_link(link)
-        numeros = re.findall(r'\d+', res)
-        return int(numeros[0]) if numeros else None
+        numeros = re.findall(r'\d+', res[0])
+        seller = res[1]
+        return [int(numeros[0]), seller] if [numeros, seller] else None
+        return pd.Series({'sold_num': int(numeros[0]), 'seller': seller}) if numeros and seller else pd.Series({'sold_num': None, 'seller': None})
 
     except Exception as e:
         print(f"Erro ao processar o link {link}: {e}")
-        return None
+        return pd.Series({'sold_num': None, 'seller': None})
 
-# Solicita ao usuário que insira o valor de open_num
-open_num = int(input("\nDigite até que linhas que deseja processar: "))
+
+print()
+# Solicita ao usuário que insira o valor de rows_num
+rows_num = int(input("\nDigite até que linhas que deseja processar: "))
 
 # Aplica a função às primeiras linhas
-df_ordenado['sold_num'] = df_ordenado.head(open_num).apply(processar_linha, axis=1)
+resultados = df_ordenado.head(rows_num).apply(processar_linha, axis=1)
+
+# Atribui os resultados às colunas correspondentes
+df_ordenado.loc[:rows_num-1, 'sold_num'] = resultados['sold_num']
+df_ordenado.loc[:rows_num-1, 'seller'] = resultados['seller']
 
 # Exibe o DataFrame atualizado
 print()
@@ -214,7 +229,7 @@ caminho_completo = caminho_da_pasta + nomarquivo
 df.to_csv(caminho_completo, index=False)
 
 # string para outcsv/info
-infostring = f'{nomarquivo}: result = {len(df_ordenado)}: {in_search}'
+infostring = f'{nomfile}, res: {len(df_ordenado)}: search: {in_search}'
 
 with open('outcsv/info.md', 'a', encoding='utf-8') as arquivo:
     arquivo.write(infostring + '\n')
