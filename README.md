@@ -16,6 +16,56 @@
 
 ---
 
+
+## tópicos (Qué quiero saber con la pregunta que estoy haciendo?)
+
+### conocer los tipos de productos
+- ¿Cuáles son los productos para el cabello más usados en los salones de belleza?
+
+### conocer las marcas y los mas vendidos/usandos Co/Br
+- ¿Cuáles son los productos que normalmente son más caros?  
+- Productos Más Usados en los Salones de Belleza (Brasil y Colombia):  
+- Marcas Más Usadas en los Salones de Belleza:  
+
+#### mas usados/vendidos Co
+- Productos Más Vendidos en Colombia que Son Producidos en Brasil:  
+- Productos más vendidos en Mercado Libre Colombia:
+- Buscar productos brasileños presentes en Colombia.  
+- También encontrar buenas alternativas fuera del mercado colombiano (proponer nuevos productos).  
+
+#### mas usados/vendidos Br
+- Productos más vendidos en Mercado Libre Brasil:
+- ¿Cuáles son los productos para el cabello más vendidos en Brasil?  
+- ¿Cuáles son las marcas más populares en Brasil para los productos más utilizados en los salones de belleza?
+- ¿Cuáles de los productos se producen en Brasil y cuáles son importados?
+- ¿Cuál es el mayor mercado de productos para el cabello en Brasil?  
+- Buscar proveedores de productos brasileños.  
+
+### conocer sobre precio Co/Br
+- Productos Más Costosos en los Salones de Belleza:  
+- Comparar precios entre Brasil y Colombia.  
+- Minar productos en ML Brasil y ML Colombia para compararlos.  
+- Conocer precios y cantidades de productos.  
+
+### Logística y distribución
+- Preguntar sobre exportación y cantidades.  
+- Investigar la exportación de Brasil a Colombia.  
+
+### viabilidad de la ganancia y la inversión
+- Rentabilidad
+- Calcular la viabilidad de la ganancia y la inversión.  
+- Seleccionar productos interesantes (para maximizar la ganancia, podemos probar productos más caros).  
+
+### faces del proyecto, estrategia
+- Quiero exportar productos de belleza y cabello a Colombia... La idea es extraer datos de Mercado Libre de Colombia y de Brasil para descubrir cuáles son los productos brasileños más vendidos y enviar esos productos. Allá, una persona recibirá esos productos y hará la distribución. ¿Crees que esta idea es viable? ¿Es rentable? ¿Tendrías una idea mejor?
+- Sería interesante realizar un estudio de mercado en los salones de belleza en Brasil.  
+- También encontrar buenas alternativas fuera del mercado colombiano (proponer nuevos productos).  
+- crear una nueva cultura en col, por ejemplo las uñas de fibra de vidrio
+- promover productos que raramente se usan en col pero que se usan en br
+
+
+---
+
 # Programa para buscar productos en ML y generar un archivo CSV
 
 Creé un programa que captura los datos mediante scraping de los resultados de cada producto con los siguientes atributos:
@@ -50,76 +100,28 @@ python 00mlanalitics.py co 10 esp32,cam
     - Podemos iniciar búsquedas solamente por marca y analizar los más vendidos/evaluados.
     - Buscar por marca y tipo de producto y analizar los más vendidos/evaluados.
     - ¿Cuáles pueden ser los criterios de búsqueda?
-
         - Recomendados por DeepSeek, ChatGPT:
-
             - **Marcas Más Usadas en los Salones de Belleza**:
-
                - **En Brasil**:
-                 - Natura (líneas Ekos y Lumina).
-                 - Embelleze (productos para alisado y reconstrucción).
-                 - Cadiveu (aceites y mascarillas de tratamiento).
-                 - Salonline (productos para styling).
-                 - Niely (tinturas y decolorantes).
                - **En Colombia**:
-                 - Marcas internacionales como L'Oréal Professionnel, Schwarzkopf y Wella.
-                 - Marcas locales o regionales que atienden demandas específicas del mercado colombiano.
-
             - **Productos Más Vendidos en Colombia que Son Producidos en Brasil**:
                - **Posibles Productos**:
-                 - Aceites capilares (como los de Cadiveu o Natura).
-                 - Mascarillas de tratamiento (especialmente para cabellos dañados o rizados).
-                 - Productos para styling (ceras y pomadas de Salonline).
-                 - Tinturas y decolorantes (Niely o Embelleze).
                - **Minar Datos en Mercado Libre Colombia**:
-                 - Analizar los productos brasileños ya listados y sus volúmenes de ventas.
-                 - Identificar vacíos en el mercado (productos con alta demanda y poca oferta).
-                 - Comparar precios y evaluar la viabilidad de competir.
-
             - **Marcas con Producción en Brasil**:
-                1. **L'Oréal Professionnel**:
-                   - **Producción**: L'Oréal tiene fábricas en Brasil, donde produce una variedad de productos para el mercado local.
-
-                2. **Wella Professionals**:
-                   - **Producción**: Wella, que forma parte del grupo Coty, también tiene producción en Brasil.
-
-                3. **Schwarzkopf Professional**:
-                   - **Producción**: Schwarzkopf, perteneciente al grupo Henkel, produce muchos de sus productos en Brasil.
-
-                4. **Matrix**:
-                   - **Producción**: Matrix, una marca del grupo L'Oréal, también tiene producción local en Brasil.
-
-                5. **Natura**:
-                   - **Producción**: Natura es una marca brasileña y todos sus productos son producidos en Brasil.
-
-                6. **Salonline**:
-                   - **Producción**: Salonline es una marca brasileña, con producción local.
-
                 - **Productos Más Caros en los Salones de Belleza**:
                    - **En Brasil**:
-                     - Mascarillas de tratamiento premium (con queratina, aceites vegetales e ingredientes naturales).
-                     - Aceites capilares de lujo (como aceite de argán, marula o macadamia).
-                     - Líneas profesionales de marcas como Kérastase, L'Oréal Professionnel y Redken.
-                     - Productos para alisado y reconstrucción capilar.
                    - **En Colombia**:
-                     - Productos importados de marcas internacionales (como Moroccanoil, Olaplex o Kérastase).
-                     - Productos para tratamientos específicos, como reconstrucción o protección térmica.
-
         - Explorar más preguntas para DeepSeek y ChatGPT.
-        - Más evaluados.
-        - Más vendidos.
-        - Más caros.
-
+            - Más evaluados.
+            - Más vendidos.
+            - Más caros.
     - ¿Cuáles son los criterios de selección de productos?
-        - Más evaluados.
-        - Más vendidos.
-        - Más caros.
-        - Comparar los precios de los productos más vendidos.
-            - ¿La mejor diferencia entre Brasil y Colombia?
-
-- Seleccionando los productos que tienen más sentido comercializar, podemos:
-    - Preguntar al mercado si tiene sentido enviar esos productos.
-
+            - Más evaluados.
+            - Más vendidos.
+            - Más caros.
+            - Comparar los precios de los productos más vendidos.
+                - ¿La mejor diferencia entre Brasil y Colombia?
+- Seleccionando los productos que tienen más sentido comercializar
     - Conversar con la empresa y preguntar costos de compra/venta de stock.
     - Averiguar costos de envío por vía aérea.
     - Puede ser interesante ver quiénes son los vendedores de esos productos en Colombia y tratar de descubrir la forma en que importaron a Colombia.
@@ -133,38 +135,9 @@ python 00mlanalitics.py co 10 esp32,cam
 - Modelo dropshipping (venta internacional):
     - Ver la posibilidad de hacer ventas internacionales como si fuera comprando de China.
 
-- **Competencia**:  
+- Analizar la Competencia:  
  - Estudia las marcas locales e internacionales ya establecidas en Colombia.  
  - Identifica tu diferencial competitivo (precio, calidad o nicho específico).
-
----
-
-## ¿Cuál es el mayor mercado de productos para el cabello en Brasil?  
-## Sería interesante realizar un estudio de mercado en los salones de belleza en Brasil.  
-
-# Seleccionar productos interesantes (para maximizar la ganancia, podemos probar productos más caros).  
-
-# Buscar productos brasileños presentes en Colombia.  
-## También encontrar buenas alternativas fuera del mercado colombiano (proponer nuevos productos).  
-
-# Minar productos en MLCol.  
-## Encontrar una extensión de Chrome que extraiga datos de ML.  
-## Mamá tiene un contacto en MLCol (preguntar cómo extraer datos de la API de ML).  
-
-# Comparar precios entre Brasil y Colombia.  
-
-# Minar productos en ML Brasil y ML Colombia para compararlos.  
-
-# Buscar proveedores de productos brasileños.  
-## Conocer precios y cantidades de productos.  
-## Preguntar sobre exportación y cantidades.  
-
-# Investigar la exportación de Brasil a Colombia.  
-## Amanda puede saber.  
-## Una amiga de mi mamá puede saber.  
-
-# Calcular la viabilidad de la ganancia y la inversión.  
-
 
 ---
 
