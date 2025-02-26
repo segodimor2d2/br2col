@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-import re
+import re, sys
 import pandas as pd
 import time
 from datetime import datetime
@@ -135,19 +135,15 @@ def scrape_by_link(link):
 
 
 
+# ---
 
-# Exemplo de uso
-# search_query = 'fone%20tranya'
-# search_query = 'tranya'
-# search_query = 'xiaomi%20poco%20F5%20pro'
-# search_query = 'xiaomi-poco-f6-pro'
-search_query = 'esp32s3'
+print('python 00mlanalitics.py country pags search_query\n')
 
-# Solicita ao usuário que insira
-in_search = input("\nserach: ")
-search_query = in_search.replace(' ', '%20')
-pags = int(input("pags: "))
-country = input("county: ")
+country = sys.argv[1:][0]
+pags = int(sys.argv[1:][1])
+in_search = sys.argv[1:][2]
+in_search.split(',')
+search_query = in_search.replace(',', '%20')
 
 produtos = scrape_mercado_livre(search_query, pags, country)
 print(f'\nProdutos no total {len(produtos)}')

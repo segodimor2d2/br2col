@@ -1,0 +1,5 @@
+outcsv/
+
+__pycache__/
+
+.vscode/
