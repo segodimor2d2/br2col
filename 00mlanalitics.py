@@ -197,6 +197,7 @@ df_ordenado['seller'] = None
 print()
 # Solicita ao usuário que insira o valor de rows_num
 rows_num = int(input("\nDigite até que linhas que deseja processar: "))
+print()
 
 # Aplica a função às primeiras linhas
 res_linha = df_ordenado.head(rows_num).apply(processar_linha, axis=1)

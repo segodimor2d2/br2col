@@ -1,744 +1,610 @@
 # BR2COL GODIMARKET
 
----
+# backlog (lista de tareas por hacer)
 
-# reunião
-
-- proposta da daily
-- traduzir documento para es
-- itens que fui buscando en deepseek y chatgpt
-- fluxo de analises
-- programa de busca ML
+- crear un nombre para el proyecto (no es nombre de la empresa)
+    - el nombre de la empresa es la ultima cosa que se hace ya que vamos a tener la visión de todo el panorama
 
 ---
 
-# progresso
+# reunión
 
-- a ideia inicial é ter um programa que consiga identificar os produtos mais vendidos na busca e depois gerar um arquivo csv para ser analisado posteriormente.
-
-- assim vamos ir descobrindo quais são os produtos mas vendidos por marca e tipo de produto nos dois países principalmente na col
-    - podemos iniciar buscas somente por marca e analisar mas vendidos/avaliados
-    - buscar por marca y tipo de produto e analisar mas vendidos/avaliados
-    - quais podem ser os critérios de busca?
-        - recomendados deepseek, chatgpt
-            - **Marcas Mais Usadas nos Salões de Beleza**:
-               - **No Brasil**:
-                 - Natura (linhas Ekos e Lumina).
-                 - Embelleze (produtos para alisamento e reconstrução).
-                 - Cadiveu (óleos e máscaras de tratamento).
-                 - Salonline (produtos para styling).
-                 - Niely (tinturas e descolorantes).
-               - **Na Colômbia**:
-                 - Marcas internacionais como L'Oréal Professionnel, Schwarzkopf, e Wella.
-                 - Marcas locais ou regionais que atendem a demandas específicas do mercado colombiano.
-
-            - **Produtos Mais Vendidos na Colômbia que São Produzidos no Brasil**:
-               - **Possíveis Produtos**:
-                 - Óleos capilares (como os da Cadiveu ou Natura).
-                 - Máscaras de tratamento (especialmente para cabelos danificados ou cacheados).
-                 - Produtos para styling (ceras e pomadas da Salonline).
-                 - Tinturas e descolorantes (Niely ou Embelleze).
-               - **Minerar Dados no Mercado Livre Colômbia**:
-                 - Analise os produtos brasileiros já listados e seus volumes de vendas.
-                 - Identifique lacunas no mercado (produtos com alta demanda e pouca oferta).
-                 - Compare preços e avalie a viabilidade de competir.
-
-
-            - Marcas com Produção no Brasil:
-                1. **L'Oréal Professionnel**:
-                   - **Produção**: A L'Oréal possui fábricas no Brasil, onde produz uma variedade de produtos para o mercado local.
-
-                2. **Wella Professionals**:
-                   - **Produção**: A Wella, que faz parte do grupo Coty, também tem produção no Brasil.
-
-                3. **Schwarzkopf Professional**:
-                   - **Produção**: A Schwarzkopf, pertencente ao grupo Henkel, produz muitos de seus produtos no Brasil.
-
-                4. **Matrix**:
-                   - **Produção**: Matrix, uma marca do grupo L'Oréal, também tem produção local no Brasil.
-
-                5. **Natura**:
-                   - **Produção**: Natura é uma marca brasileira e todos os seus produtos são produzidos no Brasil.
-
-                6. **Salonline**:
-                   - **Produção**: Salonline é uma marca brasileira, com produção local.
-
-                - **Produtos Mais Caros nos Salões de Beleza**:
-                   - **No Brasil**:
-                     - Máscaras de tratamento premium (com queratina, óleos vegetais e ingredientes naturais).
-                     - Óleos capilares de luxo (como óleo de argan, marula ou macadâmia).
-                     - Linhas profissionais de marcas como Kérastase, L'Oréal Professionnel e Redken.
-                     - Produtos para alisamento e reconstrução capilar.
-                   - **Na Colômbia**:
-                     - Produtos importados de marcas internacionais (como Moroccanoil, Olaplex, ou Kérastase).
-                     - Produtos para tratamentos específicos, como reconstrução ou proteção térmica.
-
-        - explorar mais perguntas para o deepseek e chatgpt
-        - mais avaliados
-        - mais vendidos
-        - mais caros
-
-    - quais são os critérios de escolha de produtos?
-        - mais avaliados
-        - mais vendidos
-        - mais caros
-        - comparar os preços dos produtos mais vendidos
-            - a melhor diferença entre Br e Col?
-
-- selecionando os produtos que fazem mas sentido comercializar podemos
-    - preguntar para el mercado si faz sentido enviar esses produtos
-
-    - conversar com a empresa e perguntar custos de compra/venda de stoque
-    - averiguar custos de envio via área
-    - pode ser interessante ver quais são os vendedores deses produtos na col e tentar desaurir a a forma em que ele importou na col
-        - custos de compra num ponto de distribuição na col
-        - averiguar como funciona ser uma franquia do produto
-        - existe DCs em col do produto?
-
-- abrir novo mercado (possibilidade)
-    - descobrir produtos muitos usados aqui no br que não estão na col
-
-- modelo dropshipping (venta internacional)
-    - ver a possibilidade fazer vendas internacionais como si foce comprando da china
-
-
-
-
+- propuesta daily, qué días se pueden hacer?
+    Lun 07:30 pm col / 21:30 br
+    Mie 07:30 pm col / 21:30 br
+    Vie 07:30 am col / 09:30 br
 
 ---
-# programa para buscar produtos e gerar um arquivo csv
 
-Criei um programa que captura os dados via scraping os resultados de cada produtos com os atributos:
+# Programa para buscar productos en ML y generar un archivo CSV
+
+Creé un programa que captura los datos mediante scraping de los resultados de cada producto con los siguientes atributos:
 
 - 'title'
 - 'price'
-- 'permalink' (ulr)
-- 'rating_aqverage' (nota geral)
-- 'total_reviews' (num de avaliações)
-- 'sold_num' (num de vendidos)
+- 'permalink' (url)
+- 'rating_average' (nota general)
+- 'total_reviews' (número de evaluaciones)
+- 'sold_num' (número de vendidos)
+- 'seller' (nombre del vendedor)
 
-#### 'seller_id' (interessante incluir para analisar os vendedores)
+Para mejorar la ejecución del programa la llamada del programa contiene los siguientes parámetros:
+- country: país (br/co)
+- search_query: cadena de búsqueda, en vez de espacio se usaría coma (,)
 
-- o programa vai pedir una string de serach, as paginas que vão ser analisadas por consulta e o country (br/co)
-- apos analisar a busca, vai gerar uma lista ordenada pelo numero de avaliações em pandas
-- em seguida vai pedir até que linha vai querer obter os dados dos vendidos
-- finalmente imprime a tabela ordenada com os campos inseridos
-- FALTA: gerar um arquivo csv com os dados
+Ejemplo:
+```bash
+python 00mlanalitics.py country pags search_query
+python 00mlanalitics.py co 10 esp32,cam
+```
+- Después de analizar la búsqueda, va a generar una lista ordenada por el número de opiniones/comentarios en pandas.
+- A continuación, va a pedir hasta qué línea se quieren obtener los datos de los vendidos y el nombre de los vendedores
+- el programa va a generar un archivo CSV en la carpeta outcsv con los datos colectados ej. 20250226110058_co.csv
+- e adiciona en el archivo info.md la consulta e el nombre de archivo asi: 20250226110058_co, res: 61: search: esp32s3
 
----
-## API do Mercado Livre
-https://developers.mercadolivre.com.br/pt_br/itens-e-buscas
+# Progreso
 
----
+- La idea inicial es tener un programa que pueda identificar los productos más vendidos en la búsqueda y luego generar un archivo CSV para ser analizado posteriormente.
 
-# Quero exportar produtos de beleza e cabelo para Colômbia...a ideia é minerar dados do mercado livre da colombia e do brasil para descobrir quais produtos brasileiros são os mais vendidos e enviar esses produtos. Lá, uma pessoa irá receber esses produtos e fazer a distribuição. Você acha que essa ideia é viável??? É lucrativo??? Vc teria uma ideia melhor
+- Así vamos descubriendo cuáles son los productos más vendidos por marca y tipo de producto en los dos países, principalmente en Colombia.
+    - Podemos iniciar búsquedas solamente por marca y analizar los más vendidos/evaluados.
+    - Buscar por marca y tipo de producto y analizar los más vendidos/evaluados.
+    - ¿Cuáles pueden ser los criterios de búsqueda?
 
-A sua ideia faz sentido e pode ser viável, mas há alguns pontos importantes a considerar:
+        - Recomendados por DeepSeek, ChatGPT:
 
-1. Demanda e Concorrência: Minerar dados do Mercado Livre é uma ótima forma de entender a demanda, mas também é importante analisar concorrentes locais, preços e marcas já estabelecidas na Colômbia.
+            - **Marcas Más Usadas en los Salones de Belleza**:
 
+               - **En Brasil**:
+                 - Natura (líneas Ekos y Lumina).
+                 - Embelleze (productos para alisado y reconstrucción).
+                 - Cadiveu (aceites y mascarillas de tratamiento).
+                 - Salonline (productos para styling).
+                 - Niely (tinturas y decolorantes).
+               - **En Colombia**:
+                 - Marcas internacionales como L'Oréal Professionnel, Schwarzkopf y Wella.
+                 - Marcas locales o regionales que atienden demandas específicas del mercado colombiano.
 
-2. Custos e Tributação: O custo de envio, tarifas alfandegárias e impostos podem impactar bastante a margem de lucro. Vale conferir acordos comerciais entre Brasil e Colômbia para entender se há incentivos ou isenções.
+            - **Productos Más Vendidos en Colombia que Son Producidos en Brasil**:
+               - **Posibles Productos**:
+                 - Aceites capilares (como los de Cadiveu o Natura).
+                 - Mascarillas de tratamiento (especialmente para cabellos dañados o rizados).
+                 - Productos para styling (ceras y pomadas de Salonline).
+                 - Tinturas y decolorantes (Niely o Embelleze).
+               - **Minar Datos en Mercado Libre Colombia**:
+                 - Analizar los productos brasileños ya listados y sus volúmenes de ventas.
+                 - Identificar vacíos en el mercado (productos con alta demanda y poca oferta).
+                 - Comparar precios y evaluar la viabilidad de competir.
 
+            - **Marcas con Producción en Brasil**:
+                1. **L'Oréal Professionnel**:
+                   - **Producción**: L'Oréal tiene fábricas en Brasil, donde produce una variedad de productos para el mercado local.
 
-3. Logística e Distribuição: Ter um parceiro confiável na Colômbia é essencial para evitar problemas com recebimento, estoque e entrega. Além disso, avaliar opções de transporte pode reduzir custos.
+                2. **Wella Professionals**:
+                   - **Producción**: Wella, que forma parte del grupo Coty, también tiene producción en Brasil.
 
+                3. **Schwarzkopf Professional**:
+                   - **Producción**: Schwarzkopf, perteneciente al grupo Henkel, produce muchos de sus productos en Brasil.
 
-4. Regulação Sanitária: Produtos de beleza e cabelo podem exigir registro na entidade reguladora da Colômbia (como o INVIMA). Se precisar de registro, isso pode ser um entrave inicial.
+                4. **Matrix**:
+                   - **Producción**: Matrix, una marca del grupo L'Oréal, también tiene producción local en Brasil.
 
+                5. **Natura**:
+                   - **Producción**: Natura es una marca brasileña y todos sus productos son producidos en Brasil.
 
-## É lucrativo?
+                6. **Salonline**:
+                   - **Producción**: Salonline es una marca brasileña, con producción local.
 
-Se os custos forem bem controlados e você focar em produtos com alta demanda e pouco concorrência, pode ser sim. Um diferencial pode ser trabalhar com marcas de nicho ou produtos difíceis de encontrar na Colômbia.
+                - **Productos Más Caros en los Salones de Belleza**:
+                   - **En Brasil**:
+                     - Mascarillas de tratamiento premium (con queratina, aceites vegetales e ingredientes naturales).
+                     - Aceites capilares de lujo (como aceite de argán, marula o macadamia).
+                     - Líneas profesionales de marcas como Kérastase, L'Oréal Professionnel y Redken.
+                     - Productos para alisado y reconstrucción capilar.
+                   - **En Colombia**:
+                     - Productos importados de marcas internacionales (como Moroccanoil, Olaplex o Kérastase).
+                     - Productos para tratamientos específicos, como reconstrucción o protección térmica.
 
-Ideia alternativa
+        - Explorar más preguntas para DeepSeek y ChatGPT.
+        - Más evaluados.
+        - Más vendidos.
+        - Más caros.
 
-Se a burocracia for um problema, você poderia começar testando a aceitação dos produtos via dropshipping (vendendo sem manter estoque, direto de fornecedores brasileiros para clientes colombianos). Outra opção seria vender através de marketplaces locais, como Mercado Livre Colômbia ou Linio, antes de investir pesado na importação.
+    - ¿Cuáles son los criterios de selección de productos?
+        - Más evaluados.
+        - Más vendidos.
+        - Más caros.
+        - Comparar los precios de los productos más vendidos.
+            - ¿La mejor diferencia entre Brasil y Colombia?
 
-## Quer que eu te ajude a encontrar dados sobre os produtos mais vendidos nesses mercados?
+- Seleccionando los productos que tienen más sentido comercializar, podemos:
+    - Preguntar al mercado si tiene sentido enviar esos productos.
 
-Entendo que você deseja identificar os produtos de beleza e cuidados pessoais mais vendidos no Mercado Livre, tanto no Brasil quanto na Colômbia, para avaliar a viabilidade de exportação. Abaixo, apresento algumas informações relevantes:
+    - Conversar con la empresa y preguntar costos de compra/venta de stock.
+    - Averiguar costos de envío por vía aérea.
+    - Puede ser interesante ver quiénes son los vendedores de esos productos en Colombia y tratar de descubrir la forma en que importaron a Colombia.
+        - Costos de compra en un punto de distribución en Colombia.
+        - Averiguar cómo funciona ser una franquicia del producto.
+        - ¿Existen DCs en Colombia del producto?
 
+- Abrir nuevo mercado (posibilidad):
+    - Descubrir productos muy usados aquí en Brasil que no están en Colombia.
 
-## Produtos mais vendidos no Mercado Livre Brasil:
+- Modelo dropshipping (venta internacional):
+    - Ver la posibilidad de hacer ventas internacionales como si fuera comprando de China.
 
-**Cuidados com o cabelo:** Shampoos, condicionadores, óleos capilares e máscaras de tratamento estão entre os itens mais procurados.
-
-**Cuidados com a pele:** Hidratantes, cremes anti-idade, protetores solares e esfoliantes são populares entre os consumidores brasileiros.
-
-**Maquiagem:** Bases, batons, sombras e delineadores têm alta demanda.
-
-**Perfumes e fragrâncias:** Perfumes e desodorantes são frequentemente adquiridos.
-
-**Cuidados com as unhas:** Esmaltes e produtos relacionados também têm boa saída.
-
-### Essas informações são corroboradas por dados da Nubimetrics, que destacam essas categorias como as mais buscadas no Mercado Livre Brasil. 
-
-
-## Produtos mais vendidos no Mercado Livre Colômbia:
-
-Embora não haja uma lista específica disponível nos resultados fornecidos, é possível inferir que categorias semelhantes às do Brasil também sejam populares na Colômbia, dado o comportamento de consumo em mercados latino-americanos.
-
-## Considerações adicionais:
-
-**Análise de mercado:** Antes de iniciar a exportação, é fundamental realizar uma pesquisa de mercado detalhada na Colômbia para identificar a demanda específica por produtos brasileiros e entender as preferências locais.
-
-**Regulamentações:** Verifique as regulamentações colombianas para a importação e comercialização de cosméticos e produtos de beleza, garantindo que todos os produtos estejam em conformidade com as normas locais.
-
-**Logística e custos:** Avalie os custos de envio, possíveis taxas alfandegárias e o processo logístico para assegurar que a operação seja financeiramente viável.
-
-**Parcerias locais:** Estabelecer parcerias com distribuidores ou pontos de venda locais pode facilitar a entrada e a aceitação dos produtos no mercado colombiano.
-
-Para uma compreensão mais aprofundada sobre os produtos mais vendidos no Mercado Livre, você pode assistir ao seguinte vídeo:
-
----
-
-A ideia tem potencial, mas alguns desafios e pontos estratégicos precisam ser analisados antes de investir tempo e dinheiro. Vou abordar os principais aspectos:
-
-### **1. Viabilidade da Ideia**
-✅ **Oportunidade de Mercado**  
-A Colômbia tem um mercado crescente de cosméticos e produtos para cabelo. Produtos brasileiros são bem vistos na América Latina, especialmente aqueles voltados para cabelos cacheados e crespos, que têm grande demanda.
-
-✅ **Facilidade de Importação**  
-A Colômbia tem acordos comerciais com o Brasil, o que pode facilitar a importação. No entanto, é preciso verificar impostos, tarifas alfandegárias e a necessidade de certificações sanitárias para cosméticos.
-
-⚠ **Logística e Distribuição**  
-Ter uma pessoa na Colômbia para receber os produtos e distribuir é uma vantagem. Mas você precisa garantir que a logística seja eficiente, com custos de envio controlados e sem burocracia excessiva.
-
-⚠ **Regulamentação Sanitária**  
-A venda de cosméticos pode exigir registros na autoridade sanitária colombiana (INVIMA). Se os produtos não tiverem essa certificação, podem ser barrados na alfândega ou vendidos apenas no mercado informal.
-
-### **2. Como Minerar Dados para Escolher os Produtos Certos**
-Sua ideia de analisar o **Mercado Livre Brasil e Colômbia** para identificar produtos populares faz sentido. Você pode:
-- Coletar dados sobre os produtos mais vendidos em cada país.
-- Identificar marcas e categorias com mais avaliações e melhor reputação.
-- Comparar preços entre Brasil e Colômbia para ver se há margem de lucro.
-
-#### **Ferramentas para Coletar os Dados**
-- **Scrapy (Python)** para extrair informações automaticamente.
-- **Selenium** para simular navegação em páginas protegidas.
-- **Pandas e Matplotlib** para analisar os dados e encontrar padrões.
-- **Google Trends** para ver tendências de busca por produtos específicos.
-
-Se precisar de ajuda com um script para minerar dados, posso te ajudar a desenvolver!
-
-### **3. Lucratividade**
-A lucratividade depende dos custos envolvidos:
-✅ **Fatores Positivos:**
-- Produtos brasileiros são bem vistos na Colômbia.
-- Demanda crescente por cosméticos naturais e especializados.
-- Possibilidade de importação direta, sem necessidade de estoques locais inicialmente.
-
-⚠ **Riscos e Custos a Considerar:**
-- **Frete e impostos:** Pode encarecer os produtos se não houver planejamento.
-- **Competição com marcas locais:** Empresas colombianas podem oferecer produtos similares com menor burocracia.
-- **Taxas e regulamentação:** Produtos sem certificação podem ter restrições de venda.
-
-### **4. Alternativas ou Melhorias na Ideia**
-Caso queira reduzir os riscos, aqui estão algumas ideias alternativas:
-1. **Começar com um modelo dropshipping** – Trabalhar com fornecedores no Brasil e vender diretamente para clientes na Colômbia sem precisar de estoque inicial.
-2. **Focar em produtos com alta margem de lucro** – Produtos premium, orgânicos ou exclusivos podem ter menos concorrência e justificar preços mais altos.
-3. **Criar um e-commerce próprio** – Além do Mercado Livre, vender por uma loja própria pode ser mais lucrativo no longo prazo.
-4. **Fechar parceria com distribuidores locais** – Em vez de vender diretamente, você pode fornecer para salões de beleza ou lojas especializadas na Colômbia.
-
-### **Conclusão**
-A ideia tem viabilidade e pode ser lucrativa, desde que você avalie os custos logísticos, impostos e certificações.
-Se precisar de um script para minerar dados do Mercado Livre ou de um plano mais detalhado, me avise! 🚀
+- **Competencia**:  
+ - Estudia las marcas locales e internacionales ya establecidas en Colombia.  
+ - Identifica tu diferencial competitivo (precio, calidad o nicho específico).
 
 ---
 
-# chatgpt/deepsharck produtos mais usados em salão de beleza
+## ¿Cuál es el mayor mercado de productos para el cabello en Brasil?  
+## Sería interesante realizar un estudio de mercado en los salones de belleza en Brasil.  
 
-## quais são os produtos de cabelo mais usados nos salões de beleza?
+# Seleccionar productos interesantes (para maximizar la ganancia, podemos probar productos más caros).  
 
-Nos salões de beleza, uma variedade de produtos para cabelo é utilizada para atender às necessidades dos clientes, desde tratamentos até finalizações. Aqui estão alguns dos produtos mais comuns:
+# Buscar productos brasileños presentes en Colombia.  
+## También encontrar buenas alternativas fuera del mercado colombiano (proponer nuevos productos).  
 
-1. **Shampoos e Condicionadores**: 
-   - **Shampoos de Limpeza Profunda**: Removem resíduos de produtos e impurezas.
-   - **Shampoos Hidratantes**: Para cabelos ressecados.
-   - **Condicionadores**: Auxiliam na desembaraçação e hidratação dos fios.
+# Minar productos en MLCol.  
+## Encontrar una extensión de Chrome que extraiga datos de ML.  
+## Mamá tiene un contacto en MLCol (preguntar cómo extraer datos de la API de ML).  
 
-2. **Máscaras de Tratamento**:
-   - **Máscaras Hidratantes**: Para cabelos secos e danificados.
-   - **Máscaras Reconstrutoras**: Restauram a fibra capilar, ideais para cabelos quimicamente tratados.
-   - **Máscaras Nutritivas**: Repõem lipídeos e nutrientes.
+# Comparar precios entre Brasil y Colombia.  
 
-3. **Finalizadores**:
-   - **Óleos Capilares**: Para brilho e controle de frizz.
-   - **Cremes para Pentear**: Facilitam o desembaraço e protegem os fios durante o uso de calor.
-   - **Sérum Capilar**: Proporciona brilho e proteção térmica.
+# Minar productos en ML Brasil y ML Colombia para compararlos.  
 
-4. **Produtos para Estilo**:
-   - **Gel**: Para fixação e definição de cachos ou penteados.
-   - **Spray Fixador**: Mantém o penteado no lugar.
-   - **Cera Modeladora**: Para textura e definição.
-   - **Pomada Capilar**: Para controle e modelagem.
+# Buscar proveedores de productos brasileños.  
+## Conocer precios y cantidades de productos.  
+## Preguntar sobre exportación y cantidades.  
 
-5. **Produtos para Alisamento e Relaxamento**:
-   - **Cremes Alisantes**: Para alisamento temporário ou permanente.
-   - **Produtos para Relaxamento**: Para cabelos crespos ou cacheados.
+# Investigar la exportación de Brasil a Colombia.  
+## Amanda puede saber.  
+## Una amiga de mi mamá puede saber.  
 
-6. **Tinturas e Descolorantes**:
-   - **Tinturas Permanentes**: Para mudança de cor.
-   - **Descolorantes**: Para clarear os fios antes da aplicação de cor.
-
-7. **Produtos para Proteção Térmica**:
-   - **Sprays Termoprotetores**: Protegem os fios do calor de secadores, chapinhas e babyliss.
-
-8. **Produtos para Cuidados Específicos**:
-   - **Antirresíduos**: Para remover acúmulo de produtos.
-   - **Anticaspa**: Para controle de caspa e seborreia.
-   - **Antioleosidade**: Para cabelos oleosos.
-
-9. **Produtos para Cachos**:
-   - **Ativadores de Cachos**: Para definir e realçar cachos.
-   - **Cremes para Cachos**: Para hidratação e definição.
-
-10. **Produtos para Volume**:
-    - **Sprays de Volume**: Para dar corpo aos fios.
-    - **Mousses**: Para volume e fixação.
-
-Esses produtos são escolhidos com base no tipo de cabelo, condição e desejo do cliente, e os profissionais dos salões de beleza são treinados para recomendar e aplicar os mais adequados para cada situação.
-
-## quais são os produtos que normalmente são mais caros?
-
-No mercado de produtos capilares, os preços podem variar bastante dependendo da marca, qualidade dos ingredientes, tecnologia envolvida e tipo de tratamento. Geralmente, os produtos mais caros são aqueles que oferecem benefícios específicos, como tratamentos intensivos, fórmulas premium ou marcas de luxo. Aqui estão alguns dos produtos que costumam ter um preço mais elevado:
-
-1. **Máscaras de Tratamento Profundo**:
-   - **Máscaras Reconstrutoras**: Contêm ingredientes como queratina, proteínas e aminoácidos que ajudam a reconstruir a fibra capilar.
-   - **Máscaras com Ingredientes Naturais ou Orgânicos**: Produtos que utilizam ingredientes de alta qualidade, como óleos vegetais puros, extratos botânicos e manteigas naturais.
-
-2. **Óleos Capilares Premium**:
-   - **Óleos com Ingredientes Exóticos**: Como óleo de argan, óleo de marula, óleo de macadâmia e óleo de jojoba. Esses óleos são conhecidos por suas propriedades nutritivas e regenerativas.
-
-3. **Sérum Capilar de Luxo**:
-   - **Sérum com Proteção Térmica e Brilho Intenso**: Produtos que combinam proteção térmica, brilho e tratamento em uma única fórmula, muitas vezes com ingredientes como silicone orgânico e vitaminas.
-
-4. **Produtos para Alisamento e Relaxamento**:
-   - **Cremes Alisantes de Alta Qualidade**: Produtos que prometem alisamento duradouro sem danificar os fios, muitas vezes com fórmulas que incluem queratina e outros agentes reparadores.
-   - **Kits de Alisamento Japonês ou Brasileiro**: Tratamentos profissionais que oferecem alisamento permanente e são realizados em salões de beleza.
-
-5. **Tinturas e Descolorantes Profissionais**:
-   - **Tinturas Permanentes de Marcas Renomadas**: Produtos que oferecem uma ampla gama de cores, cobertura de fios brancos e durabilidade.
-   - **Descolorantes de Alta Qualidade**: Que minimizam danos aos fios durante o processo de clareamento.
-
-6. **Produtos para Proteção Térmica**:
-   - **Sprays e Cremes Termoprotetores de Luxo**: Que oferecem proteção avançada contra o calor de secadores, chapinhas e babyliss, além de benefícios adicionais como hidratação e brilho.
-
-7. **Linhas de Tratamento Completo**:
-   - **Kits de Tratamento Capilar**: Que incluem shampoo, condicionador, máscara e sérum de uma mesma linha, formulados para tratar problemas específicos como danos, ressecamento ou queda de cabelo.
-
-8. **Produtos para Cuidados Específicos**:
-   - **Tratamentos Antiqueda**: Produtos que contêm ingredientes como minoxidil, vitaminas e minerais para estimular o crescimento capilar e reduzir a queda.
-   - **Tratamentos para Couro Cabeludo Sensível**: Produtos que acalmam e equilibram o couro cabeludo, muitas vezes com ingredientes como aloe vera, camomila e óleos essenciais.
-
-9. **Produtos para Cachos de Luxo**:
-   - **Ativadores de Cachos e Cremes Definidores**: Produtos que oferecem definição, hidratação e controle de frizz para cabelos cacheados e crespos, muitas vezes com fórmulas ricas em manteigas e óleos naturais.
-
-10. **Produtos de Marcas de Luxo**:
-    - **Marcas Renomadas**: Como Kerastase, Oribe, Moroccanoil, Aveda e Shu Uemura, que oferecem produtos de alta performance com embalagens sofisticadas e ingredientes premium.
-
-Esses produtos são geralmente mais caros devido à qualidade dos ingredientes, pesquisa e desenvolvimento envolvidos, além da reputação da marca. No entanto, muitos clientes consideram que o investimento vale a pena pelos resultados superiores e benefícios oferecidos.
-
-## quais são os produtos de cabelo mais vendidos no Brasil?
-
-No Brasil, os salões de beleza costumam utilizar e vender uma variedade de produtos para cabelo que atendem às necessidades dos clientes, desde tratamentos até finalizações. Alguns dos produtos mais vendidos e populares incluem:
-
-1. **Shampoos e Condicionadores**:
-   - **Shampoos de Limpeza Profunda**: Para remover resíduos de produtos e impurezas.
-   - **Shampoos Hidratantes**: Para cabelos ressecados e danificados.
-   - **Condicionadores**: Para desembaraçar e hidratar os fios.
-
-2. **Máscaras de Tratamento**:
-   - **Máscaras Hidratantes**: Para cabelos secos e danificados.
-   - **Máscaras Reconstrutoras**: Para restaurar a fibra capilar, ideais para cabelos quimicamente tratados.
-   - **Máscaras Nutritivas**: Para repor lipídeos e nutrientes.
-
-3. **Finalizadores**:
-   - **Óleos Capilares**: Para brilho e controle de frizz.
-   - **Cremes para Pentear**: Facilitam o desembaraço e protegem os fios durante o uso de calor.
-   - **Sérum Capilar**: Proporciona brilho e proteção térmica.
-
-4. **Produtos para Estilo**:
-   - **Gel**: Para fixação e definição de cachos ou penteados.
-   - **Spray Fixador**: Mantém o penteado no lugar.
-   - **Cera Modeladora**: Para textura e definição.
-   - **Pomada Capilar**: Para controle e modelagem.
-
-5. **Produtos para Alisamento e Relaxamento**:
-   - **Cremes Alisantes**: Para alisamento temporário ou permanente.
-   - **Produtos para Relaxamento**: Para cabelos crespos ou cacheados.
-
-6. **Tinturas e Descolorantes**:
-   - **Tinturas Permanentes**: Para mudança de cor.
-   - **Descolorantes**: Para clarear os fios antes da aplicação de cor.
-
-7. **Produtos para Proteção Térmica**:
-   - **Sprays Termoprotetores**: Protegem os fios do calor de secadores, chapinhas e babyliss.
-
-8. **Produtos para Cuidados Específicos**:
-   - **Antirresíduos**: Para remover acúmulo de produtos.
-   - **Anticaspa**: Para controle de caspa e seborreia.
-   - **Antioleosidade**: Para cabelos oleosos.
-
-9. **Produtos para Cachos**:
-   - **Ativadores de Cachos**: Para definir e realçar cachos.
-   - **Cremes para Cachos**: Para hidratação e definição.
-
-10. **Produtos para Volume**:
-    - **Sprays de Volume**: Para dar corpo aos fios.
-    - **Mousses**: Para volume e fixação.
+# Calcular la viabilidad de la ganancia y la inversión.  
 
 
-Algumas marcas populares no Brasil incluem L'Oréal Professionnel, Kérastase, Wella Professionals, Schwarzkopf Professional, e muitas outras. Esses produtos são escolhidos com base no tipo de cabelo, condição e desejo do cliente, e os profissionais dos salões de beleza são treinados para recomendar e aplicar os mais adequados para cada situação.
+---
 
-## quais são as marcas mais populares no Brasil sobre os produtos mais usados nos salões de beleza?
+# chatgpt/deepsharck
 
-No Brasil, várias marcas de produtos capilares são amplamente reconhecidas e utilizadas nos salões de beleza devido à sua qualidade, eficácia e reputação no mercado. Aqui estão algumas das marcas mais populares e os tipos de produtos pelos quais são conhecidas:
+
+### 1. **Productos Más Usados en los Salones de Belleza (Brasil y Colombia)**:  
+   - **En Brasil**:  
+     - Shampoos y acondicionadores (especialmente para hidratación y reconstrucción).  
+     - Mascarillas de tratamiento (hidratantes, reconstructivas y nutritivas).  
+     - Aceites capilares (para brillo y control del frizz).  
+     - Productos para alisado (cremas alisadoras y tratamientos post-alisado).  
+     - Productos para styling (ceras, pomadas, sprays fijadores).  
+     - Tintes y decolorantes.  
+   - **En Colombia**:  
+     - Productos para cabellos rizados y afro (activadores de rizos, cremas definidoras).  
+     - Productos para hidratación y protección térmica (debido al uso frecuente de secadores y planchas).  
+     - Productos para coloración y decoloración (tintes y decolorantes de alta calidad).  
+     - Productos para control del frizz y la humedad (debido al clima tropical).  
+
+### 2. **Productos Más Costosos en los Salones de Belleza**:  
+   - **En Brasil**:  
+     - Mascarillas de tratamiento premium (con queratina, aceites vegetales e ingredientes naturales).  
+     - Aceites capilares de lujo (como aceite de argán, marula o macadamia).  
+     - Líneas profesionales de marcas como Kérastase, L'Oréal Professionnel y Redken.  
+     - Productos para alisado y reconstrucción capilar.  
+   - **En Colombia**:  
+     - Productos importados de marcas internacionales (como Moroccanoil, Olaplex o Kérastase).  
+     - Productos para tratamientos específicos, como reconstrucción o protección térmica.  
+
+### 3. **Marcas Más Usadas en los Salones de Belleza**:  
+   - **En Brasil**:  
+     - Natura (líneas Ekos y Lumina).  
+     - Embelleze (productos para alisado y reconstrucción).  
+     - Cadiveu (aceites y mascarillas de tratamiento).  
+     - Salonline (productos para styling).  
+     - Niely (tintes y decolorantes).  
+   - **En Colombia**:  
+     - Marcas internacionales como L'Oréal Professionnel, Schwarzkopf y Wella.  
+     - Marcas locales o regionales que atienden demandas específicas del mercado colombiano.  
+
+### 4. **Productos Más Vendidos en Colombia que Son Producidos en Brasil**:  
+   - **Posibles Productos**:  
+     - Aceites capilares (como los de Cadiveu o Natura).  
+     - Mascarillas de tratamiento (especialmente para cabellos dañados o rizados).  
+     - Productos para styling (ceras y pomadas de Salonline).  
+     - Tintes y decolorantes (Niely o Embelleze).  
+   - **Análisis de Datos en Mercado Libre Colombia**:  
+     - Analizar los productos brasileños ya listados y sus volúmenes de ventas.  
+     - Identificar brechas en el mercado (productos con alta demanda y poca oferta).  
+     - Comparar precios y evaluar la viabilidad de competir.  
+
+
+---
+
+## Quiero exportar productos de belleza y cabello a Colombia... La idea es extraer datos de Mercado Libre de Colombia y de Brasil para descubrir cuáles son los productos brasileños más vendidos y enviar esos productos. Allá, una persona recibirá esos productos y hará la distribución. ¿Crees que esta idea es viable? ¿Es rentable? ¿Tendrías una idea mejor?
+
+Tu idea tiene sentido y puede ser viable, pero hay algunos puntos importantes a considerar:
+
+1. **Demanda y Competencia**: Extraer datos de Mercado Libre es una excelente forma de entender la demanda, pero también es importante analizar la competencia local, los precios y las marcas ya establecidas en Colombia.
+
+2. **Costos e Impuestos**: El costo de envío, los aranceles aduaneros y los impuestos pueden afectar significativamente el margen de ganancia. Vale la pena revisar los acuerdos comerciales entre Brasil y Colombia para entender si hay incentivos o exenciones.
+
+3. **Logística y Distribución**: Tener un socio confiable en Colombia es esencial para evitar problemas con la recepción, el almacenamiento y la entrega. Además, evaluar opciones de transporte puede reducir costos.
+
+4. **Regulación Sanitaria**: Los productos de belleza y cabello pueden requerir registro en la entidad reguladora de Colombia (como el INVIMA). Si se necesita registro, esto puede ser un obstáculo inicial.
+
+## ¿Es rentable?
+
+Si los costos están bien controlados y te enfocas en productos con alta demanda y poca competencia, puede serlo. Un diferencial puede ser trabajar con marcas de nicho o productos difíciles de encontrar en Colombia.
+
+### Idea alternativa
+
+Si la burocracia es un problema, podrías comenzar probando la aceptación de los productos mediante **dropshipping** (vendiendo sin mantener inventario, directamente de proveedores brasileños a clientes colombianos). Otra opción sería vender a través de marketplaces locales, como Mercado Libre Colombia o Linio, antes de invertir fuertemente en la importación.
+
+## ¿Quieres que te ayude a encontrar datos sobre los productos más vendidos en esos mercados?
+
+Entiendo que deseas identificar los productos de belleza y cuidado personal más vendidos en Mercado Libre, tanto en Brasil como en Colombia, para evaluar la viabilidad de la exportación. A continuación, presento algunas informaciones relevantes:
+
+## Productos más vendidos en Mercado Libre Brasil:
+
+- **Cuidados del cabello**: Champús, acondicionadores, aceites capilares y mascarillas de tratamiento están entre los artículos más buscados.
+- **Cuidados de la piel**: Hidratantes, cremas anti-edad, protectores solares y exfoliantes son populares entre los consumidores brasileños.
+- **Maquillaje**: Bases, labiales, sombras y delineadores tienen alta demanda.
+- **Perfumes y fragancias**: Perfumes y desodorantes se compran con frecuencia.
+- **Cuidados de las uñas**: Esmaltes y productos relacionados también tienen buena salida.
+
+Estas informaciones son corroboradas por datos de Nubimetrics, que destacan estas categorías como las más buscadas en Mercado Libre Brasil.
+
+## Productos más vendidos en Mercado Libre Colombia:
+
+Aunque no hay una lista específica disponible en los resultados proporcionados, es posible inferir que categorías similares a las de Brasil también sean populares en Colombia, dado el comportamiento de consumo en mercados latinoamericanos.
+
+## Consideraciones adicionales:
+
+- **Análisis de mercado**: Antes de iniciar la exportación, es fundamental realizar una investigación de mercado detallada en Colombia para identificar la demanda específica por productos brasileños y entender las preferencias locales.
+- **Regulaciones**: Verifica las regulaciones colombianas para la importación y comercialización de cosméticos y productos de belleza, asegurando que todos los productos estén en conformidad con las normas locales.
+- **Logística y costos**: Evalúa los costos de envío, posibles tasas aduaneras y el proceso logístico para asegurar que la operación sea financieramente viable.
+- **Alianzas locales**: Establecer alianzas con distribuidores o puntos de venta locales puede facilitar la entrada y aceptación de los productos en el mercado colombiano.
+
+Para una comprensión más profunda sobre los productos más vendidos en Mercado Libre, puedes ver el siguiente video:
+
+La idea tiene potencial, pero algunos desafíos y puntos estratégicos deben ser analizados antes de invertir tiempo y dinero. Abordaré los principales aspectos:
+
+### **1. Viabilidad de la Idea**
+✅ **Oportunidad de Mercado**  
+Colombia tiene un mercado creciente de cosméticos y productos para el cabello. Los productos brasileños son bien vistos en América Latina, especialmente aquellos dirigidos a cabellos rizados y crespos, que tienen gran demanda.
+
+✅ **Facilidad de Importación**  
+Colombia tiene acuerdos comerciales con Brasil, lo que puede facilitar la importación. Sin embargo, es necesario verificar impuestos, aranceles aduaneros y la necesidad de certificaciones sanitarias para cosméticos.
+
+⚠ **Logística y Distribución**  
+Tener una persona en Colombia para recibir los productos y distribuirlos es una ventaja. Pero debes garantizar que la logística sea eficiente, con costos de envío controlados y sin burocracia excesiva.
+
+⚠ **Regulación Sanitaria**  
+La venta de cosméticos puede requerir registros en la autoridad sanitaria colombiana (INVIMA). Si los productos no tienen esta certificación, pueden ser retenidos en la aduana o vendidos solo en el mercado informal.
+
+### **2. Cómo Extraer Datos para Elegir los Productos Correctos**
+Tu idea de analizar **Mercado Libre Brasil y Colombia** para identificar productos populares tiene sentido. Puedes:
+- Recolectar datos sobre los productos más vendidos en cada país.
+- Identificar marcas y categorías con más evaluaciones y mejor reputación.
+- Comparar precios entre Brasil y Colombia para ver si hay margen de ganancia.
+
+#### **Herramientas para Recolectar los Datos**
+- **Scrapy (Python)** para extraer información automáticamente.
+- **Selenium** para simular navegación en páginas protegidas.
+- **Pandas y Matplotlib** para analizar los datos y encontrar patrones.
+- **Google Trends** para ver tendencias de búsqueda de productos específicos.
+
+Si necesitas ayuda con un script para extraer datos, ¡puedo ayudarte a desarrollarlo!
+
+### **3. Rentabilidad**
+La rentabilidad depende de los costos involucrados:
+✅ **Factores Positivos:**
+- Los productos brasileños son bien vistos en Colombia.
+- Demanda creciente por cosméticos naturales y especializados.
+- Posibilidad de importación directa, sin necesidad de inventarios locales inicialmente.
+
+⚠ **Riesgos y Costos a Considerar:**
+- **Flete e impuestos**: Pueden encarecer los productos si no hay planificación.
+- **Competencia con marcas locales**: Empresas colombianas pueden ofrecer productos similares con menos burocracia.
+- **Tasas y regulación**: Productos sin certificación pueden tener restricciones de venta.
+
+### **4. Alternativas o Mejoras en la Idea**
+Si deseas reducir los riesgos, aquí tienes algunas ideas alternativas:
+1. **Comenzar con un modelo dropshipping** – Trabajar con proveedores en Brasil y vender directamente a clientes en Colombia sin necesidad de inventario inicial.
+2. **Enfocarse en productos con alto margen de ganancia** – Productos premium, orgánicos o exclusivos pueden tener menos competencia y justificar precios más altos.
+3. **Crear un e-commerce propio** – Además de Mercado Libre, vender a través de una tienda propia puede ser más rentable a largo plazo.
+4. **Establecer alianzas con distribuidores locales** – En lugar de vender directamente, puedes proveer a salones de belleza o tiendas especializadas en Colombia.
+
+### **Conclusión**
+La idea es viable y puede ser rentable, siempre y cuando evalúes los costos logísticos, impuestos y certificaciones.
+Si necesitas un script para extraer datos de Mercado Libre o un plan más detallado, ¡avísame! 🚀
+
+---
+
+## ¿Cuáles son los productos para el cabello más usados en los salones de belleza?
+
+En los salones de belleza, se utiliza una variedad de productos para el cabello para satisfacer las necesidades de los clientes, desde tratamientos hasta finalizaciones. Aquí están algunos de los productos más comunes:
+
+1. **Shampoos y Acondicionadores**:  
+   - **Shampoos de Limpieza Profunda**: Eliminan residuos de productos e impurezas.  
+   - **Shampoos Hidratantes**: Para cabellos resecos.  
+   - **Acondicionadores**: Facilitan el desenredado e hidratan el cabello.  
+
+2. **Mascarillas de Tratamiento**:  
+   - **Mascarillas Hidratantes**: Para cabellos secos y dañados.  
+   - **Mascarillas Reconstrucción**: Restauran la fibra capilar, ideales para cabellos con tratamientos químicos.  
+   - **Mascarillas Nutritivas**: Aportan lípidos y nutrientes.  
+
+3. **Finalizadores**:  
+   - **Aceites Capilares**: Para brillo y control del frizz.  
+   - **Cremas para Peinar**: Facilitan el desenredado y protegen el cabello del calor.  
+   - **Sérum Capilar**: Aporta brillo y protección térmica.  
+
+4. **Productos para Estilizado**:  
+   - **Gel**: Para fijación y definición de rizos o peinados.  
+   - **Spray Fijador**: Mantiene el peinado en su lugar.  
+   - **Cera Moldeadora**: Para textura y definición.  
+   - **Pomada Capilar**: Para control y modelado.  
+
+5. **Productos para Alisado y Relajación**:  
+   - **Cremas Alisadoras**: Para alisado temporal o permanente.  
+   - **Productos para Relajación**: Para cabellos rizados u ondulados.  
+
+6. **Tintes y Decolorantes**:  
+   - **Tintes Permanentes**: Para cambio de color.  
+   - **Decolorantes**: Para aclarar el cabello antes de aplicar color.  
+
+7. **Productos para Protección Térmica**:  
+   - **Sprays Termoprotectores**: Protegen el cabello del calor de secadores, planchas y rizadores.  
+
+8. **Productos para Cuidados Específicos**:  
+   - **Antirresiduos**: Para eliminar acumulación de productos.  
+   - **Anticaspa**: Para control de caspa y seborrea.  
+   - **Antigrasa**: Para cabellos grasos.  
+
+9. **Productos para Rizos**:  
+   - **Activadores de Rizos**: Para definir y realzar rizos.  
+   - **Cremas para Rizos**: Para hidratación y definición.  
+
+10. **Productos para Volumen**:  
+   - **Sprays de Volumen**: Para dar cuerpo al cabello.  
+   - **Mousses**: Para volumen y fijación.  
+
+Estos productos se eligen según el tipo de cabello, su condición y las necesidades del cliente. Los profesionales en los salones de belleza están capacitados para recomendar y aplicar los más adecuados en cada situación.  
+
+---
+
+## ¿Cuáles son los productos que normalmente son más caros?  
+
+En el mercado de productos capilares, los precios pueden variar dependiendo de la marca, la calidad de los ingredientes, la tecnología involucrada y el tipo de tratamiento. Generalmente, los productos más caros son aquellos que ofrecen beneficios específicos, como tratamientos intensivos, fórmulas premium o marcas de lujo. A continuación, algunos de los productos que suelen tener un precio más elevado:  
+
+1. **Mascarillas de Tratamiento Profundo**:  
+   - **Mascarillas Reconstrucción**: Contienen ingredientes como queratina, proteínas y aminoácidos que ayudan a reparar la fibra capilar.  
+   - **Mascarillas con Ingredientes Naturales u Orgánicos**: Usan ingredientes de alta calidad, como aceites vegetales puros, extractos botánicos y mantecas naturales.  
+
+2. **Aceites Capilares Premium**:  
+   - **Aceites con Ingredientes Exóticos**: Como aceite de argán, marula, macadamia y jojoba, conocidos por sus propiedades nutritivas y regenerativas.  
+
+3. **Sérum Capilar de Lujo**:  
+   - **Sérum con Protección Térmica y Brillo Intenso**: Productos que combinan protección térmica, brillo y tratamiento en una sola fórmula, con ingredientes como siliconas orgánicas y vitaminas.  
+
+4. **Productos para Alisado y Relajación**:  
+   - **Cremas Alisadoras de Alta Calidad**: Garantizan alisado duradero sin dañar el cabello, con fórmulas que incluyen queratina y otros agentes reparadores.  
+   - **Kits de Alisado Japonés o Brasileño**: Tratamientos profesionales de alisado permanente realizados en salones de belleza.  
+
+5. **Tintes y Decolorantes Profesionales**:  
+   - **Tintes Permanentes de Marcas Reconocidas**: Ofrecen amplia gama de colores, cobertura de canas y durabilidad.  
+   - **Decolorantes de Alta Calidad**: Minimiza los daños al cabello durante el proceso de aclarado.  
+
+6. **Productos para Protección Térmica**:  
+   - **Sprays y Cremas Termoprotectores de Lujo**: Brindan protección avanzada contra el calor, además de hidratación y brillo.  
+
+7. **Líneas de Tratamiento Completo**:  
+   - **Kits de Tratamiento Capilar**: Incluyen shampoo, acondicionador, mascarilla y sérum de una misma línea, diseñados para problemas específicos como daño, resequedad o caída del cabello.  
+
+8. **Productos para Cuidados Específicos**:  
+   - **Tratamientos Anticaída**: Contienen ingredientes como minoxidil, vitaminas y minerales para estimular el crecimiento capilar y reducir la caída.  
+   - **Tratamientos para Cuero Cabelludo Sensible**: Ayudan a calmar y equilibrar el cuero cabelludo con ingredientes como aloe vera, manzanilla y aceites esenciales.  
+
+9. **Productos para Rizos de Lujo**:  
+   - **Activadores de Rizos y Cremas Definidoras**: Brindan definición, hidratación y control del frizz, con fórmulas ricas en mantecas y aceites naturales.  
+
+10. **Productos de Marcas de Lujo**:  
+   - **Marcas Reconocidas**: Como Kérastase, Oribe, Moroccanoil, Aveda y Shu Uemura, que ofrecen productos de alto rendimiento con empaques sofisticados e ingredientes premium.  
+
+Estos productos suelen ser más costosos debido a la calidad de sus ingredientes, la investigación y desarrollo involucrados, además de la reputación de la marca. Sin embargo, muchos clientes consideran que la inversión vale la pena por los resultados superiores y los beneficios ofrecidos.  
+
+---
+
+## ¿Cuáles son los productos para el cabello más vendidos en Brasil?  
+
+En Brasil, los salones de belleza utilizan y venden una variedad de productos para el cabello que cubren desde tratamientos hasta finalizaciones. Algunos de los productos más vendidos y populares incluyen:  
+
+1. **Champús y Acondicionadores**:
+   - **Champús de Limpieza Profunda**: Para eliminar residuos de productos e impurezas.
+   - **Champús Hidratantes**: Para cabellos resecos y dañados.
+   - **Acondicionadores**: Para desenredar e hidratar los cabellos.
+
+2. **Mascarillas de Tratamiento**:
+   - **Mascarillas Hidratantes**: Para cabellos secos y dañados.
+   - **Mascarillas Reconstructoras**: Para restaurar la fibra capilar, ideales para cabellos tratados químicamente.
+   - **Mascarillas Nutritivas**: Para reponer lípidos y nutrientes.
+
+3. **Productos Finalizadores**:
+   - **Aceites Capilares**: Para brillo y control del frizz.
+   - **Cremas para Peinar**: Facilitan el desenredo y protegen los cabellos durante el uso de calor.
+   - **Sérum Capilar**: Proporciona brillo y protección térmica.
+
+4. **Productos para Estilizar**:
+   - **Gel**: Para fijación y definición de rizos o peinados.
+   - **Spray Fijador**: Mantiene el peinado en su lugar.
+   - **Cera Modeladora**: Para textura y definición.
+   - **Pomada Capilar**: Para control y modelado.
+
+5. **Productos para Alisado y Relajación**:
+   - **Cremas Alisadoras**: Para alisado temporal o permanente.
+   - **Productos para Relajación**: Para cabellos crespos o rizados.
+
+6. **Tinturas y Decolorantes**:
+   - **Tinturas Permanentes**: Para cambio de color.
+   - **Decolorantes**: Para aclarar los cabellos antes de aplicar color.
+
+7. **Productos para Protección Térmica**:
+   - **Sprays Termoprotectores**: Protegen los cabellos del calor de secadores, planchas y tenacillas.
+
+8. **Productos para Cuidados Específicos**:
+   - **Antirresiduos**: Para eliminar acumulación de productos.
+   - **Anticaspa**: Para control de caspa y seborrea.
+   - **Antioleosidad**: Para cabellos grasos.
+
+9. **Productos para Rizos**:
+   - **Activadores de Rizos**: Para definir y resaltar rizos.
+   - **Cremas para Rizos**: Para hidratación y definición.
+
+10. **Productos para Volumen**:
+    - **Sprays de Volumen**: Para dar cuerpo a los cabellos.
+    - **Mousses**: Para volumen y fijación.
+
+Algunas marcas populares en Brasil incluyen L'Oréal Professionnel, Kérastase, Wella Professionals, Schwarzkopf Professional, y muchas otras. Estos productos se eligen en función del tipo de cabello, su condición y el deseo del cliente, y los profesionales de los salones de belleza están capacitados para recomendar y aplicar los más adecuados para cada situación.
+
+---
+
+## ¿Cuáles son las marcas más populares en Brasil para los productos más utilizados en los salones de belleza?
+
+En Brasil, varias marcas de productos capilares son ampliamente reconocidas y utilizadas en los salones de belleza debido a su calidad, eficacia y reputación en el mercado. Aquí están algunas de las marcas más populares y los tipos de productos por los que son conocidas:
 
 1. **L'Oréal Professionnel**:
-   - **Produtos Populares**: Shampoos, condicionadores, máscaras de tratamento, tinturas, e produtos para alisamento.
-   - **Destaque**: Linha Mythic Oil (óleos capilares) e linha Tecni Art (produtos para styling).
+   - **Productos Populares**: Shampoos, acondicionadores, mascarillas de tratamiento, tintes y productos para alisado.
+   - **Destacado**: Línea Mythic Oil (aceites capilares) y línea Tecni Art (productos para styling).
 
 2. **Kérastase**:
-   - **Produtos Populares**: Máscaras de tratamento, óleos capilares, séruns e produtos para cuidados específicos como queda de cabelo e couro cabeludo sensível.
-   - **Destaque**: Óleo Elixir Ultime e máscaras da linha Fusio-Dose.
+   - **Productos Populares**: Mascarillas de tratamiento, aceites capilares, sueros y productos para el cuidado específico del cabello, como caída del cabello y cuero cabelludo sensible.
+   - **Destacado**: Aceite Elixir Ultime y mascarillas de la línea Fusio-Dose.
 
 3. **Wella Professionals**:
-   - **Produtos Populares**: Tinturas, descolorantes, shampoos, condicionadores e produtos para styling.
-   - **Destaque**: Linha Invigo (cuidado capilar) e linha EIMI (styling).
+   - **Productos Populares**: Tintes, decolorantes, shampoos, acondicionadores y productos para styling.
+   - **Destacado**: Línea Invigo (cuidado capilar) y línea EIMI (styling).
 
 4. **Schwarzkopf Professional**:
-   - **Produtos Populares**: Tinturas, descolorantes, produtos para alisamento e tratamentos capilares.
-   - **Destaque**: Linha BC (Bonacure) para tratamentos e linha OSiS+ para styling.
+   - **Productos Populares**: Tintes, decolorantes, productos para alisado y tratamientos capilares.
+   - **Destacado**: Línea BC (Bonacure) para tratamientos y línea OSiS+ para styling.
 
 5. **Redken**:
-   - **Produtos Populares**: Shampoos, condicionadores, máscaras de tratamento e produtos para styling.
-   - **Destaque**: Linha Extreme para cabelos danificados e linha All Soft para cabelos secos.
+   - **Productos Populares**: Shampoos, acondicionadores, mascarillas de tratamiento y productos para styling.
+   - **Destacado**: Línea Extreme para cabellos dañados y línea All Soft para cabellos secos.
 
 6. **Matrix**:
-   - **Produtos Populares**: Tinturas, descolorantes, shampoos, condicionadores e produtos para styling.
-   - **Destaque**: Linha Biolage para cuidados naturais e linha SoColor para tinturas.
+   - **Productos Populares**: Tintes, decolorantes, shampoos, acondicionadores y productos para styling.
+   - **Destacado**: Línea Biolage para cuidados naturales y línea SoColor para tintes.
 
 7. **Bumble and bumble**:
-   - **Produtos Populares**: Produtos para styling, como sprays, pomadas e cremes.
-   - **Destaque**: Spray de textura e óleo capilar.
+   - **Productos Populares**: Productos para styling, como sprays, pomadas y cremas.
+   - **Destacado**: Spray de textura y aceite capilar.
 
 8. **Moroccanoil**:
-   - **Produtos Populares**: Óleos capilares, shampoos, condicionadores e tratamentos.
-   - **Destaque**: Óleo de tratamento original.
+   - **Productos Populares**: Aceites capilares, shampoos, acondicionadores y tratamientos.
+   - **Destacado**: Aceite de tratamiento original.
 
 9. **Aveda**:
-   - **Produtos Populares**: Produtos naturais e orgânicos para cuidados capilares, incluindo shampoos, condicionadores e tratamentos.
-   - **Destaque**: Linha Damage Remedy para cabelos danificados.
+   - **Productos Populares**: Productos naturales y orgánicos para el cuidado capilar, incluyendo shampoos, acondicionadores y tratamientos.
+   - **Destacado**: Línea Damage Remedy para cabellos dañados.
 
 10. **Joico**:
-    - **Produtos Populares**: Shampoos, condicionadores, máscaras de tratamento e produtos para styling.
-    - **Destaque**: Linha K-Pak para reconstrução capilar.
+    - **Productos Populares**: Shampoos, acondicionadores, mascarillas de tratamiento y productos para styling.
+    - **Destacado**: Línea K-Pak para reconstrucción capilar.
 
 11. **Natura**:
-    - **Produtos Populares**: Linhas de produtos naturais e sustentáveis, incluindo shampoos, condicionadores e tratamentos.
-    - **Destaque**: Linha Ekos, com ingredientes da biodiversidade brasileira.
+    - **Productos Populares**: Líneas de productos naturales y sostenibles, incluyendo shampoos, acondicionadores y tratamientos.
+    - **Destacado**: Línea Ekos, con ingredientes de la biodiversidad brasileña.
 
 12. **Salonline**:
-    - **Produtos Populares**: Produtos para styling e tratamentos capilares.
-    - **Destaque**: Ceras modeladoras e sprays fixadores.
+    - **Productos Populares**: Productos para styling y tratamientos capilares.
+    - **Destacado**: Ceras modeladoras y sprays fijadores.
 
-Essas marcas são escolhidas pelos profissionais dos salões de beleza por sua confiabilidade e eficácia, e muitas delas oferecem linhas completas que cobrem desde a limpeza e tratamento até a finalização e styling dos cabelos. A escolha da marca e dos produtos específicos pode variar dependendo das necessidades individuais do cliente e das tendências do mercado.
+Estas marcas son elegidas por los profesionales de los salones de belleza por su confiabilidad y eficacia. Muchas de ellas ofrecen líneas completas que cubren desde la limpieza y tratamiento hasta la finalización y el styling del cabello. La elección de la marca y los productos específicos puede variar según las necesidades individuales del cliente y las tendencias del mercado.
 
-## quais dos produtos anteriores são produzidos no brasil? e quias são importados? 
+## ¿Cuáles de los productos anteriores se producen en Brasil y cuáles son importados?
 
-No Brasil, muitas marcas de produtos capilares têm produção local, enquanto outras são importadas. Aqui está uma visão geral das marcas mencionadas e sua origem de produção:
+En Brasil, muchas marcas de productos capilares tienen producción local, mientras que otras son importadas. Aquí está un resumen de las marcas mencionadas y su origen de producción:
 
-### Marcas com Produção no Brasil:
+### Marcas con Producción en Brasil:
 
 1. **L'Oréal Professionnel**:
-   - **Produção**: A L'Oréal possui fábricas no Brasil, onde produz uma variedade de produtos para o mercado local.
+   - **Producción**: L'Oréal tiene fábricas en Brasil donde produce una variedad de productos para el mercado local.
 
 2. **Wella Professionals**:
-   - **Produção**: A Wella, que faz parte do grupo Coty, também tem produção no Brasil.
+   - **Producción**: Wella, que forma parte del grupo Coty, también tiene producción en Brasil.
 
 3. **Schwarzkopf Professional**:
-   - **Produção**: A Schwarzkopf, pertencente ao grupo Henkel, produz muitos de seus produtos no Brasil.
+   - **Producción**: Schwarzkopf, perteneciente al grupo Henkel, fabrica muchos de sus productos en Brasil.
 
 4. **Matrix**:
-   - **Produção**: Matrix, uma marca do grupo L'Oréal, também tem produção local no Brasil.
+   - **Producción**: Matrix, una marca del grupo L'Oréal, también tiene producción local en Brasil.
 
 5. **Natura**:
-   - **Produção**: Natura é uma marca brasileira e todos os seus produtos são produzidos no Brasil.
+   - **Producción**: Natura es una marca brasileña y todos sus productos son fabricados en Brasil.
 
 6. **Salonline**:
-   - **Produção**: Salonline é uma marca brasileira, com produção local.
+   - **Producción**: Salonline es una marca brasileña con producción local.
 
 ### Marcas Importadas:
 
 1. **Kérastase**:
-   - **Origem**: Kérastase é uma marca de luxo do grupo L'Oréal, e a maioria de seus produtos é importada.
+   - **Origen**: Kérastase es una marca de lujo del grupo L'Oréal, y la mayoría de sus productos son importados.
 
 2. **Redken**:
-   - **Origem**: Redken, também do grupo L'Oréal, tem a maioria de seus produtos importados.
+   - **Origen**: Redken, también del grupo L'Oréal, tiene la mayoría de sus productos importados.
 
 3. **Bumble and bumble**:
-   - **Origem**: Bumble and bumble é uma marca americana, e seus produtos são importados.
+   - **Origen**: Bumble and bumble es una marca estadounidense y sus productos son importados.
 
 4. **Moroccanoil**:
-   - **Origem**: Moroccanoil é uma marca israelense, e seus produtos são importados.
+   - **Origen**: Moroccanoil es una marca israelí y sus productos son importados.
 
 5. **Aveda**:
-   - **Origem**: Aveda, pertencente ao grupo Estée Lauder, tem a maioria de seus produtos importados.
+   - **Origen**: Aveda, perteneciente al grupo Estée Lauder, tiene la mayoría de sus productos importados.
 
 6. **Joico**:
-   - **Origem**: Joico é uma marca americana, e seus produtos são importados.
+   - **Origen**: Joico es una marca estadounidense y sus productos son importados.
 
-### Considerações:
+### Consideraciones:
 
-- **Produção Local**: Marcas como L'Oréal Professionnel, Wella Professionals, Schwarzkopf Professional, Matrix, Natura e Salonline têm produção no Brasil, o que geralmente resulta em preços mais acessíveis e maior disponibilidade no mercado local.
+- **Producción Local**: Marcas como L'Oréal Professionnel, Wella Professionals, Schwarzkopf Professional, Matrix, Natura y Salonline tienen producción en Brasil, lo que generalmente resulta en precios más accesibles y mayor disponibilidad en el mercado local.
   
-- **Produtos Importados**: Marcas como Kérastase, Redken, Bumble and bumble, Moroccanoil, Aveda e Joico são importadas, o que pode refletir em preços mais elevados devido a custos de importação e logística.
+- **Productos Importados**: Marcas como Kérastase, Redken, Bumble and bumble, Moroccanoil, Aveda y Joico son importadas, lo que puede reflejarse en precios más elevados debido a costos de importación y logística.
 
-A escolha entre produtos nacionais e importados pode depender das preferências do cliente, do orçamento e dos resultados desejados. Profissionais de salões de beleza costumam recomendar produtos com base na eficácia e na adequação às necessidades específicas dos cabelos de seus clientes.
+La elección entre productos nacionales e importados puede depender de las preferencias del cliente, el presupuesto y los resultados deseados. Los profesionales de los salones de belleza suelen recomendar productos según su eficacia y su adecuación a las necesidades específicas del cabello de sus clientes.
 
+## ¿Qué productos brasileños son parte de los más usados en los salones de belleza?
 
-# que produtos brasileiros são parte dos mais usados nos salões de beleza
+En Brasil, varias marcas y productos nacionales son ampliamente utilizados en los salones de belleza debido a su calidad, eficacia y adaptación a las necesidades del cabello brasileño. Aquí están algunas de las marcas y productos brasileños más populares y frecuentemente usados en salones de belleza:
 
-No Brasil, várias marcas e produtos nacionais são amplamente utilizados em salões de beleza devido à sua qualidade, eficácia e adaptação às necessidades dos cabelos brasileiros. Aqui estão algumas das marcas e produtos brasileiros mais populares e frequentemente usados em salões de beleza:
-
-### Marcas Brasileiras Populares em Salões de Beleza:
+### Marcas Brasileñas Populares en Salones de Belleza:
 
 1. **Natura**:
-   - **Produtos Populares**: Shampoos, condicionadores, máscaras de tratamento e óleos capilares.
-   - **Destaque**: Linha Ekos (com ingredientes da biodiversidade brasileira, como açaí, castanha e murumuru) e linha Lumina (para cabelos coloridos).
+   - **Productos Populares**: Shampoos, acondicionadores, mascarillas de tratamiento y aceites capilares.
+   - **Destacado**: Línea Ekos (con ingredientes de la biodiversidad brasileña, como açaí, castaña y murumuru) y línea Lumina (para cabellos teñidos).
 
 2. **Embelleze**:
-   - **Produtos Populares**: Cremes para alisamento, shampoos, condicionadores e tratamentos capilares.
-   - **Destaque**: Linha de alisamentos e reconstruções capilares.
+   - **Productos Populares**: Cremas para alisado, shampoos, acondicionadores y tratamientos capilares.
+   - **Destacado**: Línea de alisado y reconstrucción capilar.
 
 3. **Salonline**:
-   - **Produtos Populares**: Ceras modeladoras, sprays fixadores, pomadas e géis.
-   - **Destaque**: Produtos para styling e finalização.
+   - **Productos Populares**: Ceras modeladoras, sprays fijadores, pomadas y geles.
+   - **Destacado**: Productos para styling y finalización.
 
 4. **Niely**:
-   - **Produtos Populares**: Tinturas, descolorantes e tratamentos capilares.
-   - **Destaque**: Linha Gold para coloração e cuidados com cabelos coloridos.
+   - **Productos Populares**: Tintes, decolorantes y tratamientos capilares.
+   - **Destacado**: Línea Gold para coloración y cuidado del cabello teñido.
 
 5. **Cadiveu**:
-   - **Produtos Populares**: Óleos capilares, máscaras de tratamento e produtos para finalização.
-   - **Destaque**: Óleo de tratamento de Brazilian Keratin e máscaras hidratantes.
+   - **Productos Populares**: Aceites capilares, mascarillas de tratamiento y productos para finalización.
+   - **Destacado**: Aceite de tratamiento de Brazilian Keratin y mascarillas hidratantes.
 
 6. **Boticário (O Boticário)**:
-   - **Produtos Populares**: Shampoos, condicionadores e tratamentos capilares.
-   - **Destaque**: Linha Cuide-se Bem e linha Truss.
+   - **Productos Populares**: Shampoos, acondicionadores y tratamientos capilares.
+   - **Destacado**: Línea Cuide-se Bem y línea Truss.
 
 7. **Lola Cosmetics**:
-   - **Produtos Populares**: Produtos para styling, como sprays, pomadas e ceras.
-   - **Destaque**: Linha de produtos para finalização e modelagem.
-
-8. **Kérastase (produção local)**:
-   - **Produtos Populares**: Embora seja uma marca internacional, a Kérastase tem produção local no Brasil, o que a torna mais acessível e popular em salões.
-   - **Destaque**: Óleos capilares e máscaras de tratamento.
-
-### Produtos Brasileiros Mais Usados em Salões:
-
-1. **Shampoos e Condicionadores**:
-   - **Natura Ekos**: Conhecidos por seus ingredientes naturais e hidratação profunda.
-   - **Embelleze**: Para cabelos quimicamente tratados e necessitando de reconstrução.
-
-2. **Máscaras de Tratamento**:
-   - **Cadiveu Brazilian Keratin**: Para reconstrução e hidratação intensiva.
-   - **Natura Lumina**: Para cabelos coloridos, ajudando a manter a vibração da cor.
-
-3. **Óleos Capilares**:
-   - **Cadiveu Óleo de Tratamento**: Para brilho e controle de frizz.
-   - **Natura Ekos Óleo de Murumuru**: Para nutrição e hidratação.
-
-4. **Produtos para Alisamento**:
-   - **Embelleze**: Cremes de alisamento e tratamentos reconstrutores.
-   - **Niely Gold**: Produtos para alisamento e cuidados pós-alisamento.
-
-5. **Produtos para Styling**:
-   - **Salonline**: Ceras modeladoras, sprays fixadores e pomadas.
-   - **Lola Cosmetics**: Produtos para finalização e modelagem.
-
-6. **Tinturas e Descolorantes**:
-   - **Niely**: Tinturas permanentes e descolorantes de alta qualidade.
-   - **Natura**: Tinturas com ingredientes naturais e menos agressivos.
-
-### Considerações Finais:
-
-As marcas brasileiras são muito valorizadas nos salões de beleza do Brasil devido à sua eficácia, adaptação aos diferentes tipos de cabelos e condições climáticas do país, além de preços geralmente mais acessíveis em comparação com marcas importadas. Profissionais de salões de beleza costumam recomendar esses produtos com base nas necessidades específicas de seus clientes, garantindo resultados satisfatórios e cabelos saudáveis.
-
----
-
-# Projeto
-
-eu quero comercializar produtos de cabelo produzidos no Brasil para ser vendidos na Colômbia, a principal ideia é obter o máximo lucro em curto prazo.
-
-para isso eu estou coletando informações sobre:
-
-- quais são os produtos mais usados nos salões de beleza
-- quis são os produtos mais caros nos salões de beleza
-- quis são as marcas mais usadas nos salões de beleza
-- quais são os produtos mais vendidos na Colômbia que são produzidos no Brasil
-- estou pensando minerar os dados dos produtos no Mercado Livre Colômbia para saber quais seriam os produtos mais vendidos
-- também comparar os preços dos produtos no Mercado do Brasil com os do Mercado Livre na Colômbia
-
-Quero averiguar como eu consigo enviar os produtos dede Brasil para a Colômbia e entender todos os detalhes de exportação e importação nos países.
-
-O que outros detalhes seria bom abalizar para este projeto?
-
----
-
-Para comercializar produtos de cabelo produzidos no Brasil na Colômbia com o objetivo de maximizar o lucro em curto prazo, é essencial realizar uma análise detalhada e estratégica. Abaixo, vou organizar as informações e sugerir passos adicionais para ajudar no seu projeto:
-
----
-
-### 1. **Produtos Mais Usados nos Salões de Beleza (Brasil e Colômbia)**:
-   - **No Brasil**:
-     - Shampoos e condicionadores (especialmente para hidratação e reconstrução).
-     - Máscaras de tratamento (hidratantes, reconstrutoras e nutritivas).
-     - Óleos capilares (para brilho e controle de frizz).
-     - Produtos para alisamento (cremes alisantes e tratamentos pós-alisamento).
-     - Produtos para styling (ceras, pomadas, sprays fixadores).
-     - Tinturas e descolorantes.
-   - **Na Colômbia**:
-     - Produtos para cabelos cacheados e crespos (ativadores de cachos, cremes definidores).
-     - Produtos para hidratação e proteção térmica (devido ao uso frequente de secadores e chapinhas).
-     - Produtos para coloração e descoloração (tinturas e descolorantes de alta qualidade).
-     - Produtos para controle de frizz e umidade (devido ao clima tropical).
-
-   **Ação**: Pesquise se há diferenças significativas nas preferências entre os dois países e identifique produtos que possam atender a demandas específicas na Colômbia.
-
----
-
-### 2. **Produtos Mais Caros nos Salões de Beleza**:
-   - **No Brasil**:
-     - Máscaras de tratamento premium (com queratina, óleos vegetais e ingredientes naturais).
-     - Óleos capilares de luxo (como óleo de argan, marula ou macadâmia).
-     - Linhas profissionais de marcas como Kérastase, L'Oréal Professionnel e Redken.
-     - Produtos para alisamento e reconstrução capilar.
-   - **Na Colômbia**:
-     - Produtos importados de marcas internacionais (como Moroccanoil, Olaplex, ou Kérastase).
-     - Produtos para tratamentos específicos, como reconstrução ou proteção térmica.
-
-   **Ação**: Identifique produtos brasileiros que possam competir com marcas internacionais em termos de qualidade, mas com preços mais acessíveis.
-
----
-
-### 3. **Marcas Mais Usadas nos Salões de Beleza**:
-   - **No Brasil**:
-     - Natura (linhas Ekos e Lumina).
-     - Embelleze (produtos para alisamento e reconstrução).
-     - Cadiveu (óleos e máscaras de tratamento).
-     - Salonline (produtos para styling).
-     - Niely (tinturas e descolorantes).
-   - **Na Colômbia**:
-     - Marcas internacionais como L'Oréal Professionnel, Schwarzkopf, e Wella.
-     - Marcas locais ou regionais que atendem a demandas específicas do mercado colombiano.
-
-   **Ação**: Analise se as marcas brasileiras já possuem presença na Colômbia e como você pode se diferenciar (preço, qualidade, ou nichos específicos).
-
----
-
-### 4. **Produtos Mais Vendidos na Colômbia que São Produzidos no Brasil**:
-   - **Possíveis Produtos**:
-     - Óleos capilares (como os da Cadiveu ou Natura).
-     - Máscaras de tratamento (especialmente para cabelos danificados ou cacheados).
-     - Produtos para styling (ceras e pomadas da Salonline).
-     - Tinturas e descolorantes (Niely ou Embelleze).
-   - **Minerar Dados no Mercado Livre Colômbia**:
-     - Analise os produtos brasileiros já listados e seus volumes de vendas.
-     - Identifique lacunas no mercado (produtos com alta demanda e pouca oferta).
-     - Compare preços e avalie a viabilidade de competir.
-
----
-
-### 5. **Comparação de Preços entre Brasil e Colômbia**:
-   - **Mercado Livre Colômbia**:
-     - Verifique os preços dos produtos brasileiros já disponíveis.
-     - Analise os preços de produtos similares de marcas internacionais.
-   - **Mercado Brasileiro**:
-     - Calcule o custo de produção, embalagem e transporte.
-     - Adicione custos de exportação e impostos.
-     - Defina uma margem de lucro competitiva.
-
-   **Ação**: Use ferramentas de scraping (como Python com BeautifulSoup ou Selenium) para coletar dados de preços e volumes de vendas no Mercado Livre Colômbia.
-
----
-
-### 6. **Logística de Exportação e Importação**:
-   - **Exportação no Brasil**:
-     - Registro na Receita Federal como exportador.
-     - Emissão de Nota Fiscal de Exportação.
-     - Contratação de um despachante aduaneiro.
-   - **Importação na Colômbia**:
-     - Registro no Registro Nacional de Importadores da Colômbia.
-     - Pagamento de impostos de importação (arancel de importación, IVA, e outros).
-     - Conhecimento das regulamentações sanitárias para produtos cosméticos.
-   - **Transporte**:
-     - Escolha entre transporte aéreo (mais rápido, mas mais caro) ou marítimo (mais lento, mas mais barato).
-     - Contrate uma empresa de logística internacional com experiência em comércio exterior.
-
-   **Ação**: Consulte a Agência Brasileira de Promoção de Exportações e Investimentos (ApexBrasil) e a Câmara de Comércio Brasil-Colômbia para orientações específicas.
-
----
-
-### 7. **Outros Detalhes para Avaliar**:
-   - **Regulamentações Sanitárias**:
-     - Verifique se os produtos precisam de registros específicos na Colômbia (como o INVIMA, órgão regulador de produtos cosméticos).
-   - **Embalagem e Rotulagem**:
-     - Adapte as embalagens e rótulos para o mercado colombiano (idioma espanhol e informações obrigatórias).
-   - **Distribuição**:
-     - Defina se você vai vender diretamente para salões de beleza, distribuidores ou plataformas online.
-   - **Marketing e Branding**:
-     - Desenvolva uma estratégia de marketing para posicionar sua marca na Colômbia.
-     - Utilize redes sociais e parcerias com influenciadores de beleza.
-   - **Concorrência**:
-     - Estude as marcas locais e internacionais já estabelecidas na Colômbia.
-     - Identifique seu diferencial competitivo (preço, qualidade, ou nicho específico).
-
----
-
-### 8. **Ferramentas e Recursos Úteis**:
-   - **Ferramentas de Análise de Mercado**:
-     - Google Trends: Para identificar tendências de busca na Colômbia.
-     - SEMrush ou SimilarWeb: Para analisar tráfego e desempenho de concorrentes online.
-   - **Consultoria**:
-     - Contrate uma consultoria especializada em comércio exterior ou mercado de cosméticos.
-   - **Parcerias**:
-     - Busque parcerias com distribuidores ou varejistas locais na Colômbia.
-
----
-
-### Conclusão:
-Para maximizar o lucro em curto prazo, foque em produtos com alta demanda e margens atrativas, como óleos capilares, máscaras de tratamento e produtos para styling. Utilize dados do Mercado Livre Colômbia para identificar oportunidades e ajustar sua estratégia de preços. Além disso, invista em uma logística eficiente e no cumprimento das regulamentações sanitárias e aduaneiras. Com uma abordagem bem planejada, você pode conquistar uma fatia do mercado colombiano de produtos capilares.
-
-
-
----
-
-## qual é o maior mercado de produtos de cabelo no Brasil?
-## legal seria fazer uma pesquisa de mercado nas salas de beleza no brasil
-
-# selecionar produtos interessantes (abordagem, para maximizar el lucro podemos testar produtos mais caros)
-
-# procurar produtos brasileiros pressentes na Colômbia,
-## também achar alternativas boas fora do mercado da Colômbia (propor novos produtos)
-
-# minerar produtos no MLCol
-## encontrar extensão do Chrome que minera dados no ML
-## mamá tem um contato no MLCol (perguntar como minerar api ML)
-
-# comparar valores BR/COL
-
-# minerar productos en MLbr y ML Col para compararlos
-
-# procurar fornecedores de produtos brasileiros
-## saber valores e quantidades de produto
-## perguntar sobre exportação e quantidades
-
-# averiguar exportação BR to Col
-## Amanda pode saber
-## Amiga de mi mamá pode saber
-
-# Calcular viabilidade do lucro e investimento
-
+   - **Productos Populares**: Productos para styling, como sprays, pomadas y ceras.
+   - **Destacado**: Línea de productos para finalización y modelado.
