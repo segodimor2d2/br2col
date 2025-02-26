@@ -1,4 +1,16 @@
 
+
+
+organizar el df por mas vendidos después de capturar los vendidos y el seller
+corregir error cuando la búsqueda no tiene resultados
+tener la opción de todas las pagina
+tener la opción de imprimir la lista hasta un numero de lineas para poder ver la tabla
+organizar el código
+construir programa que compara precios entre dos listas de productos
+crear un Docker para instalar fácilmente en otras maquinas
+
+---
+
 https://auth.mercadolivre.com.br/authorization?response_type=code&client_id=293958870459442&redirect_uri=https://github.com/segodimor2d2/br2col
 
 

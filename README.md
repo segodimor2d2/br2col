@@ -1,9 +1,5 @@
 # BR2COL GODIMARKET
 
-# backlog (lista de tareas por hacer)
-
-- crear un nombre para el proyecto (no es nombre de la empresa)
-    - el nombre de la empresa es la ultima cosa que se hace ya que vamos a tener la visión de todo el panorama
 
 ---
 
@@ -16,8 +12,43 @@
 
 ---
 
+# backlog (lista de tareas por hacer)
 
-## tópicos (Qué quiero saber con la pregunta que estoy haciendo?)
+- crear un nombre para el proyecto (no es nombre de la empresa)
+    - el nombre de la empresa es la ultima cosa que se hace ya que vamos a tener la visión de todo el panorama
+        - br2col
+        - godimarcket
+
+- mlanalitics features backlog
+    - organizar el df por mas vendidos después de capturar los vendidos y el seller
+    - corregir error cuando la búsqueda no tiene resultados
+    - tener la opción de todas las pagina
+    - tener la opción de imprimir la lista hasta un numero de lineas para poder ver la tabla
+    - organizar el código
+    - construir programa que compara precios entre dos listas de productos
+    - graficar resultados de python en plotly
+    - crear un Docker para instalar fácilmente en otras maquinas
+
+- GitHub para todos, aprender a subir archivos en git y control de versiones
+
+- Documento, planeamiento de, trabajo/forma U
+
+---
+
+# in progress
+
+## fercha
+- logistica
+
+## negro
+- Refinar las preguntas y datos retornados por DeepSeek y ChatGPT
+
+## pinpinelo
+- mlanalitics
+
+---
+
+# tópicos (Qué quiero saber con la pregunta que estoy haciendo?)
 
 ### conocer los tipos de productos
 - ¿cuáles son los productos para el cabello más usados en los salones de belleza?
@@ -27,20 +58,20 @@
 - productos más usados en los salones de belleza (brasil y colombia):  
 - marcas más usadas en los salones de belleza:  
 
-#### mas usados/vendidos co
-- productos más vendidos en colombia que son producidos en brasil:  
-- productos más vendidos en mercado libre col
-- buscar productos brasileños presentes en col
+    - mas usados/vendidos co
+        - productos más vendidos en colombia que son producidos en brasil:  
+        - productos más vendidos en mercado libre col
+        - buscar productos brasileños presentes en col
 
-- también encontrar buenas alternativas fuera del mercado colombiano (proponer nuevos productos).  
+        - también encontrar buenas alternativas fuera del mercado colombiano (proponer nuevos productos).  
 
-#### mas usados/vendidos br
-- productos más vendidos en mercado libre brasil:
-- ¿cuáles son los productos para el cabello más vendidos en brasil?  
-- ¿cuáles son las marcas más populares en brasil para los productos más utilizados en los salones de belleza?
-- ¿cuáles de los productos se producen en brasil y cuáles son importados?
-- ¿cuál es el mayor mercado de productos para el cabello en brasil?  
-- buscar proveedores de productos brasileños.  
+    - mas usados/vendidos br
+        - productos más vendidos en mercado libre brasil:
+        - ¿cuáles son los productos para el cabello más vendidos en brasil?  
+        - ¿cuáles son las marcas más populares en brasil para los productos más utilizados en los salones de belleza?
+        - ¿cuáles de los productos se producen en brasil y cuáles son importados?
+        - ¿cuál es el mayor mercado de productos para el cabello en brasil?  
+        - buscar proveedores de productos brasileños.  
 
 ### conocer sobre precio co/br
 - productos más costosos en los salones de belleza:  
@@ -92,6 +123,8 @@ python 00mlanalitics.py co 10 esp32,cam
 - A continuación, va a pedir hasta qué línea se quieren obtener los datos de los vendidos y el nombre de los vendedores
 - el programa va a generar un archivo CSV en la carpeta outcsv con los datos colectados ej. 20250226110058_co.csv
 - e adiciona en el archivo info.md la consulta e el nombre de archivo asi: 20250226110058_co, res: 61: search: esp32s3
+
+
 
 # Progreso
 
