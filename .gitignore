@@ -1,4 +1,5 @@
 outcsv/
+outcsv/**
 
 __pycache__/
 
