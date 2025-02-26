@@ -10,9 +10,9 @@
 # reunión
 
 - propuesta daily, qué días se pueden hacer?
-    Lun 07:30 pm col / 21:30 br
-    Mie 07:30 pm col / 21:30 br
-    Vie 07:30 am col / 09:30 br
+    - Lun 07:30 pm col / 21:30 br
+    - Mie 07:30 pm col / 21:30 br
+    - Vie 07:30 am col / 09:30 br
 
 ---
 
