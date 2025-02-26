@@ -20,46 +20,47 @@
 ## tópicos (Qué quiero saber con la pregunta que estoy haciendo?)
 
 ### conocer los tipos de productos
-- ¿Cuáles son los productos para el cabello más usados en los salones de belleza?
+- ¿cuáles son los productos para el cabello más usados en los salones de belleza?
 
-### conocer las marcas y los mas vendidos/usandos Co/Br
-- ¿Cuáles son los productos que normalmente son más caros?  
-- Productos Más Usados en los Salones de Belleza (Brasil y Colombia):  
-- Marcas Más Usadas en los Salones de Belleza:  
+### conocer las marcas y los mas vendidos/usandos co/br
+- ¿cuáles son los productos que normalmente son más caros?  
+- productos más usados en los salones de belleza (brasil y colombia):  
+- marcas más usadas en los salones de belleza:  
 
-#### mas usados/vendidos Co
-- Productos Más Vendidos en Colombia que Son Producidos en Brasil:  
-- Productos más vendidos en Mercado Libre Colombia:
-- Buscar productos brasileños presentes en Colombia.  
-- También encontrar buenas alternativas fuera del mercado colombiano (proponer nuevos productos).  
+#### mas usados/vendidos co
+- productos más vendidos en colombia que son producidos en brasil:  
+- productos más vendidos en mercado libre col
+- buscar productos brasileños presentes en col
 
-#### mas usados/vendidos Br
-- Productos más vendidos en Mercado Libre Brasil:
-- ¿Cuáles son los productos para el cabello más vendidos en Brasil?  
-- ¿Cuáles son las marcas más populares en Brasil para los productos más utilizados en los salones de belleza?
-- ¿Cuáles de los productos se producen en Brasil y cuáles son importados?
-- ¿Cuál es el mayor mercado de productos para el cabello en Brasil?  
-- Buscar proveedores de productos brasileños.  
+- también encontrar buenas alternativas fuera del mercado colombiano (proponer nuevos productos).  
 
-### conocer sobre precio Co/Br
-- Productos Más Costosos en los Salones de Belleza:  
-- Comparar precios entre Brasil y Colombia.  
-- Minar productos en ML Brasil y ML Colombia para compararlos.  
-- Conocer precios y cantidades de productos.  
+#### mas usados/vendidos br
+- productos más vendidos en mercado libre brasil:
+- ¿cuáles son los productos para el cabello más vendidos en brasil?  
+- ¿cuáles son las marcas más populares en brasil para los productos más utilizados en los salones de belleza?
+- ¿cuáles de los productos se producen en brasil y cuáles son importados?
+- ¿cuál es el mayor mercado de productos para el cabello en brasil?  
+- buscar proveedores de productos brasileños.  
 
-### Logística y distribución
-- Preguntar sobre exportación y cantidades.  
-- Investigar la exportación de Brasil a Colombia.  
+### conocer sobre precio co/br
+- productos más costosos en los salones de belleza:  
+- comparar precios entre brasil y colombia.  
+- minar productos en ml brasil y ml colombia para compararlos.  
+- conocer precios y cantidades de productos.  
+
+### logística y distribución
+- preguntar sobre exportación y cantidades.  
+- investigar la exportación de brasil a colombia.  
 
 ### viabilidad de la ganancia y la inversión
-- Rentabilidad
-- Calcular la viabilidad de la ganancia y la inversión.  
-- Seleccionar productos interesantes (para maximizar la ganancia, podemos probar productos más caros).  
+- rentabilidad
+- calcular la viabilidad de la ganancia y la inversión.  
+- seleccionar productos interesantes (para maximizar la ganancia, podemos probar productos más caros).  
 
 ### faces del proyecto, estrategia
-- Quiero exportar productos de belleza y cabello a Colombia... La idea es extraer datos de Mercado Libre de Colombia y de Brasil para descubrir cuáles son los productos brasileños más vendidos y enviar esos productos. Allá, una persona recibirá esos productos y hará la distribución. ¿Crees que esta idea es viable? ¿Es rentable? ¿Tendrías una idea mejor?
-- Sería interesante realizar un estudio de mercado en los salones de belleza en Brasil.  
-- También encontrar buenas alternativas fuera del mercado colombiano (proponer nuevos productos).  
+- quiero exportar productos de belleza y cabello a colombia... la idea es extraer datos de mercado libre de colombia y de brasil para descubrir cuáles son los productos brasileños más vendidos y enviar esos productos. allá, una persona recibirá esos productos y hará la distribución. ¿crees que esta idea es viable? ¿es rentable? ¿tendrías una idea mejor?
+- sería interesante realizar un estudio de mercado en los salones de belleza en brasil.  
+- también encontrar buenas alternativas fuera del mercado colombiano (proponer nuevos productos).  
 - crear una nueva cultura en col, por ejemplo las uñas de fibra de vidrio
 - promover productos que raramente se usan en col pero que se usan en br
 
