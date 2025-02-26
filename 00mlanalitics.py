@@ -174,11 +174,6 @@ print()
 print(df_ordenado)
 
 
-# Adicionando a nova coluna vazia
-# df_ordenado['sold_num'] = np.nan  # Ou pd.NA, ou np.nan, dependendo do caso
-
-df_ordenado['sold_num'] = None  # Ou pd.NA, ou np.nan, dependendo do caso
-df_ordenado['seller'] = None
 
 # Função para processar cada linha
 def processar_linha(row):
@@ -191,24 +186,31 @@ def processar_linha(row):
         res = scrape_by_link(link)
         numeros = re.findall(r'\d+', res[0])
         seller = res[1]
-        return [int(numeros[0]), seller] if [numeros, seller] else None
-        return pd.Series({'sold_num': int(numeros[0]), 'seller': seller}) if numeros and seller else pd.Series({'sold_num': None, 'seller': None})
+        return [numeros[0], seller] if [numeros, seller] else [None, None]
+        # return pd.Series([int(numeros[0]), seller]) if [numeros, seller] else pd.Series([None, None])
 
     except Exception as e:
         print(f"Erro ao processar o link {link}: {e}")
-        return pd.Series({'sold_num': None, 'seller': None})
+        return [None, None]
 
+
+# Adicionando a nova coluna vazia
+df_ordenado['sold_num'] = None  # Ou pd.NA, ou np.nan, dependendo do caso
+df_ordenado['seller'] = None
 
 print()
 # Solicita ao usuário que insira o valor de rows_num
 rows_num = int(input("\nDigite até que linhas que deseja processar: "))
 
 # Aplica a função às primeiras linhas
-resultados = df_ordenado.head(rows_num).apply(processar_linha, axis=1)
+res_linha = df_ordenado.head(rows_num).apply(processar_linha, axis=1)
 
-# Atribui os resultados às colunas correspondentes
-df_ordenado.loc[:rows_num-1, 'sold_num'] = resultados['sold_num']
-df_ordenado.loc[:rows_num-1, 'seller'] = resultados['seller']
+for numitem in range(len(res_linha)):
+    # Inserindo um valor
+    df_ordenado.at[numitem, 'sold_num'] = res_linha[numitem][0]
+    df_ordenado.at[numitem, 'seller'] = res_linha[numitem][1]
+    
+# df_ordenado['sold_num'], df_ordenado['seller']
 
 # Exibe o DataFrame atualizado
 print()
