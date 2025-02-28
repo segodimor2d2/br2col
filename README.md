@@ -29,6 +29,7 @@
         - godimarcket
 
 - mlanalitics features backlog
+    - imprimie quantos productos son diferentes de 0 calificados
     - el numero de lineas de entrada puede ser automático
     - corregir error cuando la búsqueda no tiene resultados
     - tener la opción de todas las pagina
@@ -54,7 +55,6 @@
 
 ## Sebastián
 - mlanalitics
-    - organizar el df por mas vendidos después de capturar los vendidos y el seller
 
 ---
 
@@ -67,7 +67,8 @@
 ## Santiago
 
 ## Sebastián
-    - imprimir a numero da linea procesada
+- imprimir a numero da linea procesada
+- organizar el df por mas vendidos después de capturar los vendidos y el seller
 
 ---
 

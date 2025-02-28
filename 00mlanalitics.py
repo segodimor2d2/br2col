@@ -13,10 +13,10 @@ def scrape_mercado_livre(search_query, until=1, country='co'):
     else:
         raise ValueError("Country must be 'co' or 'br'")
 
-
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
     }
+
     all_products = []
     link = ''
     page = 1
@@ -133,8 +133,6 @@ def scrape_by_link(link):
         print(f"Erro ao acessar a página: {response.status_code}")
         return None
 
-
-
 # ---
 
 print('python 00mlanalitics.py country pags search_query\n')
@@ -165,21 +163,23 @@ df_ordenado = df_ordenado.reset_index(drop=True)
 
 # print(df_ordenado.iloc[0])
 
-
 print()
 print(df_ordenado)
 
+# Contar quantas linhas são diferentes de 0
+count_nonzero = (df['total_reviews'] != 0).sum()
+print(f'\ntotal_reviews non zero: {count_nonzero}')
 
-
+if count_nonzero > 10:
+    # Solicita ao usuário que insira o valor de rows_num
+    rows_num = int(input("\nDigite até que linhas que deseja processar: "))
+else:
+    rows_num = count_nonzero
 
 # Adicionando a nova coluna vazia
 df_ordenado['sold_num'] = None  # Ou pd.NA, ou np.nan, dependendo do caso
 df_ordenado['seller'] = None
 
-print()
-# Solicita ao usuário que insira o valor de rows_num
-rows_num = int(input("\nDigite até que linhas que deseja processar: "))
-print()
 
 # Função para processar cada linha
 def processar_linha(row):
@@ -199,22 +199,19 @@ def processar_linha(row):
         print(f"Erro ao processar o link {link}: {e}")
         return [None, None]
 
+print()
+
 # Aplica a função às primeiras linhas
 res_linha = df_ordenado.head(rows_num).apply(processar_linha, axis=1)
 
 for numitem in range(len(res_linha)):
     # Inserindo um valor
-    df_ordenado.at[numitem, 'sold_num'] = res_linha[numitem][0]
+    df_ordenado.at[numitem, 'sold_num'] = int(res_linha[numitem][0])
     df_ordenado.at[numitem, 'seller'] = res_linha[numitem][1]
-    
-# df_ordenado['sold_num'], df_ordenado['seller']
 
-
-import ipdb; ipdb.set_trace()
 # ordenar o original
-# df_ordenado.sort_values(by='sold_num', ascending=False, inplace=True)
-# df_ordenado.sort_values(by='sold_num', ascending=False)
-# df_ordenado.sort_values(by='total_reviews', ascending=False)
+df_ordenado.sort_values(by='sold_num', ascending=False, inplace=True)
+df_ordenado = df_ordenado.reset_index(drop=True)
 
 # Exibe o DataFrame atualizado
 print()
