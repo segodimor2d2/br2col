@@ -20,8 +20,9 @@
         - godimarcket
 
 - mlanalitics features backlog
+    - imprimir a numero da linea procesada
     - organizar el df por mas vendidos después de capturar los vendidos y el seller
-    - el numero de lineas de entrada puede ser automatico
+    - el numero de lineas de entrada puede ser automático
     - corregir error cuando la búsqueda no tiene resultados
     - tener la opción de todas las pagina
     - tener la opción de imprimir la lista hasta un numero de lineas para poder ver la tabla
@@ -46,6 +47,10 @@
 
 ## pinpinelo
 - mlanalitics
+
+---
+
+# done
 
 ---
 

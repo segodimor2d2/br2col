@@ -171,9 +171,19 @@ print(df_ordenado)
 
 
 
+
+# Adicionando a nova coluna vazia
+df_ordenado['sold_num'] = None  # Ou pd.NA, ou np.nan, dependendo do caso
+df_ordenado['seller'] = None
+
+print()
+# Solicita ao usuário que insira o valor de rows_num
+rows_num = int(input("\nDigite até que linhas que deseja processar: "))
+print()
+
 # Função para processar cada linha
 def processar_linha(row):
-    print(row['title'])
+    print(f'{row.name} {row['title']}')
 
     link = row['permalink']
 
@@ -189,16 +199,6 @@ def processar_linha(row):
         print(f"Erro ao processar o link {link}: {e}")
         return [None, None]
 
-
-# Adicionando a nova coluna vazia
-df_ordenado['sold_num'] = None  # Ou pd.NA, ou np.nan, dependendo do caso
-df_ordenado['seller'] = None
-
-print()
-# Solicita ao usuário que insira o valor de rows_num
-rows_num = int(input("\nDigite até que linhas que deseja processar: "))
-print()
-
 # Aplica a função às primeiras linhas
 res_linha = df_ordenado.head(rows_num).apply(processar_linha, axis=1)
 
@@ -208,6 +208,13 @@ for numitem in range(len(res_linha)):
     df_ordenado.at[numitem, 'seller'] = res_linha[numitem][1]
     
 # df_ordenado['sold_num'], df_ordenado['seller']
+
+
+import ipdb; ipdb.set_trace()
+# ordenar o original
+# df_ordenado.sort_values(by='sold_num', ascending=False, inplace=True)
+# df_ordenado.sort_values(by='sold_num', ascending=False)
+# df_ordenado.sort_values(by='total_reviews', ascending=False)
 
 # Exibe o DataFrame atualizado
 print()
