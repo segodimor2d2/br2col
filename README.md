@@ -6,13 +6,22 @@
 # reunión
 
 - propuesta daily, qué días se pueden hacer?
-    - Lun 07:30 pm col / 21:30 br
-    - Mie 07:30 pm col / 21:30 br
-    - Vie 07:30 am col / 09:30 br
+    v Mar 07:30 am col / 09:30 br
+    x Mie 07:30 pm col / 21:30 br
+    x Vie 07:30 am col / 09:30 br
 
 ---
 
 # backlog (lista de tareas por hacer)
+
+- crear un checklist de todos los pasos que se vamos hacer
+    `[x] Definir el producto que vamos a trabajar`
+    `[x] Definir la empresa por la que vamos a mandar el producto`
+    `[x] Poner en el papel los costos de todo`
+    `[x] Ejecutar`
+    <!--`[x] `-->
+
+- organizar las info de google drive en github
 
 - crear un nombre para el proyecto (no es nombre de la empresa)
     - el nombre de la empresa es la ultima cosa que se hace ya que vamos a tener la visión de todo el panorama
@@ -20,13 +29,12 @@
         - godimarcket
 
 - mlanalitics features backlog
-    - imprimir a numero da linea procesada
-    - organizar el df por mas vendidos después de capturar los vendidos y el seller
     - el numero de lineas de entrada puede ser automático
     - corregir error cuando la búsqueda no tiene resultados
     - tener la opción de todas las pagina
     - tener la opción de imprimir la lista hasta un numero de lineas para poder ver la tabla
     - organizar el código
+    - programa para analizar resultados
     - construir programa que compara precios entre dos listas de productos
     - graficar resultados de python en plotly
     - crear un Docker para instalar fácilmente en otras maquinas
@@ -39,18 +47,27 @@
 
 # in progress
 
-## fercha
-- logistica
+## Maria Fernanda
 
-## negro
+## Santiago
 - Refinar las preguntas y datos retornados por DeepSeek y ChatGPT
 
-## pinpinelo
+## Sebastián
 - mlanalitics
+    - organizar el df por mas vendidos después de capturar los vendidos y el seller
 
 ---
 
 # done
+
+## Maria Fernanda
+- mlanalitics
+    - logística discovery
+
+## Santiago
+
+## Sebastián
+    - imprimir a numero da linea procesada
 
 ---
 
@@ -132,7 +149,7 @@ python 00mlanalitics.py co 10 esp32,cam
 
 
 
-# Progreso
+# Flujo / Planeamento
 
 - La idea inicial es tener un programa que pueda identificar los productos más vendidos en la búsqueda y luego generar un archivo CSV para ser analizado posteriormente.
 
