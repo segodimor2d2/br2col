@@ -52,6 +52,7 @@
 - Refinar las preguntas y datos retornados por DeepSeek y ChatGPT
 
 ## Sebastián
+- secuencia de preguntas deepseek
 - mlanalitics
 
 ---
