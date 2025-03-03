@@ -1,6 +1,11 @@
 
 
 
+python -m venv myenv
+python -m venv brtocol
+
+---
+
 organizar el df por mas vendidos después de capturar los vendidos y el seller
 corregir error cuando la búsqueda no tiene resultados
 tener la opción de todas las pagina

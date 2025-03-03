@@ -15,11 +15,11 @@
 # backlog (lista de tareas por hacer)
 
 - crear un checklist de todos los pasos que se vamos hacer
-    `[x] Definir el producto que vamos a trabajar`
-    `[x] Definir la empresa por la que vamos a mandar el producto`
-    `[x] Poner en el papel los costos de todo`
-    `[x] Ejecutar`
-    <!--`[x] `-->
+    - `[x] Definir el producto que vamos a trabajar`
+    - `[x] Definir la empresa por la que vamos a mandar el producto`
+    - `[x] Poner en el papel los costos de todo`
+    - `[x] Ejecutar`
+    - <!--`[x] `-->
 
 - organizar las info de google drive en github
 
@@ -30,7 +30,7 @@
 
 - mlanalitics features backlog
     - corregir error cuando la búsqueda no tiene resultados
-    - tener la opción de todas las pagina
+    - tener la opción de todas las paginas
     - tener la opción de imprimir la lista hasta un numero de lineas para poder ver la tabla
     - organizar el código
     - programa para analizar resultados
@@ -146,10 +146,9 @@ python 00mlanalitics.py country pags search_query
 python 00mlanalitics.py co 10 esp32,cam
 ```
 - Después de analizar la búsqueda, va a generar una lista ordenada por el número de opiniones/comentarios en pandas.
-- A continuación, va a pedir hasta qué línea se quieren obtener los datos de los vendidos y el nombre de los vendedores
+- A continuación, si el número de total_reviews > 10 va a pedir hasta qué línea se quieren obtener los datos de vendidos e imprime uno a uno los productos consultados
 - el programa va a generar un archivo CSV en la carpeta outcsv con los datos colectados ej. 20250226110058_co.csv
-- e adiciona en el archivo info.md la consulta e el nombre de archivo asi: 20250226110058_co, res: 61: search: esp32s3
-
+- e adiciona en el archivo info.md la consulta e el nombre de archivo así: 20250226110058_co, res: 61: search: esp32s3
 
 
 # Flujo / Planeamento
