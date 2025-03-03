@@ -232,7 +232,11 @@ caminho_completo = caminho_da_pasta + nomarquivo
 df.to_csv(caminho_completo, index=False)
 
 # string para outcsv/info
-infostring = f'{nomfile}, numProductos = {len(df_ordenado)}, pags = {pags}, comentados = {count_nonzero}, search = {in_search}'
+
+infostring = f'{nomfile}, numprod = {len(df_ordenado)}, pags = {pags}, comment = {count_nonzero}, search = {in_search}'
+
+print()
+print(infostring)
 
 with open('outcsv/info.md', 'a', encoding='utf-8') as arquivo:
     arquivo.write(infostring + '\n')

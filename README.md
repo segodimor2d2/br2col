@@ -66,11 +66,12 @@
 
 ## Sebastián
 - mlanalitics
-    - imprimir a numero da linea procesada
+    - va imprimiendo el numero da la linea procesada
     - organizar el df por mas vendidos después de capturar los vendidos y el seller
-    - imprimie quantos productos son diferentes de 0 calificados total_reviews
+    - imprime cuantos productos son diferentes de 0 calificados total_reviews
     - el numero de lineas de entrada puede ser automático
         - se es < 10 va automatico
+    - info.md logs ex: 20250303192220_co, numprod = 49, pags = 3, coment = 8, search = esp32s3
 
 ---
 
