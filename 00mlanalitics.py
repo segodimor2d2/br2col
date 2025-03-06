@@ -22,6 +22,7 @@ def scrape_mercado_livre(search_query, until=1, country='co'):
     page = 1
 
     while True:
+
         print(f"\nColetando dados da página {page}...")
         # url = f"{base_url}/{search_query}_Desde_{(page - 1) * 50 + 1}"
 
