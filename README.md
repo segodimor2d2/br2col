@@ -108,10 +108,10 @@ python 01mlanalitics.py co 20 esp32,cam
 
 ---
 
-1. saber la cantidad de pagina de un search
+1. saber la cantidad de paginas de un search
 2. sabiendo cuantas paginas en total tot_pags, decidir el numero de paginas que van a ser mineradas
-2.1. if tot_pags < 10 paginas, va a pedir el total
-2.2. else, va a pedir 10 paginas
+2. 1. if tot_pags < 10 paginas, va a pedir el total
+2. 2. else, va a pedir 10 paginas
 3. info.md va a tener el dato de tot_pags
 
 
