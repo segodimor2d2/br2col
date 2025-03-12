@@ -110,8 +110,6 @@ def scrape_by_link(link):
     # Fazendo a requisição
     response = requests.get(url, headers=headers)
 
-    # import ipdb; ipdb.set_trace()
-
     # Verificando se a requisição foi bem-sucedida
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')
@@ -146,6 +144,8 @@ search_query = in_search.replace(',', '%20')
 
 produtos = scrape_mercado_livre(search_query, pags, country)
 print(f'\nProdutos no total {len(produtos)}')
+
+import ipdb; ipdb.set_trace()
 
 # Exibir os dados coletados
 # for produto in produtos:

@@ -1,6 +1,11 @@
 
 
 
+
+python 01mlanalitics.py co 3 orange,pi,zero
+
+---
+
 python -m venv myenv
 python -m venv brtocol
 

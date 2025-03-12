@@ -96,11 +96,63 @@ Para mejorar la ejecución del programa la llamada del programa contiene los sig
 Ejemplo:
 ```bash
 python 00mlanalitics.py country pags search_query
-python 00mlanalitics.py co 10 esp32,cam
+
+python 01mlanalitics.py co 3 orange,pi,5
+python 01mlanalitics.py co 3 esp32,cam
+python 01mlanalitics.py co 20 esp32,cam
 ```
 - Después de analizar la búsqueda, va a generar una lista ordenada por el número de opiniones/comentarios en pandas.
 - A continuación, si el número de total_reviews > 10 va a pedir hasta qué línea se quieren obtener los datos de vendidos e imprime uno a uno los productos consultados
 - el programa va a generar un archivo CSV en la carpeta outcsv con los datos colectados ej. 20250226110058_co.csv
 - e adiciona en el archivo info.md la consulta e el nombre de archivo así: 20250226110058_co, res: 61: search: esp32s3
+
+---
+
+1. saber la cantidad de pagina de un search
+2. sabiendo cuantas paginas en total tot_pags, decidir el numero de paginas que van a ser mineradas
+2.1. if tot_pags < 10 paginas, va a pedir el total
+2.2. else, va a pedir 10 paginas
+3. info.md va a tener el dato de tot_pags
+
+
+---
+
+- pedir para la IA que genere una lista de productos de acuerdo con la secuencia de preguntas
+
+- revisar la cantidad de paginas que encontró por producto en la primera pagina
+    - adicionar el numero de paginas sobre un producto en el info.md
+        - req 1 pag
+        - scrap numero pags
+        - if > 10
+            - req 10 pag
+            - scrap numero pags
+        - pega num de la ultima pag
+
+
+- revisar la cantidad de paginas para buscar max_pages = all
+
+- filtrar la búsqueda por total_reviews en mercado libre e parar de buscar si el total_reviews es 0 en una pagina
+
+- revisar filtro en la url mejores vendedores
+
+- saber cuantos total_reviews != 0
+
+- automatizar una lista de searchs para buscar
+
+---
+
+#D[A:rating_average]
+
+url = f"https://www.mercadolibre.com.br/jm/search?as_word={query}&sort=rating_desc"
+url = f"https://www.mercadolibre.com.br/jm/search?as_word={query}&sort=rating_desc"
+
+https://listado.mercadolibre.com.co/esp32#D[A:esp32]
+
+https://www.mercadolibre.com.br/jm/search?as_word=esp32&sort=rating_desc
+
+query = "zapatillas"  # Cambia esto por tu búsqueda
+url = f"https://listado.mercadolibre.com.ar/{query.replace(' ', '-')}_Order_BEST_SELLER"
+
+https://listado.mercadolibre.com.ar/esp32_Order_BEST_SELLER"
 
 

@@ -1,3 +1,61 @@
+## Mercado Libre utiliza un algoritmo complejo para filtrar y ordenar los resultados de búsqueda cuando se selecciona la opción "Más relevantes". Aunque los detalles exactos del algoritmo no son públicos, se sabe que considera múltiples factores para determinar la relevancia de los productos. Algunos de los factores más importantes incluyen:
+
+1. **Palabras clave**: Coincidencia entre las palabras clave de la búsqueda y el título, descripción y atributos del producto.
+
+2. **Historial de ventas y reputación del vendedor**: Los productos de vendedores con mejor reputación y mayor historial de ventas suelen aparecer más arriba.
+
+3. **Precio**: Los productos con precios competitivos pueden tener mayor relevancia.
+
+4. **Ubicación**: Mercado Libre prioriza los productos que están más cerca del comprador, ya que esto reduce los costos de envío y el tiempo de entrega.
+
+5. **Disponibilidad**: Los productos que están en stock y listos para ser enviados suelen tener mayor relevancia.
+
+6. **Interacción del usuario**: Clics, vistas y tiempo que los usuarios pasan viendo un producto pueden influir en su posición.
+
+7. **Promociones y ofertas**: Los productos que están en oferta o tienen promociones especiales pueden aparecer más arriba en los resultados.
+
+8. **Calidad del anuncio**: La calidad de las imágenes, la completitud de la descripción y otros factores relacionados con la presentación del producto también son considerados.
+
+9. **Comportamiento del comprador**: Historial de búsquedas y compras anteriores del usuario pueden influir en los resultados mostrados.
+
+10. **Pago Mercado Pago**: Los productos que aceptan Mercado Pago pueden tener prioridad, ya que esta opción ofrece mayor seguridad tanto para el comprador como para el vendedor.
+
+Estos factores se combinan de manera dinámica para ofrecer una lista de productos que Mercado Libre considera más relevantes para el usuario en función de su búsqueda.
+
+
+## No Mercado Livre, cuando se realiza una búsqueda por "Más relevantes", el filtro prioriza ciertos factores para determinar cuáles productos mostrar primero en los resultados. Aunque los detalles exactos del algoritmo no se publican, algunos de los criterios más comunes que influyen en el orden de los resultados incluyen:
+
+1. **Popularidad del Producto**: Los productos con más ventas o visitas en los últimos días suelen tener mayor relevancia. Esto incluye tanto la cantidad de ventas como las interacciones de los usuarios.
+
+2. **Valoraciones y Reseñas**: Los productos con altas calificaciones y reseñas positivas son más propensos a aparecer en los primeros lugares. La confianza de otros compradores en el producto influye en la relevancia.
+
+3. **Precio Competitivo**: Los productos con precios competitivos en comparación con otros similares también tienen mayores probabilidades de aparecer entre los más relevantes, ya que el sistema prioriza la experiencia de compra favorable.
+
+4. **Frecuencia de actualización**: Los productos que han sido actualizados recientemente o que están siendo promocionados activamente por el vendedor pueden estar más arriba en los resultados.
+
+5. **Métodos de envío**: Los productos con opciones de envío más rápidas o gratuitas pueden ser priorizados, ya que los compradores suelen preferir estos productos.
+
+6. **Títulos y Descripciones**: La relevancia de las palabras clave en el título y la descripción del producto también juega un papel importante en el filtro de resultados.
+
+7. **Atributos de la tienda**: La reputación del vendedor, si es "MercadoLíder", su nivel de confianza y la calidad de su servicio al cliente también afectan el orden de los resultados.
+
+En resumen, el algoritmo tiene en cuenta múltiples factores relacionados con la popularidad, la confianza de los compradores, la competitividad de los precios y la experiencia del cliente para determinar qué productos mostrar primero cuando se utiliza el filtro de "Más relevantes".
+
+
+## Mercado Livre (MercadoLibre) usa um algoritmo próprio para classificar os produtos como "Mais Relevantes" nas buscas. Esse algoritmo considera diversos fatores, incluindo:
+
+- Popularidade do Anúncio – Produtos com mais visualizações, cliques e interações podem ganhar prioridade.
+- Histórico de Vendas – Anúncios com um volume maior de vendas recentes tendem a aparecer no topo.
+- Reputação do Vendedor – Vendedores com boas avaliações, poucos cancelamentos e alto nível de atendimento têm prioridade.
+- Preço e Competitividade – O algoritmo pode favorecer produtos com preços mais competitivos dentro da mesma categoria.
+- Entrega e Frete – Anúncios com frete grátis, envios rápidos (como Mercado Envios Full) ou maior cobertura geográfica podem ser favorecidos.
+- Qualidade do Anúncio – Títulos bem escritos, descrições detalhadas, boas imagens e categorias corretas influenciam a relevância.
+- Taxa de Conversão – Produtos que geram mais compras em relação ao número de visitantes podem subir no ranking.
+
+Ou seja, a ordenação por "Mais Relevantes" não depende só do preço, mas de um conjunto de fatores que indicam quais produtos são mais atrativos para os compradores.
+
+---
+
 # tópicos (Qué quiero saber con la pregunta que estoy haciendo?)
 
 ## conocer los tipos de productos
