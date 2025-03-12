@@ -109,6 +109,12 @@ python 01mlanalitics.py co 20 esp32,cam
 ---
 
 1. saber la cantidad de paginas de un search
+- req pag1 && scrap numero pags andes-pagination__button
+- salva produtos pag1 all_products
+- if > 10
+    - req 10 pag && scrap numero pags andes-pagination__button
+- pega num de la ultima pag
+
 2. sabiendo cuantas paginas en total tot_pags, decidir el numero de paginas que van a ser mineradas
     1. if tot_pags < 10 paginas, va a pedir el total
     2. else, va a pedir 10 paginas
