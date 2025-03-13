@@ -1,6 +1,21 @@
 
 
+#D[A:rating_average]
 
+url = f"https://www.mercadolibre.com.br/jm/search?as_word={query}&sort=rating_desc"
+url = f"https://www.mercadolibre.com.br/jm/search?as_word={query}&sort=rating_desc"
+
+https://listado.mercadolibre.com.co/esp32#D[A:esp32]
+
+https://www.mercadolibre.com.br/jm/search?as_word=esp32&sort=rating_desc
+
+query = "zapatillas"  # Cambia esto por tu búsqueda
+url = f"https://listado.mercadolibre.com.ar/{query.replace(' ', '-')}_Order_BEST_SELLER"
+
+https://listado.mercadolibre.com.ar/esp32_Order_BEST_SELLER"
+
+
+---
 
 python 01mlanalitics.py co 3 orange,pi,zero
 
