@@ -557,8 +557,22 @@ La elección entre productos nacionales e importados puede depender de las prefe
 
         - ¿cuál es el mayor mercado de productos para el cabello en brasil?  
         - buscar proveedores de productos brasileños.  
+---
 
-
+```python
+{'Anterior': None,
+'1': 'https://listado.mercadolibre.com.co/electronica-audio-video/componentes-electronicos/placas-microcontroladores/esp32_NoIndex_True',
+'2': 'https://listado.mercadolibre.com.co/electro nica-audio-video/componentes-electronicos/placas-microcontroladores/esp32_Desde_51_NoIndex_True',
+'3': 'https://listado.mercadolibre.com.co/electronica-audio-video/componentes-electronicos/placas-microcontr oladores/esp32_Desde_101_NoIndex_True',
+'4': 'https://listado.mercadolibre.com.co/electronica-audio-video/componentes-electronicos/placas-microcontroladores/esp32_Desde_151_NoIndex_True',
+'5': 'https://list ado.mercadolibre.com.co/electronica-audio-video/componentes-electronicos/placas-microcontroladores/esp32_Desde_201_NoIndex_True',
+'6': 'https://listado.mercadolibre.com.co/electronica-audio-video/componente s-electronicos/placas-microcontroladores/esp32_Desde_251_NoIndex_True',
+'7': 'https://listado.mercadolibre.com.co/electronica-audio-video/componentes-electronicos/placas-microcontroladores/esp32_Desde_301_N oIndex_True',
+'8': 'https://listado.mercadolibre.com.co/electronica-audio-video/componentes-electronicos/placas-microcontroladores/esp32_Desde_351_NoIndex_True',
+'9': 'https://listado.mercadolibre.com.co/el ectronica-audio-video/componentes-electronicos/placas-microcontroladores/esp32_Desde_401_NoIndex_True',
+'10': 'https://listado.mercadolibre.com.co/electronica-audio-video/componentes-electronicos/placas-mic rocontroladores/esp32_Desde_451_NoIndex_True',
+'Siguiente': 'https://listado.mercadolibre.com.co/electronica-audio-video/componentes-electronicos/placas-microcontroladores/esp32_Desde_51_NoIndex_True'}
+```
 
 
 

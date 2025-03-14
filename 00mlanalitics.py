@@ -27,12 +27,8 @@ def scrape_mercado_livre(search_query, until=1, country='co'):
         # url = f"{base_url}/{search_query}_Desde_{(page - 1) * 50 + 1}"
 
         url = link
-
         if link == '': url = f"{base_url}/{search_query}"
-
-        print(url)
         response = requests.get(url, headers=headers)
-
         if response.status_code != 200:
             print(f"Erro ao acessar a página {page}. Status code: {response.status_code}")
             break
@@ -144,8 +140,6 @@ search_query = in_search.replace(',', '%20')
 
 produtos = scrape_mercado_livre(search_query, pags, country)
 print(f'\nProdutos no total {len(produtos)}')
-
-import ipdb; ipdb.set_trace()
 
 # Exibir os dados coletados
 # for produto in produtos:

@@ -110,7 +110,6 @@ def scrape_pages(search_query, all_products, pags_list, pagnum):
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"}
 
     link = pags_list[pagnum]
-
     response = requests.get(link, headers=headers)
     if response.status_code != 200:
         print(f"Erro {response.status_code} ao acessar a página {link}.")
@@ -160,45 +159,6 @@ def first_link(search_query, country):
     link = f"{base_url}/{search_query}"
     return link
 
-
-def tst_scrape_mercado_livre(search_query, until=1, country='co'):
-    if country == 'co':
-        base_url = "https://listado.mercadolibre.com.co"
-    elif country == 'br':
-        base_url = "https://lista.mercadolivre.com.br"
-    else:
-        raise ValueError("Country must be 'co' or 'br'")
-
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-    }
-
-    all_products = []
-    link = ''
-    page = 1
-
-    print(f"\nColetando dados da página {page}...")
-    # url = f"{base_url}/{search_query}_Desde_{(page - 1) * 50 + 1}"
-
-    url = link
-    if link == '': url = f"{base_url}/{search_query}"
-    response = requests.get(url, headers=headers)
-    if response.status_code != 200:
-        print(f"Erro ao acessar a página {page}. Status code: {response.status_code}")
-
-    soup = BeautifulSoup(response.text, 'html.parser')
-
-    # next_button = soup.find('li', class_='andes-pagination__button andes-pagination__button--next')
-    # print(next_button)
-
-    # pglinks = {a.get_text(strip=True): a["href"] for a in soup.find_all("a", href=True)}
-    btnlinks = {a.get_text(strip=True): a['href'] for a in soup.find_all('a', class_='andes-pagination__link') if 'href' in a.attrs}
-
-    pglinks  = {int(k): v for k, v in btnlinks.items() if k.isdigit()}
-
-    print(pglinks)
-    import ipdb; ipdb.set_trace()
-
 #########################################################################
 
 def main():
@@ -214,15 +174,12 @@ def main():
 
     # first_link(search_query, country)
 
-    '''
     link = first_link(search_query, args.country)
     pags_list[1] = link
 
     all_products, index_pags_list = scrape_pages(search_query, all_products, pags_list, 1)
 
     print(all_products)
-    '''
-    tst_scrape_mercado_livre(search_query, until=1, country='co')
 
     # pags_list
     # pags_num
