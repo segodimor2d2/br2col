@@ -7,3 +7,4 @@ filename = 20250313172438_co, num_pages = 2, numProd = 52, nonzeroReviews = 9, s
 filename = 20250313172502_co, num_pages = 1, numProd = 38, nonzeroReviews = 35, search = raspberry
 filename = 20250313172611_co, num_pages = 5, numProd = 218, nonzeroReviews = 174, search = carro,control,remoto
 filename = 20250313203349_co, num_pages = 2, numProd = 52, nonzeroReviews = 41, search = esp32
+20250314170521_co, numprod = 40, pags = 4, comment = 35, search = esp32
