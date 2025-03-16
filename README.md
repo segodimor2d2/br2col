@@ -20,18 +20,8 @@
     - `[x] Ejecutar`
     - <!--`[x] `-->
 
-- organizar las info de google drive en github
-
-- crear un nombre para el proyecto (no es nombre de la empresa)
-    - el nombre de la empresa es la ultima cosa que se hace ya que vamos a tener la visión de todo el panorama
-        - br2col
-        - godimarcket
-
 - mlanalitics features backlog
-    - organizar el código
-    - tener una noción de los mas vendidos con: analizar total_reviews de varias paginas sin entrar en el producto
     - observa si hay productos con alta rotación o que estén agotados frecuentemente
-    - corregir error cuando la búsqueda no tiene resultados
     - tener la opción de todas las paginas
     - tener la opción de imprimir la lista hasta un numero de lineas para poder ver la tabla
     - programa para analizar resultados
@@ -50,15 +40,17 @@
 ## Maria Fernanda
 
 ## Santiago
-- Refinar las preguntas y datos retornados por DeepSeek y ChatGPT
 
 ## Sebastián
 - secuencia de preguntas deepseek
 - mlanalitics
+    - tener una noción de los mas vendidos con: analizar total_reviews de varias paginas sin entrar en el producto
 
 ---
 
 # done
+
+
 
 ## Maria Fernanda
 - mlanalitics
@@ -68,6 +60,8 @@
 
 ## Sebastián
 - mlanalitics
+    - organizar el código
+    - corregir error cuando la búsqueda no tiene resultados
     - va imprimiendo el numero da la linea procesada
     - organizar el df por mas vendidos después de capturar los vendidos y el seller
     - imprime cuantos productos son diferentes de 0 calificados total_reviews
@@ -75,32 +69,73 @@
         - se es < 10 va automatico
     - info.md logs ex: 20250303192220_co, numprod = 49, pags = 3, coment = 8, search = esp32s3
 
+- organizar las info de google drive en github
+
+- crear un nombre para el proyecto (no es nombre de la empresa)
+    - el nombre de la empresa es la ultima cosa que se hace ya que vamos a tener la visión de todo el panorama
+        - br2col
+        - godimarcket
 ---
 
 # Programa para buscar productos en ML y generar un archivo CSV
 
-Creé un programa que captura los datos mediante scraping de los resultados de cada producto con los siguientes atributos:
+mlanaliser es un programa que genera un csv con la captura los datos mediante scraping
+de los resultados de cada producto
+con los siguientes atributos:
 
-- 'title'
-- 'price'
-- 'permalink' (url)
-- 'rating_average' (nota general)
-- 'total_reviews' (número de evaluaciones)
-- 'sold_num' (número de vendidos)
-- 'seller' (nombre del vendedor)
+- title = titulo del producto
+- price = precio del producto
+- rating_average = calificación general del producto
+- total_reviews = numero de evaluaciones
+- pagnum = numero de la pagina donde se encuentra el producto
+- permalink = link del producto
+* sold_num = (número de vendidos)
+* seller = (nombre del vendedor) 
 
 Para mejorar la ejecución del programa la llamada del programa contiene los siguientes parámetros:
 - country: país (br/co)
+- numero de paginas donde va a buscar productos
 - search_query: cadena de búsqueda, en vez de espacio se usaría coma (,)
 
 Ejemplo:
 ```bash
-python 00mlanalitics.py country pags search_query
+# python 00mlanalitics.py country pags search_query
+python 02mlanalitics.py co 5 esp32
+python 02mlanalitics.py co 5 crema
+python 02mlanalitics.py co 5 shampoo
+python 02mlanalitics.py co 5 carro,control,remoto
 
-python 01mlanalitics.py co 3 orange,pi,5
-python 01mlanalitics.py co 3 esp32,cam
-python 01mlanalitics.py co 20 esp32,cam
 ```
+### info.md
+
+- fileName = nombre del archivo
+- toPage = hasta cuántos páginas se va a buscar
+- maxPages = numero de páginas disponibles
+- numProd = productos encontrados hasta la pagina toPage
+- nonZeroReviews = productos que tienen total_reviews > 0
+- search = busqueda realizada
+
+Log tiene como formato de salida:
+
+filename = 20250316103504_co, topage = 5, maxpages = 9, numProd = 204, nonzeroReviews = 200, search = shampoo
+
+---
+
+## NEW VERSIÓN
+
+- el programa busca en la pag1, los links de las pags que la búsqueda generó
+- el programa colecta los datos de los productos de la pag1
+- si existe la pag10 existe, el programa abre la pag10 donde ML va general el link y el numero de la última pag disponible
+- asi captura conseguí capturar el numero máximo de paginas que ML tiene disponible
+- `aún no estoy capturando los links de las pags que hacen falta hay que resolver eso por quermos buscar en dados en el resto de las paginas`
+- la funcionalidad esta creada para capturar el numero total de pag como un indicador de que el producto esta publicando en varias páginas 
+- el programa colecta los datos de los productos de la pag10
+- el programa va a pasar por las pags hasta el paramento topage y si topage es mayor a la lista de links, va a colectar los datos hasta el numero máximo
+
+---
+
+## OLD VERSIÓN
+
 - Después de analizar la búsqueda, va a generar una lista ordenada por el número de opiniones/comentarios en pandas.
 - A continuación, si el número de total_reviews > 10 va a pedir hasta qué línea se quieren obtener los datos de vendidos e imprime uno a uno los productos consultados
 - el programa va a generar un archivo CSV en la carpeta outcsv con los datos colectados ej. 20250226110058_co.csv
@@ -108,37 +143,9 @@ python 01mlanalitics.py co 20 esp32,cam
 
 ---
 
-1. saber la cantidad de paginas de un search
-- req pag1 && scrap numero pags andes-pagination__button
-- salva produtos pag1 all_products
-    - slava pagina guardada en lista scraped_pags_list
-- if > 10
-    - req 10 pag && scrap numero pags andes-pagination__button
-        - slava pagina guardada en lista scraped_pags_list
-- pega num de la ultima pag
-
-2. sabiendo cuantas paginas en total tot_pags, decidir el numero de paginas que van a ser mineradas
-    1. if tot_pags < 10 paginas, va a pedir el total
-    2. else, va a pedir 10 paginas
-3. info.md va a tener el dato de tot_pags
-
-
-python 02mlanalitics.py co 5 esp32
-python 02mlanalitics.py co 5 crema
-
----
-
 - pedir para la IA que genere una lista de productos de acuerdo con la secuencia de preguntas
 
 - revisar la cantidad de paginas que encontró por producto en la primera pagina
-    - adicionar el numero de paginas sobre un producto en el info.md
-        - req 1 pag
-        - scrap numero pags
-        - if > 10
-            - req 10 pag
-            - scrap numero pags
-        - pega num de la ultima pag
-
 
 - revisar la cantidad de paginas para buscar max_pages = all
 

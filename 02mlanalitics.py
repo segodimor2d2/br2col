@@ -58,18 +58,18 @@ def export_csv(df, args, topage, count_nonzero, max_key_pags):
     df.to_csv(csv_filename, index=False)
 
     info_string = (
-        f"filename = {time_atual}_{args.country}, "
-        f"topage = {topage}, "
-        f"maxpages = {max_key_pags}, "
+        f"fileName = {time_atual}_{args.country}, "
+        f"toPage = {topage}, "
+        f"maxPages = {max_key_pags}, "
         f"numProd = {len(df)}, "
-        f"nonzeroReviews = {count_nonzero}, "
+        f"nonZeroReviews = {count_nonzero}, "
         f"search = {args.search_query}"
     )
 
-    print('\n'+info_string)
-
     with open(output_dir+"/info.md", 'a', encoding='utf-8') as arquivo:
         arquivo.write(info_string + '\n')
+
+    print('\n'+info_string.replace(', ', '\n'))
 
     print(f"\nDados salvos em {csv_filename}")
     return csv_filename
@@ -138,8 +138,7 @@ def main():
         if i not in {1, 10} and (max_key_pags < args.topage or i <= args.topage):
             all_products, pags_list = scrape_pages(search_query, all_products, pags_list, i)
 
-    print(len(f'\nall_products len = {len(all_products)}'))
-    print()
+    print(f'\nall_products len = {len(all_products)}')
 
     if not all_products:
         print("Nenhum produto encontrado.")
