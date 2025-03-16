@@ -123,6 +123,9 @@ python 01mlanalitics.py co 20 esp32,cam
 3. info.md va a tener el dato de tot_pags
 
 
+python 02mlanalitics.py co 5 esp32
+python 02mlanalitics.py co 5 crema
+
 ---
 
 - pedir para la IA que genere una lista de productos de acuerdo con la secuencia de preguntas

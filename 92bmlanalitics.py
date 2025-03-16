@@ -102,7 +102,7 @@ def scrape_mercado_livre(search_query, max_pages=1, country='co'):
     
     return all_products, page
 
-def xscrape_pages(search_query, all_products, pags_list, pagnum):
+def scrape_pages(search_query, all_products, pags_list, pagnum):
     """Faz scraping das paginas do Mercado Livre."""
     
     time.sleep(1.5)
@@ -124,6 +124,10 @@ def xscrape_pages(search_query, all_products, pags_list, pagnum):
 
     for product in products:
         all_products.append(parse_product(product, pagnum))
+
+    btnlinks = {a.get_text(strip=True): a['href'] for a in soup.find_all('a', class_='andes-pagination__link') if 'href' in a.attrs}
+    linkslist = {int(k): v for k, v in btnlinks.items() if k.isdigit()}
+    print(linkslist)
 
     # pags_list.update(resultados)
     # print(pags_list)
@@ -157,17 +161,15 @@ def pagslinlk(soup):
     pglinks  = {int(k): v for k, v in btnlinks.items() if k.isdigit()}
     return pglinks
 
-def scrape_pages(search_query, all_products, pags_list, pagnum):
+def tst_scrape_mercado_livre(search_query, all_products, pags_list, pagnum):
     print(f"\nColetando dados da página {pagnum}...")
-
-    url = pags_list[pagnum]
-    if pagnum == 1: pags_list.pop(1, None) 
-
+    # all_products = []
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"}
+    url = pags_list[pagnum]
     response = requests.get(url, headers=headers)
 
     if response.status_code != 200:
-        print(f"Erro ao acessar a página {pagnum}. Status code: {response.status_code}")
+        print(f"Erro ao acessar a página {page}. Status code: {response.status_code}")
         return
 
     if not response.text.strip():
@@ -176,25 +178,15 @@ def scrape_pages(search_query, all_products, pags_list, pagnum):
 
     soup = BeautifulSoup(response.text, 'html.parser')
 
-    if pagnum == 1 or pagnum == 10:
-        pags_list.update(pagslinlk(soup))
-
-    products = soup.find_all('li', class_='ui-search-layout__item')
-    if not products:
-        print("Nenhum produto encontrado. Encerrando...")
-        return all_products, pags_list
-
-    for product in products:
-        all_products.append(parse_product(product, pagnum))
-
-    return all_products, pags_list
+    pglinks = pagslinlk(soup)
+    print(pglinks)
 
 #########################################################################
 
 def main():
     parser = argparse.ArgumentParser(description="Scrape Mercado Livre")
     parser.add_argument("country", choices=["co", "br"], help="País do Mercado Livre")
-    parser.add_argument("topage", type=int, help="Número de páginas para buscar")
+    parser.add_argument("pages", type=int, help="Número de páginas para buscar")
     parser.add_argument("search_query", type=str, help="Consulta de pesquisa")
     args = parser.parse_args()
     search_query = args.search_query.replace(',', '%20')
@@ -202,29 +194,23 @@ def main():
     all_products = []
     pags_list = {} 
 
+    # first_link(search_query, country)
+
     link = first_link(search_query, args.country)
     pags_list[1] = link
-    print(link)
-    print()
 
-    all_products, pags_list = scrape_pages(search_query, all_products, pags_list, 1)
-    
-    if 10 in pags_list:
-        all_products, pags_list = scrape_pages(search_query, all_products, pags_list, 10)
+    tst_scrape_mercado_livre(search_query, all_products, pags_list, 1)
 
-    max_key_pags = max(pags_list.keys(), default=None)
+    # all_products, index_pags_list = scrape_pages(search_query, all_products, pags_list, 1)
 
-    if max_key_pags is not None:
-        print(f"\nMax páginas encontradas: {max_key_pags}")
+    # print(all_products)
 
-    for i in pags_list:
-        if i not in {1, 10} and (max_key_pags < args.topage or i <= args.topage):
-            all_products, pags_list = scrape_pages(search_query, all_products, pags_list, i)
+    # tst_scrape_mercado_livre(search_query, until=1, country='co')
+    # pags_list
+    # pags_num
 
-    print(len(f'\nall_products lin = {len(all_products)}'))
-    print()
+    # produtos, num_pages = scrape_mercado_livre(search_query, args.pages, args.country)
 
-    import ipdb; ipdb.set_trace()
     # if not produtos:
     #     print("Nenhum produto encontrado.")
     #     return
