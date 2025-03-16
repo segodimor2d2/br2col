@@ -21,7 +21,6 @@ def extract_int(product, tag, class_name):
     element = product.find(tag, class_=class_name)
     return int(re.sub(r'\D', '', element.text)) if element else 0
 
-
 def parse_product(product, pagnum):
     return {
         'title': product.find('h3', class_='poly-component__title-wrapper').text.strip() if product.find('h3') else '',
@@ -32,111 +31,6 @@ def parse_product(product, pagnum):
         'permalink': product.find('a', class_='poly-component__title')['href'] if product.find('a') else ''
     }
 
-
-def export_csv(df, args, num_pages, count_nonzero):
-    output_dir = 'outcsv'
-    time_atual = datetime.now().strftime('%Y%m%d%H%M%S')
-    csv_filename =  f"{output_dir}/{time_atual}_{args.country}.csv"
-    df.to_csv(csv_filename, index=False)
-
-    info_string = (
-        f"filename = {time_atual}_{args.country}, "
-        f"num_pages = {num_pages}, "
-        f"numProd = {len(df)}, "
-        f"nonzeroReviews = {count_nonzero}, "
-        f"search = {args.search_query}"
-    )
-
-    print('\n'+info_string)
-
-    with open(output_dir+"/info.md", 'a', encoding='utf-8') as arquivo:
-        arquivo.write(info_string + '\n')
-
-    print(f"\nDados salvos em {csv_filename}")
-    return csv_filename
-
-def scrape_mercado_livre(search_query, max_pages=1, country='co'):
-    """Faz scraping dos produtos no Mercado Livre."""
-    base_urls = {
-        'co': "https://listado.mercadolibre.com.co",
-        'br': "https://lista.mercadolivre.com.br"
-    }
-    
-    if country not in base_urls:
-        raise ValueError("País inválido. Escolha 'co' ou 'br'.")
-    
-    base_url = base_urls[country]
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"}
-    all_products = []
-    page = 1
-    link = f"{base_url}/{search_query}"
-    
-    while page <= max_pages:
-        print(f"Coletando página {page}: {link}")
-        time.sleep(1.5)
-
-        response = requests.get(link, headers=headers)
-        if response.status_code != 200:
-            print(f"Erro {response.status_code} ao acessar a página {page}.")
-            break
-        
-        soup = BeautifulSoup(response.text, 'html.parser')
-        products = soup.find_all('li', class_='ui-search-layout__item')
-        if not products:
-            print("Nenhum produto encontrado. Encerrando...")
-            break
-        
-        for product in products:
-            all_products.append(parse_product(product, page))
-        
-        next_button = soup.find('li', class_='andes-pagination__button andes-pagination__button--next')
-        if not next_button or 'andes-pagination__button--disabled' in next_button.get('class', []):
-            print("Não há mais páginas. Encerrando...")
-            break
-        
-        # link = next_button['href']
-        link = next_button.find('a', class_='andes-pagination__link').get('href')
-
-        page += 1
-        time.sleep(0.2)
-    
-    return all_products, page
-
-def xscrape_pages(search_query, all_products, pags_list, pagnum):
-    """Faz scraping das paginas do Mercado Livre."""
-    
-    time.sleep(1.5)
-
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"}
-
-    link = pags_list[pagnum]
-
-    response = requests.get(link, headers=headers)
-    if response.status_code != 200:
-        print(f"Erro {response.status_code} ao acessar a página {link}.")
-        return all_products, pags_list
-    
-    soup = BeautifulSoup(response.text, 'html.parser')
-    products = soup.find_all('li', class_='ui-search-layout__item')
-    if not products:
-        print("Nenhum produto encontrado. Encerrando...")
-        return all_products, pags_list
-
-    for product in products:
-        all_products.append(parse_product(product, pagnum))
-
-    # pags_list.update(resultados)
-    # print(pags_list)
-
-    # next_button = soup.find('li', class_='andes-pagination__button andes-pagination__button--next')
-    # if not next_button or 'andes-pagination__button--disabled' in next_button.get('class', []):
-    #     print("Não há mais páginas. Encerrando...")
-    #     break
-        
-    # link = next_button['href']
-    # link = next_button.find('a', class_='andes-pagination__link').get('href')
-
-    return all_products, pags_list
 
 def first_link(search_query, country):
     base_urls = {
@@ -156,6 +50,29 @@ def pagslinlk(soup):
     btnlinks = {a.get_text(strip=True): a['href'] for a in soup.find_all('a', class_='andes-pagination__link') if 'href' in a.attrs}
     pglinks  = {int(k): v for k, v in btnlinks.items() if k.isdigit()}
     return pglinks
+
+def export_csv(df, args, topage, count_nonzero, max_key_pags):
+    output_dir = 'outcsv'
+    time_atual = datetime.now().strftime('%Y%m%d%H%M%S')
+    csv_filename =  f"{output_dir}/{time_atual}_{args.country}.csv"
+    df.to_csv(csv_filename, index=False)
+
+    info_string = (
+        f"filename = {time_atual}_{args.country}, "
+        f"topage = {topage}, "
+        f"maxpages = {max_key_pags}, "
+        f"numProd = {len(df)}, "
+        f"nonzeroReviews = {count_nonzero}, "
+        f"search = {args.search_query}"
+    )
+
+    print('\n'+info_string)
+
+    with open(output_dir+"/info.md", 'a', encoding='utf-8') as arquivo:
+        arquivo.write(info_string + '\n')
+
+    print(f"\nDados salvos em {csv_filename}")
+    return csv_filename
 
 def scrape_pages(search_query, all_products, pags_list, pagnum):
     print(f"\nColetando dados da página {pagnum}...")
@@ -221,21 +138,20 @@ def main():
         if i not in {1, 10} and (max_key_pags < args.topage or i <= args.topage):
             all_products, pags_list = scrape_pages(search_query, all_products, pags_list, i)
 
-    print(len(f'\nall_products lin = {len(all_products)}'))
+    print(len(f'\nall_products len = {len(all_products)}'))
     print()
 
-    import ipdb; ipdb.set_trace()
-    # if not produtos:
-    #     print("Nenhum produto encontrado.")
-    #     return
-    #
-    # df = pd.DataFrame(produtos)
-    # df.sort_values(by='total_reviews', ascending=False).reset_index(drop=True)
-    #
-    # count_nonzero = (df['total_reviews'] != 0).sum()
-    # print(f'\ntotal_reviews non zero: {count_nonzero}')
-    #
-    # csv_filenam = export_csv(df, args, num_pages, count_nonzero)
+    if not all_products:
+        print("Nenhum produto encontrado.")
+        return
+
+    df = pd.DataFrame(all_products)
+    df.sort_values(by='total_reviews', ascending=False).reset_index(drop=True)
+
+    count_nonzero = (df['total_reviews'] != 0).sum()
+    print(f'\ntotal_reviews non zero: {count_nonzero}')
+
+    csv_filenam = export_csv(df, args, args.topage, count_nonzero, max_key_pags)
 
 if __name__ == "__main__":
     main()
