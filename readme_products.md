@@ -1,3 +1,474 @@
+
+---
+
+# Secuencia de preguntas deepseek
+- ¿cuáles son las marcas más usadas en los salones de belleza en Colombia?
+- ¿cuáles son las marcas más usadas en los salones de belleza en Brasil?
+- ¿cuáles son los productos más vendidos en los salones de belleza en Brasil?
+- ¿cuáles son los productos más vendidos en los salones de belleza en Colombia?
+- Qué marcas brasileras han sido vendidas en los salones de belleza en Colombia?
+- ¿cuáles son las marcas más usadas en los salones de belleza en Colombia que son importados de Brasil?
+- ¿cuáles son los productos más usados en los salones de belleza en Colombia que son importados de Brasil?
+
+# secuencia de preguntas:
+
+## ¿cuáles son las marcas más usadas en los salones de belleza en Colombia?
+
+En Colombia, los salones de belleza suelen utilizar una variedad de marcas reconocidas tanto a nivel nacional como internacional. Algunas de las marcas más populares y utilizadas en los salones de belleza colombianos incluyen:
+
+1. **L'Oréal Professionnel**: Una de las marcas más reconocidas a nivel mundial, ofrece una amplia gama de productos para el cuidado del cabello, coloración y tratamientos profesionales.
+
+2. **Wella Professionals**: Otra marca internacional muy popular, conocida por sus productos de coloración, cuidado capilar y styling.
+
+3. **Schwarzkopf Professional**: Ofrece productos de alta calidad para coloración, cuidado y styling, muy utilizados en salones de belleza.
+
+4. **Matrix**: Una marca accesible y popular, conocida por sus productos de coloración y cuidado capilar.
+
+5. **Revlon Professional**: Ofrece una variedad de productos para el cuidado del cabello, coloración y tratamientos.
+
+6. **Kérastase**: Una marca de lujo de L'Oréal, especializada en tratamientos capilares de alta gama.
+
+7. **Redken**: Conocida por sus productos innovadores para el cuidado y styling del cabello.
+
+8. **Joico**: Ofrece productos para reparación y cuidado intensivo del cabello, muy apreciados en salones profesionales.
+
+9. **Nioxin**: Especializada en tratamientos para la caída del cabello y cuidado del cuero cabelludo.
+
+10. **TIGI**: Conocida por sus productos de styling y cuidado capilar, especialmente populares entre los estilistas.
+
+Además de estas marcas internacionales, también hay marcas colombianas y latinoamericanas que son muy utilizadas en los salones de belleza del país, como:
+
+- **Nativa Spa**: Una marca colombiana que ofrece productos de cuidado personal y belleza con ingredientes naturales.
+- **Creaciones Gloria**: Una marca colombiana conocida por sus productos de cuidado capilar y tratamientos de belleza.
+
+Estas marcas son elegidas por los profesionales de la belleza en Colombia debido a su calidad, eficacia y la variedad de soluciones que ofrecen para diferentes necesidades capilares y de belleza.
+
+## ¿cuáles son las marcas más usadas en los salones de belleza en Brasil?
+
+En Brasil, los salones de belleza utilizan una combinación de marcas internacionales reconocidas y marcas locales que han ganado popularidad por su calidad y adaptación a las necesidades específicas del mercado brasileño. Algunas de las marcas más utilizadas en los salones de belleza en Brasil incluyen:
+
+### Marcas Internacionales:
+1. **L'Oréal Professionnel**: Una de las marcas más populares a nivel mundial, ampliamente utilizada en salones brasileños por sus productos de coloración, cuidado capilar y tratamientos profesionales.
+
+2. **Wella Professionals**: Conocida por sus productos de coloración y styling, es una marca muy respetada y utilizada en salones de belleza en Brasil.
+
+3. **Schwarzkopf Professional**: Ofrece una amplia gama de productos para coloración, cuidado y styling, muy apreciados por los profesionales brasileños.
+
+4. **Matrix**: Una marca accesible y popular, especialmente conocida por sus productos de coloración y cuidado capilar.
+
+5. **Kérastase**: Una marca de lujo de L'Oréal, especializada en tratamientos capilares de alta gama, muy utilizada en salones premium.
+
+6. **Redken**: Conocida por sus productos innovadores para el cuidado y styling del cabello.
+
+7. **Joico**: Ofrece productos para reparación y cuidado intensivo del cabello, muy valorados en salones profesionales.
+
+8. **TIGI**: Popular por sus productos de styling y cuidado capilar, especialmente entre estilistas que buscan resultados creativos.
+
+### Marcas Locales y Regionales:
+1. **Niasi**: Una marca brasileña que ofrece una línea completa de productos para el cuidado del cabello, incluyendo shampoos, acondicionadores y tratamientos.
+
+2. **Embelleze**: Una de las marcas más reconocidas en Brasil, especializada en productos para alisado, coloración y cuidado capilar.
+
+3. **Cadiveu**: Conocida por sus productos de alta calidad, especialmente sus tratamientos de keratina y aceites capilares.
+
+4. **Boticário Professional**: Parte del Grupo Boticário, esta línea profesional ofrece productos para cuidado y styling del cabello, muy utilizados en salones brasileños.
+
+5. **Lola Cosmetics**: Una marca brasileña que se ha destacado por sus productos innovadores y de alta calidad para el cuidado y coloración del cabello.
+
+6. **Soukai**: Ofrece productos para alisado y tratamientos capilares, muy populares en salones de belleza en Brasil.
+
+7. **Hombre**: Una marca brasileña especializada en productos para cabello masculino, pero también utilizada en salones mixtos.
+
+### Marcas de Tratamientos Específicos:
+1. **Kérastase**: Para tratamientos de lujo y cuidado intensivo.
+2. **Moroccanoil**: Conocida por sus productos con aceite de argán, muy populares para hidratación y brillo.
+
+Estas marcas son elegidas por los profesionales de la belleza en Brasil debido a su eficacia, calidad y adaptación a las necesidades del cabello brasileño, que a menudo requiere productos que ofrezcan hidratación intensa, reparación y protección contra los daños causados por el clima tropical y los tratamientos químicos frecuentes.
+
+## ¿cuáles son los productos más vendidos en los salones de belleza en Colombia?
+
+En Colombia, los salones de belleza ofrecen una amplia variedad de productos y servicios que se adaptan a las necesidades y preferencias de los clientes. Los productos más vendidos suelen estar relacionados con el cuidado del cabello, tratamientos capilares, coloración y servicios de styling, así como con el cuidado de la piel y las uñas. A continuación, te detallo los productos más populares y vendidos en los salones de belleza colombianos:
+
+### **1. Tratamientos de Keratina y Alisado**
+- **Productos más vendidos**:
+  - Tratamientos de keratina (marcas como **L'Oréal Professionnel**, **Cadiveu** y **Schwarzkopf Professional**).
+  - Productos para alisado progresivo (como **Niasi** y **Embelleze**).
+- **Razón de popularidad**: El clima tropical de Colombia hace que muchos clientes busquen tratamientos que controlen el frizz y dejen el cabello liso y manejable.
+
+
+### **2. Productos para Coloración**
+- **Productos más vendidos**:
+  - Tintes profesionales (marcas como **Wella Professionals**, **Matrix** y **Revlon Professional**).
+  - Decolorantes y productos para mechas (especialmente para looks rubios y reflejos).
+- **Razón de popularidad**: Los colombianos suelen experimentar con colores vibrantes, mechas y técnicas de coloración como el balayage y el ombré.
+
+### **3. Tratamientos de Hidratación y Reconstrucción**
+- **Productos más vendidos**:
+  - Mascarillas capilares (como las de **Kérastase**, **Joico** y **Redken**).
+  - Aceites nutritivos (como **Moroccanoil** y **L'Oréal Professionnel**).
+- **Razón de popularidad**: El uso frecuente de herramientas de calor y tratamientos químicos hace que los clientes busquen productos que reparen y nutran su cabello.
+
+### **4. Productos para Cuidado del Cuero Cabelludo**
+- **Productos más vendidos**:
+  - Shampoos y tratamientos anticaspa (como los de **Dercos** de L'Oréal).
+  - Productos para fortalecimiento capilar y crecimiento (como **Nioxin**).
+- **Razón de popularidad**: Problemas como la caída del cabello, la caspa y el cuero cabelludo sensible son comunes, lo que impulsa la demanda de estos productos.
+
+### **5. Productos para Styling y Termoprotección**
+- **Productos más vendidos**:
+  - Spray termoprotector (marcas como **TIGI**, **Redken** y **L'Oréal Professionnel**).
+  - Cremas para definición de rizos (especialmente para cabello rizado).
+  - Geles y ceras para fijación (como los de **Boticário Professional**).
+- **Razón de popularidad**: El uso constante de secadores, planchas y tenacillas hace que los productos de styling y termoprotección sean indispensables.
+
+### **6. Líneas Profesionales para Cabello Rizado**
+- **Productos más vendidos**:
+  - Shampoos, acondicionadores y cremas para definición de rizos (marcas como **Niasi**, **Lola Cosmetics** y **Beauty Hair**).
+- **Razón de popularidad**: El cabello rizado es común en Colombia, y los clientes buscan productos que resalten y mantengan sus rizos definidos y saludables.
+
+### **7. Productos para Alargamiento de Pestañas y Cejas**
+- **Productos más vendidos**:
+  - Extensiones de pestañas y kits para laminado de cejas.
+  - Tinturas para pestañas y cejas.
+- **Razón de popularidad**: Los servicios de belleza para ojos, como el laminado de cejas y las extensiones de pestañas, han ganado mucha popularidad en los últimos años.
+
+### **8. Productos para Manicura y Pedicura**
+- **Productos más vendidos**:
+  - Esmaltes semipermanentes (como los de **Colorama** y **Risqué**).
+  - Cremas hidratantes para manos y pies.
+- **Razón de popularidad**: Los servicios de uñas son muy demandados, especialmente los esmaltes de larga duración y los diseños creativos.
+
+### **9. Líneas de Tratamientos Capilares de Lujo**
+- **Productos más vendidos**:
+  - Tratamientos de keratina premium (como los de **Cadiveu** y **Kérastase**).
+  - Aceites y serums para brillo y nutrición (como **Moroccanoil**).
+  - Aceites y serums para brillo y nutrición (como **Moroccanoil**).
+- **Razón de popularidad**: Los clientes buscan productos de alta gama que ofrezcan resultados visibles y duraderos.
+
+### **10. Productos para Cabello Masculino**
+- **Productos más vendidos**:
+  - Pomadas y ceras para styling (como las de **Hombre** y **Boticário Professional**).
+  - Shampoos y acondicionadores específicos para hombres.
+- **Razón de popularidad**: El mercado masculino ha crecido significativamente, con más hombres buscando servicios de cuidado personal en salones.
+
+### **Tendencias Actuales**
+- **Cuidado natural y vegano**: Marcas como **Niasi** y **Lola Cosmetics** han ganado popularidad por ofrecer productos con ingredientes naturales y libres de crueldad animal.
+- **Tratamientos personalizados**: Los salones están adoptando productos que se adaptan a las necesidades específicas de cada tipo de cabello.
+
+En resumen, los productos más vendidos en los salones de belleza en Colombia reflejan las necesidades del mercado local, como el control del frizz, la hidratación intensa, la coloración creativa y el cuidado del cabello rizado. Las marcas internacionales y locales compiten por ofrecer soluciones efectivas y de alta calidad para satisfacer estas demandas.
+
+## ¿cuáles son los productos más vendidos en los salones de belleza en Brasil?
+
+En los salones de belleza en Brasil, los productos más vendidos suelen estar relacionados con tratamientos capilares, cuidado del cabello y servicios de styling, ya que el cabello es una prioridad para muchos clientes. A continuación, te menciono algunos de los productos y categorías más populares y vendidos en los salones de belleza brasileños:
+
+
+### **1. Tratamientos de Alisado y Keratina**
+- **Productos más vendidos**: 
+  - Tratamientos de keratina (como los de las marcas **Cadiveu**, **Embelleze** y **Soukai**).
+  - Productos para alisado progresivo (como **Lola Cosmetics** y **Niasi**).
+- **Razón de popularidad**: El clima húmedo y tropical de Brasil hace que muchos clientes busquen tratamientos que controlen el frizz y dejen el cabello liso y manejable.
+
+### **2. Productos para Coloración**
+- **Productos más vendidos**:
+  - Tintes profesionales (marcas como **L'Oréal Professionnel**, **Wella Professionals** y **Schwarzkopf Professional**).
+  - Decolorantes y productos para mechas (especialmente para looks claros y rubios).
+- **Razón de popularidad**: Los brasileños suelen experimentar con colores vibrantes, mechas y reflejos, lo que hace que los productos de coloración sean esenciales en los salones.
+
+### **3. Tratamientos de Hidratación y Reconstrucción**
+- **Productos más vendidos**:
+  - Mascarillas capilares (como las de **Kérastase**, **Joico** y **Niasi**).
+  - Aceites nutritivos (como **Moroccanoil** y **Cadiveu**).
+- **Razón de popularidad**: El cabello brasileño, especialmente el rizado o crespo, requiere hidratación intensa y reparación debido al uso frecuente de herramientas de calor y tratamientos químicos.
+
+### **4. Productos para Cuidado del Cuero Cabelludo**
+- **Productos más vendidos**:
+  - Shampoos y tratamientos anticaspa (como los de **Dercos** de L'Oréal).
+  - Productos para fortalecimiento capilar y crecimiento (como **Nioxin**).
+- **Razón de popularidad**: Muchos clientes buscan soluciones para problemas como la caída del cabello, caspa o cuero cabelludo sensible.
+
+### **5. Productos para Styling y Termoprotección**
+- **Productos más vendidos**:
+  - Spray termoprotector (marcas como **TIGI**, **Redken** y **L'Oréal Professionnel**).
+  - Cremas para definición de rizos (especialmente para cabello rizado o crespo).
+  - Geles y ceras para fijación (como los de **Boticário Professional**).
+- **Razón de popularidad**: El uso constante de secadores, planchas y tenacillas hace que los productos de styling y termoprotección sean indispensables.
+
+### **6. Líneas Profesionales para Cabello Rizado o Crespo**
+- **Productos más vendidos**:
+  - Shampoos, acondicionadores y cremas para definición de rizos (marcas como **Lola Cosmetics**, **Niasi** y **Beauty Hair**).
+- **Razón de popularidad**: El cabello rizado y crespo es muy común en Brasil, y los clientes buscan productos que resalten y mantengan sus rizos definidos y saludables.
+
+### **7. Productos para Alargamiento de Pestañas y Cejas**
+- **Productos más vendidos**:
+  - Extensiones de pestañas y kits para laminado de cejas.
+  - Tinturas para pestañas y cejas.
+- **Razón de popularidad**: Los servicios de belleza para ojos, como el laminado de cejas y las extensiones de pestañas, han ganado mucha popularidad en los últimos años.
+
+### **8. Productos para Manicura y Pedicura**
+- **Productos más vendidos**:
+  - Esmaltes semipermanentes (como los de **Colorama** y **Risqué**).
+  - Cremas hidratantes para manos y pies.
+- **Razón de popularidad**: Los servicios de uñas son muy demandados, especialmente los esmaltes de larga duración y los diseños creativos.
+
+### **9. Líneas de Tratamientos Capilares de Lujo**
+- **Productos más vendidos**:
+  - Tratamientos de keratina premium (como los de **Cadiveu** y **Kérastase**).
+  - Aceites y serums para brillo y nutrición (como **Moroccanoil**).
+- **Razón de popularidad**: Los clientes buscan productos de alta gama que ofrezcan resultados visibles y duraderos.
+
+### **10. Productos para Cabello Masculino**
+- **Productos más vendidos**:
+  - Pomadas y ceras para styling (como las de **Hombre** y **Boticário Professional**).
+  - Shampoos y acondicionadores específicos para hombres.
+- **Razón de popularidad**: El mercado masculino ha crecido significativamente, con más hombres buscando servicios de cuidado personal en salones.
+
+### **Tendencias Actuales**
+- **Cuidado natural y vegano**: Marcas como **Niasi** y **Lola Cosmetics** han ganado popularidad por ofrecer productos con ingredientes naturales y libres de crueldad animal.
+- **Tratamientos personalizados**: Los salones están adoptando productos que se adaptan a las necesidades específicas de cada tipo de cabello.
+
+En resumen, los productos más vendidos en los salones de belleza en Brasil reflejan las necesidades del mercado local, como el control del frizz, la hidratación intensa, la coloración creativa y el cuidado del cabello rizado o crespo. Las marcas internacionales y locales compiten por ofrecer soluciones efectivas y de alta calidad para satisfacer estas demandas.
+
+## ¿cuáles son las marcas más usadas en los salones de belleza en Colombia que son importados de Brasil?
+
+En Colombia, los salones de belleza han adoptado varias marcas brasileñas que son altamente valoradas por su calidad, innovación y efectividad en el cuidado del cabello y tratamientos de belleza. Estas marcas importadas de Brasil se han posicionado como opciones preferidas tanto para los profesionales como para los clientes. A continuación, te menciono las marcas brasileñas más utilizadas en los salones de belleza colombianos:
+
+### **1. Niasi**
+- **Productos destacados**: Shampoos, acondicionadores, mascarillas y tratamientos para hidratación y reparación capilar.
+- **Razón de popularidad**: Es una marca brasileña que ofrece productos con ingredientes naturales y libres de crueldad animal, lo que atrae a clientes que buscan opciones más sostenibles y saludables.
+
+### **2. Embelleze**
+- **Productos destacados**: Tratamientos de alisado, keratina y productos para cuidado capilar.
+- **Razón de popularidad**: Es una de las marcas más reconocidas en Brasil y ha ganado terreno en Colombia por sus tratamientos efectivos para controlar el frizz y dejar el cabello liso y manejable.
+
+### **3. Cadiveu**
+- **Productos destacados**: Tratamientos de keratina, aceites capilares y productos para hidratación profunda.
+- **Razón de popularidad**: Conocida por sus productos de alta gama, Cadiveu es muy apreciada por los profesionales de la belleza en Colombia por sus resultados duraderos y de calidad.
+
+### **4. Lola Cosmetics**
+- **Productos destacados**: Productos para coloración, hidratación y cuidado del cabello rizado.
+- **Razón de popularidad**: Esta marca brasileña se ha destacado por su innovación y productos de alta calidad, especialmente para cabello rizado y tratamientos de coloración.
+
+### **5. Boticário Professional**
+- **Productos destacados**: Líneas completas para cuidado capilar, styling y tratamientos específicos.
+- **Razón de popularidad**: Parte del Grupo Boticário, una de las empresas de belleza más grandes de Brasil, esta línea profesional es conocida por su calidad y accesibilidad.
+
+### **6. Hombre**
+- **Productos destacados**: Pomadas, ceras y shampoos para cabello masculino.
+- **Razón de popularidad**: Especializada en productos para hombres, esta marca ha ganado popularidad en Colombia debido al crecimiento del mercado masculino en salones de belleza.
+
+### **7. Soukai**
+- **Productos destacados**: Tratamientos de alisado y productos para cuidado capilar.
+- **Razón de popularidad**: Conocida por sus tratamientos de keratina y alisado, Soukai es una marca que ha llegado a Colombia con productos efectivos y de calidad.
+
+### **8. Beauty Hair**
+- **Productos destacados**: Productos para cabello rizado, hidratación y reparación.
+- **Razón de popularidad**: Esta marca brasileña se ha posicionado en Colombia por sus productos específicos para cabello rizado y crespo, que son muy demandados en el mercado.
+
+### **9. Salon Line**
+- **Productos destacados**: Productos para styling, hidratación y cuidado diario del cabello.
+- **Razón de popularidad**: Aunque es más conocida en el mercado retail, también ha incursionado en salones de belleza con productos accesibles y de buena calidad.
+
+### **10. Mahogany**
+- **Productos destacados**: Tintes, decolorantes y productos para coloración profesional.
+- **Razón de popularidad**: Es una marca brasileña especializada en coloración, muy utilizada en salones de belleza por su amplia gama de tonos y resultados profesionales.
+
+### **Tendencias de Marcas Brasileñas en Colombia**
+- **Enfoque en cabello rizado y crespo**: Marcas como **Niasi** y **Beauty Hair** han ganado terreno en Colombia debido a la demanda de productos específicos para este tipo de cabello.
+- **Tratamientos de keratina y alisado**: Marcas como **Embelleze** y **Cadiveu** son muy populares por sus tratamientos efectivos para controlar el frizz y dejar el cabello liso.
+- **Productos naturales y veganos**: La tendencia hacia el cuidado natural ha impulsado la popularidad de marcas como **Niasi** y **Lola Cosmetics**, que ofrecen opciones libres de crueldad animal y con ingredientes naturales.
+
+En resumen, las marcas brasileñas importadas más utilizadas en los salones de belleza en Colombia son valoradas por su calidad, innovación y adaptación a las necesidades del cabello latinoamericano. Estas marcas ofrecen soluciones efectivas para problemas comunes como el frizz, la falta de hidratación y la necesidad de tratamientos profesionales de alta gama.
+
+## ¿cuáles son los productos más usados en los salones de belleza en Colombia que son importados de Brasil?
+
+En Colombia, los salones de belleza han adoptado una variedad de productos brasileños que son altamente valorados por su calidad, innovación y efectividad. Estos productos importados de Brasil cubren desde tratamientos capilares hasta productos de styling y cuidado diario. A continuación, te detallo los productos más utilizados en los salones de belleza colombianos que son importados de Brasil:
+
+### **1. Tratamientos de Keratina y Alisado**
+- **Marcas destacadas**: **Embelleze**, **Cadiveu**, **Soukai**.
+- **Productos más usados**:
+  - Tratamientos de keratina líquida.
+  - Alisados progresivos.
+  - Selladores de cutícula.
+- **Razón de popularidad**: Estos productos son muy demandados por su capacidad para controlar el frizz y dejar el cabello liso y manejable, especialmente en el clima tropical de Colombia.
+
+### **2. Productos para Hidratación y Reparación Capilar**
+- **Marcas destacadas**: **Niasi**, **Lola Cosmetics**, **Beauty Hair**.
+- **Productos más usados**:
+  - Mascarillas capilares intensivas.
+  - Aceites nutritivos (como el aceite de argán o coco).
+  - Ampollas de reparación.
+- **Razón de popularidad**: El cabello colombiano, especialmente el rizado o crespo, requiere hidratación profunda y reparación debido al uso frecuente de herramientas de calor y tratamientos químicos.
+
+### **3. Productos para Coloración**
+- **Marcas destacadas**: **Lola Cosmetics**, **Mahogany**.
+- **Productos más usados**:
+  - Tintes profesionales.
+  - Decolorantes y polvos voluminizadores.
+  - Productos para reflejos y balayage.
+- **Razón de popularidad**: Los colombianos suelen experimentar con técnicas de coloración modernas, y estas marcas ofrecen productos de alta calidad que garantizan resultados duraderos y vibrantes.
+
+### **4. Productos para Cuidado del Cabello Rizado y Crespo**
+- **Marcas destacadas**: **Niasi**, **Beauty Hair**, **Lola Cosmetics**.
+- **Productos más usados**:
+  - Cremas para definición de rizos.
+  - Shampoos y acondicionadores sin sulfatos.
+  - Aceites y serums para brillo.
+- **Razón de popularidad**: El cabello rizado y crespo es común en Colombia, y estos productos ayudan a mantener los rizos definidos, hidratados y libres de frizz.
+
+### **5. Productos para Styling y Termoprotección**
+- **Marcas destacadas**: **Boticário Professional**, **Salon Line**.
+- **Productos más usados**:
+  - Sprays termoprotectores.
+  - Cremas para peinado.
+  - Geles y ceras moldeadoras.
+- **Razón de popularidad**: El uso constante de secadores, planchas y tenacillas hace que estos productos sean indispensables para proteger el cabello y lograr peinados duraderos.
+
+### **6. Tratamientos para Fortalecimiento y Crecimiento Capilar**
+- **Marcas destacadas**: **Niasi**, **Cadiveu**.
+- **Productos más usados**:
+  - Ampollas para crecimiento capilar.
+  - Shampoos y acondicionadores fortalecedores.
+  - Sueros para cuero cabelludo.
+- **Razón de popularidad**: Muchos clientes buscan soluciones para la caída del cabello y el fortalecimiento del cuero cabelludo.
+
+### **7. Productos para Cuidado del Cabello Masculino**
+- **Marcas destacadas**: **Hombre**, **Boticário Professional**.
+- **Productos más usados**:
+  - Pomadas y ceras para styling.
+  - Shampoos y acondicionadores específicos para hombres.
+  - Tratamientos para barba y bigote.
+- **Razón de popularidad**: El mercado masculino ha crecido significativamente, con más hombres buscando servicios de cuidado personal en salones.
+
+### **8. Productos Naturales y Veganos**
+- **Marcas destacadas**: **Niasi**, **Lola Cosmetics**.
+- **Productos más usados**:
+  - Shampoos y acondicionadores orgánicos.
+  - Mascarillas con ingredientes naturales.
+  - Aceites esenciales.
+- **Razón de popularidad**: La tendencia hacia el cuidado natural y sostenible ha impulsado la demanda de productos libres de crueldad animal y con ingredientes naturales.
+
+### **9. Productos para Alargamiento de Pestañas y Cejas**
+- **Marcas destacadas**: **Boticário Professional**, **Lola Cosmetics**.
+- **Productos más usados**:
+  - Kits para laminado de cejas.
+  - Tinturas para pestañas y cejas.
+  - Extensiones de pestañas.
+- **Razón de popularidad**: Los servicios de belleza para ojos han ganado mucha popularidad en los últimos años.
+
+### **10. Productos para Manicura y Pedicura**
+- **Marcas destacadas**: **Boticário Professional**, **Salon Line**.
+- **Productos más usados**:
+  - Esmaltes semipermanentes.
+  - Cremas hidratantes para manos y pies.
+  - Tratamientos para cutículas.
+- **Razón de popularidad**: Los servicios de uñas son muy demandados, especialmente los esmaltes de larga duración y los diseños creativos.
+
+### **Tendencias de Productos Brasileños en Colombia**
+- **Tratamientos de alta gama**: Marcas como **Cadiveu** y **Lola Cosmetics** ofrecen productos premium que garantizan resultados profesionales.
+- **Enfoque en cabello rizado y crespo**: Productos específicos para este tipo de cabello son muy valorados en Colombia.
+- **Cuidado natural y vegano**: La tendencia hacia productos más saludables y sostenibles ha impulsado la popularidad de marcas como **Niasi**.
+
+En resumen, los productos brasileños más utilizados en los salones de belleza en Colombia abarcan desde tratamientos de keratina y alisado hasta productos para cabello rizado, coloración y cuidado natural. Estas marcas han logrado posicionarse gracias a su calidad, innovación y adaptación a las necesidades del mercado colombiano.
+
+---
+
+# ¿CUÁLES SON LOS PRODUCTOS QUE NORMALMENTE SON MÁS CAROS?  
+
+En el mercado de productos capilares, los precios pueden variar dependiendo de la marca, la calidad de los ingredientes, la tecnología involucrada y el tipo de tratamiento. Generalmente, los productos más caros son aquellos que ofrecen beneficios específicos, como tratamientos intensivos, fórmulas premium o marcas de lujo. A continuación, algunos de los productos que suelen tener un precio más elevado:  
+
+1. **Mascarillas de Tratamiento Profundo**:  
+   - **Mascarillas Reconstrucción**: Contienen ingredientes como queratina, proteínas y aminoácidos que ayudan a reparar la fibra capilar.  
+   - **Mascarillas con Ingredientes Naturales u Orgánicos**: Usan ingredientes de alta calidad, como aceites vegetales puros, extractos botánicos y mantecas naturales.  
+
+2. **Aceites Capilares Premium**:  
+   - **Aceites con Ingredientes Exóticos**: Como aceite de argán, marula, macadamia y jojoba, conocidos por sus propiedades nutritivas y regenerativas.  
+
+3. **Sérum Capilar de Lujo**:  
+   - **Sérum con Protección Térmica y Brillo Intenso**: Productos que combinan protección térmica, brillo y tratamiento en una sola fórmula, con ingredientes como siliconas orgánicas y vitaminas.  
+
+4. **Productos para Alisado y Relajación**:  
+   - **Cremas Alisadoras de Alta Calidad**: Garantizan alisado duradero sin dañar el cabello, con fórmulas que incluyen queratina y otros agentes reparadores.  
+   - **Kits de Alisado Japonés o Brasileño**: Tratamientos profesionales de alisado permanente realizados en salones de belleza.  
+
+5. **Tintes y Decolorantes Profesionales**:  
+   - **Tintes Permanentes de Marcas Reconocidas**: Ofrecen amplia gama de colores, cobertura de canas y durabilidad.  
+   - **Decolorantes de Alta Calidad**: Minimiza los daños al cabello durante el proceso de aclarado.  
+
+6. **Productos para Protección Térmica**:  
+   - **Sprays y Cremas Termoprotectores de Lujo**: Brindan protección avanzada contra el calor, además de hidratación y brillo.  
+
+7. **Líneas de Tratamiento Completo**:  
+   - **Kits de Tratamiento Capilar**: Incluyen shampoo, acondicionador, mascarilla y sérum de una misma línea, diseñados para problemas específicos como daño, resequedad o caída del cabello.  
+
+8. **Productos para Cuidados Específicos**:  
+   - **Tratamientos Anticaída**: Contienen ingredientes como minoxidil, vitaminas y minerales para estimular el crecimiento capilar y reducir la caída.  
+   - **Tratamientos para Cuero Cabelludo Sensible**: Ayudan a calmar y equilibrar el cuero cabelludo con ingredientes como aloe vera, manzanilla y aceites esenciales.  
+
+9. **Productos para Rizos de Lujo**:  
+   - **Activadores de Rizos y Cremas Definidoras**: Brindan definición, hidratación y control del frizz, con fórmulas ricas en mantecas y aceites naturales.  
+
+10. **Productos de Marcas de Lujo**:  
+   - **Marcas Reconocidas**: Como Kérastase, Oribe, Moroccanoil, Aveda y Shu Uemura, que ofrecen productos de alto rendimiento con empaques sofisticados e ingredientes premium.  
+
+Estos productos suelen ser más costosos debido a la calidad de sus ingredientes, la investigación y desarrollo involucrados, además de la reputación de la marca. Sin embargo, muchos clientes consideran que la inversión vale la pena por los resultados superiores y los beneficios ofrecidos.  
+
+--- 
+
+# Qué marcas brasileras han sido vendidas en los salones de belleza en Colombia?
+
+En Colombia, varias marcas brasileñas de productos para el cuidado del cabello y tratamientos de belleza han ganado popularidad y se han incorporado a los salones de belleza debido a su calidad, innovación y adaptación a las necesidades del mercado latinoamericano. Algunas de las marcas brasileñas más reconocidas y vendidas en los salones de belleza colombianos incluyen:
+
+### **1. Niasi**
+- **Productos destacados**: Shampoos, acondicionadores, mascarillas y tratamientos para hidratación y reparación capilar.
+- **Razón de popularidad**: Es una marca brasileña que ofrece productos con ingredientes naturales y libres de crueldad animal, lo que atrae a clientes que buscan opciones más sostenibles y saludables.
+
+### **2. Embelleze**
+- **Productos destacados**: Tratamientos de alisado, keratina y productos para cuidado capilar.
+- **Razón de popularidad**: Es una de las marcas más reconocidas en Brasil y ha ganado terreno en Colombia por sus tratamientos efectivos para controlar el frizz y dejar el cabello liso y manejable.
+
+### **3. Cadiveu**
+- **Productos destacados**: Tratamientos de keratina, aceites capilares y productos para hidratación profunda.
+- **Razón de popularidad**: Conocida por sus productos de alta gama, Cadiveu es muy apreciada por los profesionales de la belleza en Colombia por sus resultados duraderos y de calidad.
+
+### **4. Lola Cosmetics**
+- **Productos destacados**: Productos para coloración, hidratación y cuidado del cabello rizado.
+- **Razón de popularidad**: Esta marca brasileña se ha destacado por su innovación y productos de alta calidad, especialmente para cabello rizado y tratamientos de coloración.
+
+### **5. Boticário Professional**
+- **Productos destacados**: Líneas completas para cuidado capilar, styling y tratamientos específicos.
+- **Razón de popularidad**: Parte del Grupo Boticário, una de las empresas de belleza más grandes de Brasil, esta línea profesional es conocida por su calidad y accesibilidad.
+
+### **6. Hombre**
+- **Productos destacados**: Pomadas, ceras y shampoos para cabello masculino.
+- **Razón de popularidad**: Especializada en productos para hombres, esta marca ha ganado popularidad en Colombia debido al crecimiento del mercado masculino en salones de belleza.
+
+### **7. Soukai**
+- **Productos destacados**: Tratamientos de alisado y productos para cuidado capilar.
+- **Razón de popularidad**: Conocida por sus tratamientos de keratina y alisado, Soukai es una marca que ha llegado a Colombia con productos efectivos y de calidad.
+
+### **8. Beauty Hair**
+- **Productos destacados**: Productos para cabello rizado, hidratación y reparación.
+- **Razón de popularidad**: Esta marca brasileña se ha posicionado en Colombia por sus productos específicos para cabello rizado y crespo, que son muy demandados en el mercado.
+
+### **9. Salon Line**
+- **Productos destacados**: Productos para styling, hidratación y cuidado diario del cabello.
+- **Razón de popularidad**: Aunque es más conocida en el mercado retail, también ha incursionado en salones de belleza con productos accesibles y de buena calidad.
+
+### **10. Mahogany**
+- **Productos destacados**: Tintes, decolorantes y productos para coloración profesional.
+- **Razón de popularidad**: Es una marca brasileña especializada en coloración, muy utilizada en salones de belleza por su amplia gama de tonos y resultados profesionales.
+
+### **Tendencias de Marcas Brasileñas en Colombia**
+- **Enfoque en cabello rizado y crespo**: Marcas como **Niasi** y **Beauty Hair** han ganado terreno en Colombia debido a la demanda de productos específicos para este tipo de cabello.
+- **Tratamientos de keratina y alisado**: Marcas como **Embelleze** y **Cadiveu** son muy populares por sus tratamientos efectivos para controlar el frizz y dejar el cabello liso.
+- **Productos naturales y veganos**: La tendencia hacia el cuidado natural ha impulsado la popularidad de marcas como **Niasi** y **Lola Cosmetics**, que ofrecen opciones libres de crueldad animal y con ingredientes naturales.
+
+En resumen, las marcas brasileñas han logrado un posicionamiento importante en los salones de belleza en Colombia gracias a su calidad, innovación y adaptación a las necesidades del cabello latinoamericano. Estas marcas ofrecen soluciones efectivas para problemas comunes como el frizz, la falta de hidratación y la necesidad de tratamientos profesionales de alta gama.
+
+
+---
+---
+
 ## Mercado Libre utiliza un algoritmo complejo para filtrar y ordenar los resultados de búsqueda cuando se selecciona la opción "Más relevantes". Aunque los detalles exactos del algoritmo no son públicos, se sabe que considera múltiples factores para determinar la relevancia de los productos. Algunos de los factores más importantes incluyen:
 
 1. **Palabras clave**: Coincidencia entre las palabras clave de la búsqueda y el título, descripción y atributos del producto.
@@ -40,7 +511,6 @@ Estos factores se combinan de manera dinámica para ofrecer una lista de product
 7. **Atributos de la tienda**: La reputación del vendedor, si es "MercadoLíder", su nivel de confianza y la calidad de su servicio al cliente también afectan el orden de los resultados.
 
 En resumen, el algoritmo tiene en cuenta múltiples factores relacionados con la popularidad, la confianza de los compradores, la competitividad de los precios y la experiencia del cliente para determinar qué productos mostrar primero cuando se utiliza el filtro de "Más relevantes".
-
 
 ## Mercado Livre (MercadoLibre) usa um algoritmo próprio para classificar os produtos como "Mais Relevantes" nas buscas. Esse algoritmo considera diversos fatores, incluindo:
 
@@ -163,46 +633,6 @@ Estos productos se eligen según el tipo de cabello, su condición y las necesid
 
 ## conocer las marcas y los mas vendidos/usandos co/br
 
-### ¿Cuáles son los productos que normalmente son más caros?  
-
-En el mercado de productos capilares, los precios pueden variar dependiendo de la marca, la calidad de los ingredientes, la tecnología involucrada y el tipo de tratamiento. Generalmente, los productos más caros son aquellos que ofrecen beneficios específicos, como tratamientos intensivos, fórmulas premium o marcas de lujo. A continuación, algunos de los productos que suelen tener un precio más elevado:  
-
-1. **Mascarillas de Tratamiento Profundo**:  
-   - **Mascarillas Reconstrucción**: Contienen ingredientes como queratina, proteínas y aminoácidos que ayudan a reparar la fibra capilar.  
-   - **Mascarillas con Ingredientes Naturales u Orgánicos**: Usan ingredientes de alta calidad, como aceites vegetales puros, extractos botánicos y mantecas naturales.  
-
-2. **Aceites Capilares Premium**:  
-   - **Aceites con Ingredientes Exóticos**: Como aceite de argán, marula, macadamia y jojoba, conocidos por sus propiedades nutritivas y regenerativas.  
-
-3. **Sérum Capilar de Lujo**:  
-   - **Sérum con Protección Térmica y Brillo Intenso**: Productos que combinan protección térmica, brillo y tratamiento en una sola fórmula, con ingredientes como siliconas orgánicas y vitaminas.  
-
-4. **Productos para Alisado y Relajación**:  
-   - **Cremas Alisadoras de Alta Calidad**: Garantizan alisado duradero sin dañar el cabello, con fórmulas que incluyen queratina y otros agentes reparadores.  
-   - **Kits de Alisado Japonés o Brasileño**: Tratamientos profesionales de alisado permanente realizados en salones de belleza.  
-
-5. **Tintes y Decolorantes Profesionales**:  
-   - **Tintes Permanentes de Marcas Reconocidas**: Ofrecen amplia gama de colores, cobertura de canas y durabilidad.  
-   - **Decolorantes de Alta Calidad**: Minimiza los daños al cabello durante el proceso de aclarado.  
-
-6. **Productos para Protección Térmica**:  
-   - **Sprays y Cremas Termoprotectores de Lujo**: Brindan protección avanzada contra el calor, además de hidratación y brillo.  
-
-7. **Líneas de Tratamiento Completo**:  
-   - **Kits de Tratamiento Capilar**: Incluyen shampoo, acondicionador, mascarilla y sérum de una misma línea, diseñados para problemas específicos como daño, resequedad o caída del cabello.  
-
-8. **Productos para Cuidados Específicos**:  
-   - **Tratamientos Anticaída**: Contienen ingredientes como minoxidil, vitaminas y minerales para estimular el crecimiento capilar y reducir la caída.  
-   - **Tratamientos para Cuero Cabelludo Sensible**: Ayudan a calmar y equilibrar el cuero cabelludo con ingredientes como aloe vera, manzanilla y aceites esenciales.  
-
-9. **Productos para Rizos de Lujo**:  
-   - **Activadores de Rizos y Cremas Definidoras**: Brindan definición, hidratación y control del frizz, con fórmulas ricas en mantecas y aceites naturales.  
-
-10. **Productos de Marcas de Lujo**:  
-   - **Marcas Reconocidas**: Como Kérastase, Oribe, Moroccanoil, Aveda y Shu Uemura, que ofrecen productos de alto rendimiento con empaques sofisticados e ingredientes premium.  
-
-Estos productos suelen ser más costosos debido a la calidad de sus ingredientes, la investigación y desarrollo involucrados, además de la reputación de la marca. Sin embargo, muchos clientes consideran que la inversión vale la pena por los resultados superiores y los beneficios ofrecidos.  
-
 ---
 
 ## productos más usados en los salones de belleza (brasil y colombia):  
@@ -253,20 +683,6 @@ Estos productos suelen ser más costosos debido a la calidad de sus ingredientes
      - Identificar brechas en el mercado (productos con alta demanda y poca oferta).  
      - Comparar precios y evaluar la viabilidad de competir.  
 
-## conocer sobre precio co/br
-### productos más costosos en los salones de belleza:  
-### comparar precios entre brasil y colombia.  
-### minar productos en ml brasil y ml colombia para compararlos.  
-### conocer precios y cantidades de productos.  
-
-## logística y distribución
-### preguntar sobre exportación y cantidades.  
-### investigar la exportación de brasil a colombia.  
-
-## viabilidad de la ganancia y la inversión
-### rentabilidad
-### calcular la viabilidad de la ganancia y la inversión.  
-### seleccionar productos interesantes (para maximizar la ganancia, podemos probar productos más caros).  
 
 ## faces del proyecto, estrategia
 
@@ -361,548 +777,10 @@ Si necesitas un script para extraer datos de Mercado Libre o un plan más detall
 
 
 ---
----
 
-## Secuencia de preguntas deepseek
-- ¿cuáles son las marcas más usadas en los salones de belleza en Colombia?
-- ¿cuáles son las marcas más usadas en los salones de belleza en Brasil?
-- ¿cuáles son los productos más vendidos en los salones de belleza en Brasil?
-- ¿cuáles son los productos más vendidos en los salones de belleza en Colombia?
-- Qué marcas brasileras han sido vendidas en los salones de belleza en Colombia?
-- ¿cuáles son las marcas más usadas en los salones de belleza en Colombia que son importados de Brasil?
-- ¿cuáles son los productos más usados en los salones de belleza en Colombia que son importados de Brasil?
 
 
-# secuencia de preguntas:
 
-## ¿cuáles son las marcas más usadas en los salones de belleza en Colombia?
-
-En Colombia, los salones de belleza suelen utilizar una variedad de marcas reconocidas tanto a nivel nacional como internacional. Algunas de las marcas más populares y utilizadas en los salones de belleza colombianos incluyen:
-
-1. **L'Oréal Professionnel**: Una de las marcas más reconocidas a nivel mundial, ofrece una amplia gama de productos para el cuidado del cabello, coloración y tratamientos profesionales.
-
-2. **Wella Professionals**: Otra marca internacional muy popular, conocida por sus productos de coloración, cuidado capilar y styling.
-
-3. **Schwarzkopf Professional**: Ofrece productos de alta calidad para coloración, cuidado y styling, muy utilizados en salones de belleza.
-
-4. **Matrix**: Una marca accesible y popular, conocida por sus productos de coloración y cuidado capilar.
-
-5. **Revlon Professional**: Ofrece una variedad de productos para el cuidado del cabello, coloración y tratamientos.
-
-6. **Kérastase**: Una marca de lujo de L'Oréal, especializada en tratamientos capilares de alta gama.
-
-7. **Redken**: Conocida por sus productos innovadores para el cuidado y styling del cabello.
-
-8. **Joico**: Ofrece productos para reparación y cuidado intensivo del cabello, muy apreciados en salones profesionales.
-
-9. **Nioxin**: Especializada en tratamientos para la caída del cabello y cuidado del cuero cabelludo.
-
-10. **TIGI**: Conocida por sus productos de styling y cuidado capilar, especialmente populares entre los estilistas.
-
-Además de estas marcas internacionales, también hay marcas colombianas y latinoamericanas que son muy utilizadas en los salones de belleza del país, como:
-
-- **Nativa Spa**: Una marca colombiana que ofrece productos de cuidado personal y belleza con ingredientes naturales.
-- **Creaciones Gloria**: Una marca colombiana conocida por sus productos de cuidado capilar y tratamientos de belleza.
-
-Estas marcas son elegidas por los profesionales de la belleza en Colombia debido a su calidad, eficacia y la variedad de soluciones que ofrecen para diferentes necesidades capilares y de belleza.
-
-
-## ¿cuáles son las marcas más usadas en los salones de belleza en Brasil?
-
-En Brasil, los salones de belleza utilizan una combinación de marcas internacionales reconocidas y marcas locales que han ganado popularidad por su calidad y adaptación a las necesidades específicas del mercado brasileño. Algunas de las marcas más utilizadas en los salones de belleza en Brasil incluyen:
-
-### Marcas Internacionales:
-1. **L'Oréal Professionnel**: Una de las marcas más populares a nivel mundial, ampliamente utilizada en salones brasileños por sus productos de coloración, cuidado capilar y tratamientos profesionales.
-
-2. **Wella Professionals**: Conocida por sus productos de coloración y styling, es una marca muy respetada y utilizada en salones de belleza en Brasil.
-
-3. **Schwarzkopf Professional**: Ofrece una amplia gama de productos para coloración, cuidado y styling, muy apreciados por los profesionales brasileños.
-
-4. **Matrix**: Una marca accesible y popular, especialmente conocida por sus productos de coloración y cuidado capilar.
-
-5. **Kérastase**: Una marca de lujo de L'Oréal, especializada en tratamientos capilares de alta gama, muy utilizada en salones premium.
-
-6. **Redken**: Conocida por sus productos innovadores para el cuidado y styling del cabello.
-
-7. **Joico**: Ofrece productos para reparación y cuidado intensivo del cabello, muy valorados en salones profesionales.
-
-8. **TIGI**: Popular por sus productos de styling y cuidado capilar, especialmente entre estilistas que buscan resultados creativos.
-
-### Marcas Locales y Regionales:
-1. **Niasi**: Una marca brasileña que ofrece una línea completa de productos para el cuidado del cabello, incluyendo shampoos, acondicionadores y tratamientos.
-
-2. **Embelleze**: Una de las marcas más reconocidas en Brasil, especializada en productos para alisado, coloración y cuidado capilar.
-
-3. **Cadiveu**: Conocida por sus productos de alta calidad, especialmente sus tratamientos de keratina y aceites capilares.
-
-4. **Boticário Professional**: Parte del Grupo Boticário, esta línea profesional ofrece productos para cuidado y styling del cabello, muy utilizados en salones brasileños.
-
-5. **Lola Cosmetics**: Una marca brasileña que se ha destacado por sus productos innovadores y de alta calidad para el cuidado y coloración del cabello.
-
-6. **Soukai**: Ofrece productos para alisado y tratamientos capilares, muy populares en salones de belleza en Brasil.
-
-7. **Hombre**: Una marca brasileña especializada en productos para cabello masculino, pero también utilizada en salones mixtos.
-
-### Marcas de Tratamientos Específicos:
-1. **Kérastase**: Para tratamientos de lujo y cuidado intensivo.
-2. **Moroccanoil**: Conocida por sus productos con aceite de argán, muy populares para hidratación y brillo.
-
-Estas marcas son elegidas por los profesionales de la belleza en Brasil debido a su eficacia, calidad y adaptación a las necesidades del cabello brasileño, que a menudo requiere productos que ofrezcan hidratación intensa, reparación y protección contra los daños causados por el clima tropical y los tratamientos químicos frecuentes.
-
-
-## ¿cuáles son los productos más vendidos en los salones de belleza en Colombia?
-
-En Colombia, los salones de belleza ofrecen una amplia variedad de productos y servicios que se adaptan a las necesidades y preferencias de los clientes. Los productos más vendidos suelen estar relacionados con el cuidado del cabello, tratamientos capilares, coloración y servicios de styling, así como con el cuidado de la piel y las uñas. A continuación, te detallo los productos más populares y vendidos en los salones de belleza colombianos:
-
----
-
-### **1. Tratamientos de Keratina y Alisado**
-- **Productos más vendidos**:
-  - Tratamientos de keratina (marcas como **L'Oréal Professionnel**, **Cadiveu** y **Schwarzkopf Professional**).
-  - Productos para alisado progresivo (como **Niasi** y **Embelleze**).
-- **Razón de popularidad**: El clima tropical de Colombia hace que muchos clientes busquen tratamientos que controlen el frizz y dejen el cabello liso y manejable.
-
----
-
-### **2. Productos para Coloración**
-- **Productos más vendidos**:
-  - Tintes profesionales (marcas como **Wella Professionals**, **Matrix** y **Revlon Professional**).
-  - Decolorantes y productos para mechas (especialmente para looks rubios y reflejos).
-- **Razón de popularidad**: Los colombianos suelen experimentar con colores vibrantes, mechas y técnicas de coloración como el balayage y el ombré.
-
----
-
-### **3. Tratamientos de Hidratación y Reconstrucción**
-- **Productos más vendidos**:
-  - Mascarillas capilares (como las de **Kérastase**, **Joico** y **Redken**).
-  - Aceites nutritivos (como **Moroccanoil** y **L'Oréal Professionnel**).
-- **Razón de popularidad**: El uso frecuente de herramientas de calor y tratamientos químicos hace que los clientes busquen productos que reparen y nutran su cabello.
-
----
-
-### **4. Productos para Cuidado del Cuero Cabelludo**
-- **Productos más vendidos**:
-  - Shampoos y tratamientos anticaspa (como los de **Dercos** de L'Oréal).
-  - Productos para fortalecimiento capilar y crecimiento (como **Nioxin**).
-- **Razón de popularidad**: Problemas como la caída del cabello, la caspa y el cuero cabelludo sensible son comunes, lo que impulsa la demanda de estos productos.
-
----
-
-### **5. Productos para Styling y Termoprotección**
-- **Productos más vendidos**:
-  - Spray termoprotector (marcas como **TIGI**, **Redken** y **L'Oréal Professionnel**).
-  - Cremas para definición de rizos (especialmente para cabello rizado).
-  - Geles y ceras para fijación (como los de **Boticário Professional**).
-- **Razón de popularidad**: El uso constante de secadores, planchas y tenacillas hace que los productos de styling y termoprotección sean indispensables.
-
----
-
-### **6. Líneas Profesionales para Cabello Rizado**
-- **Productos más vendidos**:
-  - Shampoos, acondicionadores y cremas para definición de rizos (marcas como **Niasi**, **Lola Cosmetics** y **Beauty Hair**).
-- **Razón de popularidad**: El cabello rizado es común en Colombia, y los clientes buscan productos que resalten y mantengan sus rizos definidos y saludables.
-
----
-
-### **7. Productos para Alargamiento de Pestañas y Cejas**
-- **Productos más vendidos**:
-  - Extensiones de pestañas y kits para laminado de cejas.
-  - Tinturas para pestañas y cejas.
-- **Razón de popularidad**: Los servicios de belleza para ojos, como el laminado de cejas y las extensiones de pestañas, han ganado mucha popularidad en los últimos años.
-
----
-
-### **8. Productos para Manicura y Pedicura**
-- **Productos más vendidos**:
-  - Esmaltes semipermanentes (como los de **Colorama** y **Risqué**).
-  - Cremas hidratantes para manos y pies.
-- **Razón de popularidad**: Los servicios de uñas son muy demandados, especialmente los esmaltes de larga duración y los diseños creativos.
-
----
-
-### **9. Líneas de Tratamientos Capilares de Lujo**
-- **Productos más vendidos**:
-  - Tratamientos de keratina premium (como los de **Cadiveu** y **Kérastase**).
-  - Aceites y serums para brillo y nutrición (como **Moroccanoil**).
-- **Razón de popularidad**: Los clientes buscan productos de alta gama que ofrezcan resultados visibles y duraderos.
-
----
-
-### **10. Productos para Cabello Masculino**
-- **Productos más vendidos**:
-  - Pomadas y ceras para styling (como las de **Hombre** y **Boticário Professional**).
-  - Shampoos y acondicionadores específicos para hombres.
-- **Razón de popularidad**: El mercado masculino ha crecido significativamente, con más hombres buscando servicios de cuidado personal en salones.
-
----
-
-### **Tendencias Actuales**
-- **Cuidado natural y vegano**: Marcas como **Niasi** y **Lola Cosmetics** han ganado popularidad por ofrecer productos con ingredientes naturales y libres de crueldad animal.
-- **Tratamientos personalizados**: Los salones están adoptando productos que se adaptan a las necesidades específicas de cada tipo de cabello.
-
----
-
-En resumen, los productos más vendidos en los salones de belleza en Colombia reflejan las necesidades del mercado local, como el control del frizz, la hidratación intensa, la coloración creativa y el cuidado del cabello rizado. Las marcas internacionales y locales compiten por ofrecer soluciones efectivas y de alta calidad para satisfacer estas demandas.
-
-## ¿cuáles son los productos más vendidos en los salones de belleza en Brasil?
-
-En los salones de belleza en Brasil, los productos más vendidos suelen estar relacionados con tratamientos capilares, cuidado del cabello y servicios de styling, ya que el cabello es una prioridad para muchos clientes. A continuación, te menciono algunos de los productos y categorías más populares y vendidos en los salones de belleza brasileños:
-
----
-
-### **1. Tratamientos de Alisado y Keratina**
-- **Productos más vendidos**: 
-  - Tratamientos de keratina (como los de las marcas **Cadiveu**, **Embelleze** y **Soukai**).
-  - Productos para alisado progresivo (como **Lola Cosmetics** y **Niasi**).
-- **Razón de popularidad**: El clima húmedo y tropical de Brasil hace que muchos clientes busquen tratamientos que controlen el frizz y dejen el cabello liso y manejable.
-
----
-
-### **2. Productos para Coloración**
-- **Productos más vendidos**:
-  - Tintes profesionales (marcas como **L'Oréal Professionnel**, **Wella Professionals** y **Schwarzkopf Professional**).
-  - Decolorantes y productos para mechas (especialmente para looks claros y rubios).
-- **Razón de popularidad**: Los brasileños suelen experimentar con colores vibrantes, mechas y reflejos, lo que hace que los productos de coloración sean esenciales en los salones.
-
----
-
-### **3. Tratamientos de Hidratación y Reconstrucción**
-- **Productos más vendidos**:
-  - Mascarillas capilares (como las de **Kérastase**, **Joico** y **Niasi**).
-  - Aceites nutritivos (como **Moroccanoil** y **Cadiveu**).
-- **Razón de popularidad**: El cabello brasileño, especialmente el rizado o crespo, requiere hidratación intensa y reparación debido al uso frecuente de herramientas de calor y tratamientos químicos.
-
----
-
-### **4. Productos para Cuidado del Cuero Cabelludo**
-- **Productos más vendidos**:
-  - Shampoos y tratamientos anticaspa (como los de **Dercos** de L'Oréal).
-  - Productos para fortalecimiento capilar y crecimiento (como **Nioxin**).
-- **Razón de popularidad**: Muchos clientes buscan soluciones para problemas como la caída del cabello, caspa o cuero cabelludo sensible.
-
----
-
-### **5. Productos para Styling y Termoprotección**
-- **Productos más vendidos**:
-  - Spray termoprotector (marcas como **TIGI**, **Redken** y **L'Oréal Professionnel**).
-  - Cremas para definición de rizos (especialmente para cabello rizado o crespo).
-  - Geles y ceras para fijación (como los de **Boticário Professional**).
-- **Razón de popularidad**: El uso constante de secadores, planchas y tenacillas hace que los productos de styling y termoprotección sean indispensables.
-
----
-
-### **6. Líneas Profesionales para Cabello Rizado o Crespo**
-- **Productos más vendidos**:
-  - Shampoos, acondicionadores y cremas para definición de rizos (marcas como **Lola Cosmetics**, **Niasi** y **Beauty Hair**).
-- **Razón de popularidad**: El cabello rizado y crespo es muy común en Brasil, y los clientes buscan productos que resalten y mantengan sus rizos definidos y saludables.
-
----
-
-### **7. Productos para Alargamiento de Pestañas y Cejas**
-- **Productos más vendidos**:
-  - Extensiones de pestañas y kits para laminado de cejas.
-  - Tinturas para pestañas y cejas.
-- **Razón de popularidad**: Los servicios de belleza para ojos, como el laminado de cejas y las extensiones de pestañas, han ganado mucha popularidad en los últimos años.
-
----
-
-### **8. Productos para Manicura y Pedicura**
-- **Productos más vendidos**:
-  - Esmaltes semipermanentes (como los de **Colorama** y **Risqué**).
-  - Cremas hidratantes para manos y pies.
-- **Razón de popularidad**: Los servicios de uñas son muy demandados, especialmente los esmaltes de larga duración y los diseños creativos.
-
----
-
-### **9. Líneas de Tratamientos Capilares de Lujo**
-- **Productos más vendidos**:
-  - Tratamientos de keratina premium (como los de **Cadiveu** y **Kérastase**).
-  - Aceites y serums para brillo y nutrición (como **Moroccanoil**).
-- **Razón de popularidad**: Los clientes buscan productos de alta gama que ofrezcan resultados visibles y duraderos.
-
----
-
-### **10. Productos para Cabello Masculino**
-- **Productos más vendidos**:
-  - Pomadas y ceras para styling (como las de **Hombre** y **Boticário Professional**).
-  - Shampoos y acondicionadores específicos para hombres.
-- **Razón de popularidad**: El mercado masculino ha crecido significativamente, con más hombres buscando servicios de cuidado personal en salones.
-
----
-
-### **Tendencias Actuales**
-- **Cuidado natural y vegano**: Marcas como **Niasi** y **Lola Cosmetics** han ganado popularidad por ofrecer productos con ingredientes naturales y libres de crueldad animal.
-- **Tratamientos personalizados**: Los salones están adoptando productos que se adaptan a las necesidades específicas de cada tipo de cabello.
-
----
-
-En resumen, los productos más vendidos en los salones de belleza en Brasil reflejan las necesidades del mercado local, como el control del frizz, la hidratación intensa, la coloración creativa y el cuidado del cabello rizado o crespo. Las marcas internacionales y locales compiten por ofrecer soluciones efectivas y de alta calidad para satisfacer estas demandas.
-
-
-## Qué marcas brasileras han sido vendidas en los salones de belleza en Colombia?
-
-En Colombia, varias marcas brasileñas de productos para el cuidado del cabello y tratamientos de belleza han ganado popularidad y se han incorporado a los salones de belleza debido a su calidad, innovación y adaptación a las necesidades del mercado latinoamericano. Algunas de las marcas brasileñas más reconocidas y vendidas en los salones de belleza colombianos incluyen:
-
----
-
-### **1. Niasi**
-- **Productos destacados**: Shampoos, acondicionadores, mascarillas y tratamientos para hidratación y reparación capilar.
-- **Razón de popularidad**: Es una marca brasileña que ofrece productos con ingredientes naturales y libres de crueldad animal, lo que atrae a clientes que buscan opciones más sostenibles y saludables.
-
----
-
-### **2. Embelleze**
-- **Productos destacados**: Tratamientos de alisado, keratina y productos para cuidado capilar.
-- **Razón de popularidad**: Es una de las marcas más reconocidas en Brasil y ha ganado terreno en Colombia por sus tratamientos efectivos para controlar el frizz y dejar el cabello liso y manejable.
-
----
-
-### **3. Cadiveu**
-- **Productos destacados**: Tratamientos de keratina, aceites capilares y productos para hidratación profunda.
-- **Razón de popularidad**: Conocida por sus productos de alta gama, Cadiveu es muy apreciada por los profesionales de la belleza en Colombia por sus resultados duraderos y de calidad.
-
----
-
-### **4. Lola Cosmetics**
-- **Productos destacados**: Productos para coloración, hidratación y cuidado del cabello rizado.
-- **Razón de popularidad**: Esta marca brasileña se ha destacado por su innovación y productos de alta calidad, especialmente para cabello rizado y tratamientos de coloración.
-
----
-
-### **5. Boticário Professional**
-- **Productos destacados**: Líneas completas para cuidado capilar, styling y tratamientos específicos.
-- **Razón de popularidad**: Parte del Grupo Boticário, una de las empresas de belleza más grandes de Brasil, esta línea profesional es conocida por su calidad y accesibilidad.
-
----
-
-### **6. Hombre**
-- **Productos destacados**: Pomadas, ceras y shampoos para cabello masculino.
-- **Razón de popularidad**: Especializada en productos para hombres, esta marca ha ganado popularidad en Colombia debido al crecimiento del mercado masculino en salones de belleza.
-
----
-
-### **7. Soukai**
-- **Productos destacados**: Tratamientos de alisado y productos para cuidado capilar.
-- **Razón de popularidad**: Conocida por sus tratamientos de keratina y alisado, Soukai es una marca que ha llegado a Colombia con productos efectivos y de calidad.
-
----
-
-### **8. Beauty Hair**
-- **Productos destacados**: Productos para cabello rizado, hidratación y reparación.
-- **Razón de popularidad**: Esta marca brasileña se ha posicionado en Colombia por sus productos específicos para cabello rizado y crespo, que son muy demandados en el mercado.
-
----
-
-### **9. Salon Line**
-- **Productos destacados**: Productos para styling, hidratación y cuidado diario del cabello.
-- **Razón de popularidad**: Aunque es más conocida en el mercado retail, también ha incursionado en salones de belleza con productos accesibles y de buena calidad.
-
----
-
-### **10. Mahogany**
-- **Productos destacados**: Tintes, decolorantes y productos para coloración profesional.
-- **Razón de popularidad**: Es una marca brasileña especializada en coloración, muy utilizada en salones de belleza por su amplia gama de tonos y resultados profesionales.
-
----
-
-### **Tendencias de Marcas Brasileñas en Colombia**
-- **Enfoque en cabello rizado y crespo**: Marcas como **Niasi** y **Beauty Hair** han ganado terreno en Colombia debido a la demanda de productos específicos para este tipo de cabello.
-- **Tratamientos de keratina y alisado**: Marcas como **Embelleze** y **Cadiveu** son muy populares por sus tratamientos efectivos para controlar el frizz y dejar el cabello liso.
-- **Productos naturales y veganos**: La tendencia hacia el cuidado natural ha impulsado la popularidad de marcas como **Niasi** y **Lola Cosmetics**, que ofrecen opciones libres de crueldad animal y con ingredientes naturales.
-
----
-
-En resumen, las marcas brasileñas han logrado un posicionamiento importante en los salones de belleza en Colombia gracias a su calidad, innovación y adaptación a las necesidades del cabello latinoamericano. Estas marcas ofrecen soluciones efectivas para problemas comunes como el frizz, la falta de hidratación y la necesidad de tratamientos profesionales de alta gama.
-
-## ¿cuáles son las marcas más usadas en los salones de belleza en Colombia que son importados de Brasil?
-
-En Colombia, los salones de belleza han adoptado varias marcas brasileñas que son altamente valoradas por su calidad, innovación y efectividad en el cuidado del cabello y tratamientos de belleza. Estas marcas importadas de Brasil se han posicionado como opciones preferidas tanto para los profesionales como para los clientes. A continuación, te menciono las marcas brasileñas más utilizadas en los salones de belleza colombianos:
-
----
-
-### **1. Niasi**
-- **Productos destacados**: Shampoos, acondicionadores, mascarillas y tratamientos para hidratación y reparación capilar.
-- **Razón de popularidad**: Es una marca brasileña que ofrece productos con ingredientes naturales y libres de crueldad animal, lo que atrae a clientes que buscan opciones más sostenibles y saludables.
-
----
-
-### **2. Embelleze**
-- **Productos destacados**: Tratamientos de alisado, keratina y productos para cuidado capilar.
-- **Razón de popularidad**: Es una de las marcas más reconocidas en Brasil y ha ganado terreno en Colombia por sus tratamientos efectivos para controlar el frizz y dejar el cabello liso y manejable.
-
----
-
-### **3. Cadiveu**
-- **Productos destacados**: Tratamientos de keratina, aceites capilares y productos para hidratación profunda.
-- **Razón de popularidad**: Conocida por sus productos de alta gama, Cadiveu es muy apreciada por los profesionales de la belleza en Colombia por sus resultados duraderos y de calidad.
-
----
-
-### **4. Lola Cosmetics**
-- **Productos destacados**: Productos para coloración, hidratación y cuidado del cabello rizado.
-- **Razón de popularidad**: Esta marca brasileña se ha destacado por su innovación y productos de alta calidad, especialmente para cabello rizado y tratamientos de coloración.
-
----
-
-### **5. Boticário Professional**
-- **Productos destacados**: Líneas completas para cuidado capilar, styling y tratamientos específicos.
-- **Razón de popularidad**: Parte del Grupo Boticário, una de las empresas de belleza más grandes de Brasil, esta línea profesional es conocida por su calidad y accesibilidad.
-
----
-
-### **6. Hombre**
-- **Productos destacados**: Pomadas, ceras y shampoos para cabello masculino.
-- **Razón de popularidad**: Especializada en productos para hombres, esta marca ha ganado popularidad en Colombia debido al crecimiento del mercado masculino en salones de belleza.
-
----
-
-### **7. Soukai**
-- **Productos destacados**: Tratamientos de alisado y productos para cuidado capilar.
-- **Razón de popularidad**: Conocida por sus tratamientos de keratina y alisado, Soukai es una marca que ha llegado a Colombia con productos efectivos y de calidad.
-
----
-
-### **8. Beauty Hair**
-- **Productos destacados**: Productos para cabello rizado, hidratación y reparación.
-- **Razón de popularidad**: Esta marca brasileña se ha posicionado en Colombia por sus productos específicos para cabello rizado y crespo, que son muy demandados en el mercado.
-
----
-
-### **9. Salon Line**
-- **Productos destacados**: Productos para styling, hidratación y cuidado diario del cabello.
-- **Razón de popularidad**: Aunque es más conocida en el mercado retail, también ha incursionado en salones de belleza con productos accesibles y de buena calidad.
-
----
-
-### **10. Mahogany**
-- **Productos destacados**: Tintes, decolorantes y productos para coloración profesional.
-- **Razón de popularidad**: Es una marca brasileña especializada en coloración, muy utilizada en salones de belleza por su amplia gama de tonos y resultados profesionales.
-
----
-
-### **Tendencias de Marcas Brasileñas en Colombia**
-- **Enfoque en cabello rizado y crespo**: Marcas como **Niasi** y **Beauty Hair** han ganado terreno en Colombia debido a la demanda de productos específicos para este tipo de cabello.
-- **Tratamientos de keratina y alisado**: Marcas como **Embelleze** y **Cadiveu** son muy populares por sus tratamientos efectivos para controlar el frizz y dejar el cabello liso.
-- **Productos naturales y veganos**: La tendencia hacia el cuidado natural ha impulsado la popularidad de marcas como **Niasi** y **Lola Cosmetics**, que ofrecen opciones libres de crueldad animal y con ingredientes naturales.
-
----
-
-En resumen, las marcas brasileñas importadas más utilizadas en los salones de belleza en Colombia son valoradas por su calidad, innovación y adaptación a las necesidades del cabello latinoamericano. Estas marcas ofrecen soluciones efectivas para problemas comunes como el frizz, la falta de hidratación y la necesidad de tratamientos profesionales de alta gama.
-
-## ¿cuáles son los productos más usados en los salones de belleza en Colombia que son importados de Brasil?
-
-En Colombia, los salones de belleza han adoptado una variedad de productos brasileños que son altamente valorados por su calidad, innovación y efectividad. Estos productos importados de Brasil cubren desde tratamientos capilares hasta productos de styling y cuidado diario. A continuación, te detallo los productos más utilizados en los salones de belleza colombianos que son importados de Brasil:
-
----
-
-### **1. Tratamientos de Keratina y Alisado**
-- **Marcas destacadas**: **Embelleze**, **Cadiveu**, **Soukai**.
-- **Productos más usados**:
-  - Tratamientos de keratina líquida.
-  - Alisados progresivos.
-  - Selladores de cutícula.
-- **Razón de popularidad**: Estos productos son muy demandados por su capacidad para controlar el frizz y dejar el cabello liso y manejable, especialmente en el clima tropical de Colombia.
-
----
-
-### **2. Productos para Hidratación y Reparación Capilar**
-- **Marcas destacadas**: **Niasi**, **Lola Cosmetics**, **Beauty Hair**.
-- **Productos más usados**:
-  - Mascarillas capilares intensivas.
-  - Aceites nutritivos (como el aceite de argán o coco).
-  - Ampollas de reparación.
-- **Razón de popularidad**: El cabello colombiano, especialmente el rizado o crespo, requiere hidratación profunda y reparación debido al uso frecuente de herramientas de calor y tratamientos químicos.
-
----
-
-### **3. Productos para Coloración**
-- **Marcas destacadas**: **Lola Cosmetics**, **Mahogany**.
-- **Productos más usados**:
-  - Tintes profesionales.
-  - Decolorantes y polvos voluminizadores.
-  - Productos para reflejos y balayage.
-- **Razón de popularidad**: Los colombianos suelen experimentar con técnicas de coloración modernas, y estas marcas ofrecen productos de alta calidad que garantizan resultados duraderos y vibrantes.
-
----
-
-### **4. Productos para Cuidado del Cabello Rizado y Crespo**
-- **Marcas destacadas**: **Niasi**, **Beauty Hair**, **Lola Cosmetics**.
-- **Productos más usados**:
-  - Cremas para definición de rizos.
-  - Shampoos y acondicionadores sin sulfatos.
-  - Aceites y serums para brillo.
-- **Razón de popularidad**: El cabello rizado y crespo es común en Colombia, y estos productos ayudan a mantener los rizos definidos, hidratados y libres de frizz.
-
----
-
-### **5. Productos para Styling y Termoprotección**
-- **Marcas destacadas**: **Boticário Professional**, **Salon Line**.
-- **Productos más usados**:
-  - Sprays termoprotectores.
-  - Cremas para peinado.
-  - Geles y ceras moldeadoras.
-- **Razón de popularidad**: El uso constante de secadores, planchas y tenacillas hace que estos productos sean indispensables para proteger el cabello y lograr peinados duraderos.
-
----
-
-### **6. Tratamientos para Fortalecimiento y Crecimiento Capilar**
-- **Marcas destacadas**: **Niasi**, **Cadiveu**.
-- **Productos más usados**:
-  - Ampollas para crecimiento capilar.
-  - Shampoos y acondicionadores fortalecedores.
-  - Sueros para cuero cabelludo.
-- **Razón de popularidad**: Muchos clientes buscan soluciones para la caída del cabello y el fortalecimiento del cuero cabelludo.
-
----
-
-### **7. Productos para Cuidado del Cabello Masculino**
-- **Marcas destacadas**: **Hombre**, **Boticário Professional**.
-- **Productos más usados**:
-  - Pomadas y ceras para styling.
-  - Shampoos y acondicionadores específicos para hombres.
-  - Tratamientos para barba y bigote.
-- **Razón de popularidad**: El mercado masculino ha crecido significativamente, con más hombres buscando servicios de cuidado personal en salones.
-
----
-
-### **8. Productos Naturales y Veganos**
-- **Marcas destacadas**: **Niasi**, **Lola Cosmetics**.
-- **Productos más usados**:
-  - Shampoos y acondicionadores orgánicos.
-  - Mascarillas con ingredientes naturales.
-  - Aceites esenciales.
-- **Razón de popularidad**: La tendencia hacia el cuidado natural y sostenible ha impulsado la demanda de productos libres de crueldad animal y con ingredientes naturales.
-
----
-
-### **9. Productos para Alargamiento de Pestañas y Cejas**
-- **Marcas destacadas**: **Boticário Professional**, **Lola Cosmetics**.
-- **Productos más usados**:
-  - Kits para laminado de cejas.
-  - Tinturas para pestañas y cejas.
-  - Extensiones de pestañas.
-- **Razón de popularidad**: Los servicios de belleza para ojos han ganado mucha popularidad en los últimos años.
-
----
-
-### **10. Productos para Manicura y Pedicura**
-- **Marcas destacadas**: **Boticário Professional**, **Salon Line**.
-- **Productos más usados**:
-  - Esmaltes semipermanentes.
-  - Cremas hidratantes para manos y pies.
-  - Tratamientos para cutículas.
-- **Razón de popularidad**: Los servicios de uñas son muy demandados, especialmente los esmaltes de larga duración y los diseños creativos.
-
----
-
-### **Tendencias de Productos Brasileños en Colombia**
-- **Tratamientos de alta gama**: Marcas como **Cadiveu** y **Lola Cosmetics** ofrecen productos premium que garantizan resultados profesionales.
-- **Enfoque en cabello rizado y crespo**: Productos específicos para este tipo de cabello son muy valorados en Colombia.
-- **Cuidado natural y vegano**: La tendencia hacia productos más saludables y sostenibles ha impulsado la popularidad de marcas como **Niasi**.
-
----
-
-En resumen, los productos brasileños más utilizados en los salones de belleza en Colombia abarcan desde tratamientos de keratina y alisado hasta productos para cabello rizado, coloración y cuidado natural. Estas marcas han logrado posicionarse gracias a su calidad, innovación y adaptación a las necesidades del mercado colombiano.
 
 ---
 
@@ -1154,4 +1032,20 @@ Las marcas brasileñas como **Niasi**, **Embelleze**, **Cadiveu**, **Lola Cosmet
 - crear una nueva cultura en col, por ejemplo las uñas de fibra de vidrio
 - promover productos que raramente se usan en col pero que se usan en br
 
+---
 
+
+## conocer sobre precio co/br
+### productos más costosos en los salones de belleza:  
+### comparar precios entre brasil y colombia.  
+### minar productos en ml brasil y ml colombia para compararlos.  
+### conocer precios y cantidades de productos.  
+
+## logística y distribución
+### preguntar sobre exportación y cantidades.  
+### investigar la exportación de brasil a colombia.  
+
+## viabilidad de la ganancia y la inversión
+### rentabilidad
+### calcular la viabilidad de la ganancia y la inversión.  
+### seleccionar productos interesantes (para maximizar la ganancia, podemos probar productos más caros).  

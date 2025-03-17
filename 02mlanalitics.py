@@ -1,10 +1,11 @@
-import requests
 from bs4 import BeautifulSoup
-import re, sys
-import pandas as pd
-import time
 from datetime import datetime
 import argparse
+import pandas as pd
+import random
+import re, sys
+import requests
+import time
 
 def extract_price(product):
     """Extrai o preço do produto."""
@@ -81,6 +82,9 @@ def scrape_pages(search_query, all_products, pags_list, pagnum):
     if pagnum == 1: pags_list.pop(1, None) 
 
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"}
+    
+    time.sleep(random.uniform(0, 2))
+
     response = requests.get(url, headers=headers)
 
     if response.status_code != 200:

@@ -1,4 +1,9 @@
 
+
+python 77test.py
+
+---
+
 python 00mlanalitics.py co 4 esp32
 python 00mlanalitics.py co 3 orange,pi,5
 

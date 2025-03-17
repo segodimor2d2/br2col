@@ -89,8 +89,8 @@ con los siguientes atributos:
 - total_reviews = numero de evaluaciones
 - pagnum = numero de la pagina donde se encuentra el producto
 - permalink = link del producto
-* sold_num = (número de vendidos)
-* seller = (nombre del vendedor) 
+- `sold_num = (número de vendidos)`
+- `seller = (nombre del vendedor)` 
 
 Para mejorar la ejecución del programa la llamada del programa contiene los siguientes parámetros:
 - country: país (br/co)
@@ -104,8 +104,22 @@ python 02mlanalitics.py co 5 esp32
 python 02mlanalitics.py co 5 crema
 python 02mlanalitics.py co 5 shampoo
 python 02mlanalitics.py co 5 carro,control,remoto
-
 ```
+---
+
+## NEW VERSIÓN
+
+- el programa busca en la pag1, los links de las pags que la búsqueda generó
+- el programa colecta los datos de los productos de la pag1
+- si existe la pag10 existe, el programa abre la pag10 donde ML va general el link y el numero de la última pag disponible
+- asi captura conseguí capturar el numero máximo de paginas que ML tiene disponible
+- `aún no estoy capturando los links de las pags que hacen falta, AQUI HAY UN BUG pq si quermos buscar en otras paginas ej. pag11-pag20`
+- la funcionalidad esta creada para capturar el numero total de pags como un indicador de volumen de productos publicados en ML
+- el programa colecta los datos de los productos de la pag10
+- el programa va a pasar por las pags hasta el paramento topage y si topage es mayor a la lista de links, va a colectar los datos hasta el numero máximo
+
+---
+
 ### info.md
 
 - fileName = nombre del archivo
@@ -121,42 +135,66 @@ filename = 20250316103504_co, topage = 5, maxpages = 9, numProd = 204, nonzeroRe
 
 ---
 
-## NEW VERSIÓN
+# ESTRATEGIA
 
-- el programa busca en la pag1, los links de las pags que la búsqueda generó
-- el programa colecta los datos de los productos de la pag1
-- si existe la pag10 existe, el programa abre la pag10 donde ML va general el link y el numero de la última pag disponible
-- asi captura conseguí capturar el numero máximo de paginas que ML tiene disponible
-- `aún no estoy capturando los links de las pags que hacen falta hay que resolver eso por quermos buscar en dados en el resto de las paginas`
-- la funcionalidad esta creada para capturar el numero total de pag como un indicador de que el producto esta publicando en varias páginas 
-- el programa colecta los datos de los productos de la pag10
-- el programa va a pasar por las pags hasta el paramento topage y si topage es mayor a la lista de links, va a colectar los datos hasta el numero máximo
+- pedir para la IA que genere una lista de productos de acuerdo con la secuencia de preguntas
+
+- crear un programa para automatizar una lista de searchs para buscar con 02mlanalitics.py (`si es necesario`)
+
+- programa para analizar el csv definiendo los productos mas vendidos 
+    - analizar precios mas caros de producto y marca
+    - analizar los mas vendidos / pedidos
+    - analizar mas vendidos con menor precio
+    - analizar mas publicados, analizar si son los mismos vendedores
+    - analizar analizar quienes son los  vendedores e ver si ellos usan un punto de distribución
+    - analizar qué productos en Brasil `MUY USADOS NO ESTÁN` siendo vendidos en Col con la posibilidad a abrir un mercado en Col
+
+- en qué momento es útil entrar dentro del link del producto para ver cuantos vendidos y cual es el vendedor?
+
+- Qué quiero saber encontrando los productos de Br que son mas vendidos en Col?
+    - Saber si puedo competir por precio
+    - Saber si es un indicador para encontrar los CDs en Col
+    - Saber si es un indicador para entender la logística de enviar para Col
+    - Saber que productos de Br pueden competir contra los productos en Col
+
+- *DESCUBRIR QUÉ PRODUCTOS PUEDEN SER COMPETITIVOS EN COL, QUE SON VENDIDOS EN BR PERO NO EN COL*
+    - Validar los productos mas vendidos en Col
+    - Validar los productos similares pero mas usando en Br
+    - Validar precios
+    - podemos encontrar un producto para competir que sea un buen negocio vender
+
+- saber marca mas usadas Br / Col
+- productos mas vendidos Br / Col
+- marcas mas vendidas en colombia
+- marcas de Br mas vendidas e usadas en Col 
+- Encontrar el nicho de los productos en Col
+ 
+
+# Secuencia de preguntas deepseek
+- ¿cuáles son las marcas más usadas en los salones de belleza en Colombia?
+- ¿cuáles son las marcas más usadas en los salones de belleza en Brasil?
+- ¿cuáles son los productos más vendidos en los salones de belleza en Brasil?
+- ¿cuáles son los productos más vendidos en los salones de belleza en Colombia?
+- Qué marcas brasileras han sido vendidas en los salones de belleza en Colombia?
+- ¿cuáles son las marcas más usadas en los salones de belleza en Colombia que son importados de Brasil?
+- ¿cuáles son los productos más usados en los salones de belleza en Colombia que son importados de Brasil?
+
 
 ---
 
-## OLD VERSIÓN
+### Brainstorm
+
+- revisar filtro en la url mejores vendedores (en la url de ML la requisición puede contener un filtro tipo #D[A:rating_average])
+    - Ex. https://listado.mercadolibre.com.co/esp32#D[A:rating_average]
+
+- encontrar productos agotados en ML 
+- hacer una encuesta sobre productos de brasil en las peluquerías para saber la vos de cliente
+
+---
+
+## OLD VERSIÓN (referencia)
 
 - Después de analizar la búsqueda, va a generar una lista ordenada por el número de opiniones/comentarios en pandas.
 - A continuación, si el número de total_reviews > 10 va a pedir hasta qué línea se quieren obtener los datos de vendidos e imprime uno a uno los productos consultados
 - el programa va a generar un archivo CSV en la carpeta outcsv con los datos colectados ej. 20250226110058_co.csv
 - e adiciona en el archivo info.md la consulta e el nombre de archivo así: 20250226110058_co, res: 61: search: esp32s3
-
----
-
-- pedir para la IA que genere una lista de productos de acuerdo con la secuencia de preguntas
-
-- revisar la cantidad de paginas que encontró por producto en la primera pagina
-
-- revisar la cantidad de paginas para buscar max_pages = all
-
-- filtrar la búsqueda por total_reviews en mercado libre e parar de buscar si el total_reviews es 0 en una pagina
-
-- revisar filtro en la url mejores vendedores
-
-- saber cuantos total_reviews != 0
-
-- automatizar una lista de searchs para buscar
-
----
-
-
