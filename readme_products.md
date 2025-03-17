@@ -12,7 +12,7 @@
 
 # secuencia de preguntas:
 
-## ¿cuáles son las marcas más usadas en los salones de belleza en Colombia?
+#### ## ¿cuáles son las marcas más usadas en los salones de belleza en Colombia?
 
 En Colombia, los salones de belleza suelen utilizar una variedad de marcas reconocidas tanto a nivel nacional como internacional. Algunas de las marcas más populares y utilizadas en los salones de belleza colombianos incluyen:
 
@@ -43,7 +43,7 @@ Además de estas marcas internacionales, también hay marcas colombianas y latin
 
 Estas marcas son elegidas por los profesionales de la belleza en Colombia debido a su calidad, eficacia y la variedad de soluciones que ofrecen para diferentes necesidades capilares y de belleza.
 
-## ¿cuáles son las marcas más usadas en los salones de belleza en Brasil?
+#### ## ¿cuáles son las marcas más usadas en los salones de belleza en Brasil?
 
 En Brasil, los salones de belleza utilizan una combinación de marcas internacionales reconocidas y marcas locales que han ganado popularidad por su calidad y adaptación a las necesidades específicas del mercado brasileño. Algunas de las marcas más utilizadas en los salones de belleza en Brasil incluyen:
 
@@ -85,9 +85,18 @@ En Brasil, los salones de belleza utilizan una combinación de marcas internacio
 
 Estas marcas son elegidas por los profesionales de la belleza en Brasil debido a su eficacia, calidad y adaptación a las necesidades del cabello brasileño, que a menudo requiere productos que ofrezcan hidratación intensa, reparación y protección contra los daños causados por el clima tropical y los tratamientos químicos frecuentes.
 
-## ¿cuáles son los productos más vendidos en los salones de belleza en Colombia?
+#### ## ¿cuáles son los productos más vendidos en los salones de belleza
+en Colombia?
 
 En Colombia, los salones de belleza ofrecen una amplia variedad de productos y servicios que se adaptan a las necesidades y preferencias de los clientes. Los productos más vendidos suelen estar relacionados con el cuidado del cabello, tratamientos capilares, coloración y servicios de styling, así como con el cuidado de la piel y las uñas. A continuación, te detallo los productos más populares y vendidos en los salones de belleza colombianos:
+
+Quiero organizar la siguiente lista asi:
+
+marca, tipo de produto, resumen corto de la razón de popularidad
+por exejmplo:
+
+- L'Oréal Professionnel, Tratamientos de Keratina y Alisado, clima tropical de Colombia
+
 
 ### **1. Tratamientos de Keratina y Alisado**
 - **Productos más vendidos**:
@@ -157,9 +166,19 @@ En Colombia, los salones de belleza ofrecen una amplia variedad de productos y s
 
 En resumen, los productos más vendidos en los salones de belleza en Colombia reflejan las necesidades del mercado local, como el control del frizz, la hidratación intensa, la coloración creativa y el cuidado del cabello rizado. Las marcas internacionales y locales compiten por ofrecer soluciones efectivas y de alta calidad para satisfacer estas demandas.
 
-## ¿cuáles son los productos más vendidos en los salones de belleza en Brasil?
+#### ## ¿cuáles son los productos más vendidos en los salones de
+belleza en Brasil?
 
 En los salones de belleza en Brasil, los productos más vendidos suelen estar relacionados con tratamientos capilares, cuidado del cabello y servicios de styling, ya que el cabello es una prioridad para muchos clientes. A continuación, te menciono algunos de los productos y categorías más populares y vendidos en los salones de belleza brasileños:
+
+Quiero organizar la siguiente lista así:
+marca, tipo de productos, resumen corto de la razón de popularidad
+
+por exejmplo:
+Embelleze, Tratamientos de keratina líquida.
+- L'Oréal Professionnel, Tratamientos de Keratina y Alisado, clima tropical de Colombia, capacidad para controlar el frizz
+
+la lista es la siguiente:
 
 
 ### **1. Tratamientos de Alisado y Keratina**
@@ -226,11 +245,23 @@ En los salones de belleza en Brasil, los productos más vendidos suelen estar re
 - **Cuidado natural y vegano**: Marcas como **Niasi** y **Lola Cosmetics** han ganado popularidad por ofrecer productos con ingredientes naturales y libres de crueldad animal.
 - **Tratamientos personalizados**: Los salones están adoptando productos que se adaptan a las necesidades específicas de cada tipo de cabello.
 
-En resumen, los productos más vendidos en los salones de belleza en Brasil reflejan las necesidades del mercado local, como el control del frizz, la hidratación intensa, la coloración creativa y el cuidado del cabello rizado o crespo. Las marcas internacionales y locales compiten por ofrecer soluciones efectivas y de alta calidad para satisfacer estas demandas.
+En resumen, los productos más vendidos en los salones de belleza
+en Brasil reflejan las necesidades del mercado local,
+como el control del frizz, la hidratación intensa, la coloración creativa y el cuidado del cabello rizado o crespo. Las marcas internacionales y locales compiten por ofrecer soluciones efectivas y de alta calidad para satisfacer estas demandas.
 
-## ¿cuáles son las marcas más usadas en los salones de belleza en Colombia que son importados de Brasil?
+#### ## ¿cuáles son las marcas más usadas en los salones de belleza en Colombia
+que son importados de Brasil?
 
 En Colombia, los salones de belleza han adoptado varias marcas brasileñas que son altamente valoradas por su calidad, innovación y efectividad en el cuidado del cabello y tratamientos de belleza. Estas marcas importadas de Brasil se han posicionado como opciones preferidas tanto para los profesionales como para los clientes. A continuación, te menciono las marcas brasileñas más utilizadas en los salones de belleza colombianos:
+
+quiero generar una lista que indique la marca y el tipo de producto, por ejemplo:
+
+- Niasi, Shampoos
+- Niasi, acondicionadores
+- Niasi, mascarillas
+- Niasi, tratamientos para hidratación
+- Niasi, reparación capilar
+
 
 ### **1. Niasi**
 - **Productos destacados**: Shampoos, acondicionadores, mascarillas y tratamientos para hidratación y reparación capilar.
@@ -279,9 +310,31 @@ En Colombia, los salones de belleza han adoptado varias marcas brasileñas que s
 
 En resumen, las marcas brasileñas importadas más utilizadas en los salones de belleza en Colombia son valoradas por su calidad, innovación y adaptación a las necesidades del cabello latinoamericano. Estas marcas ofrecen soluciones efectivas para problemas comunes como el frizz, la falta de hidratación y la necesidad de tratamientos profesionales de alta gama.
 
-## ¿cuáles son los productos más usados en los salones de belleza en Colombia que son importados de Brasil?
+
+
+#### ## ¿cuáles son los productos más usados en los salones de belleza en Colombia
+
+que son importados de Brasil?
 
 En Colombia, los salones de belleza han adoptado una variedad de productos brasileños que son altamente valorados por su calidad, innovación y efectividad. Estos productos importados de Brasil cubren desde tratamientos capilares hasta productos de styling y cuidado diario. A continuación, te detallo los productos más utilizados en los salones de belleza colombianos que son importados de Brasil:
+
+
+Quiero organizar la siguiente lista así:
+marca, tipo de productos
+
+por exejmplo:
+
+
+- Niasi, Shampoos  
+- Niasi, Acondicionadores  
+- Niasi, Mascarillas  
+- Niasi, Tratamientos para hidratación  
+- Niasi, Reparación capilar  
+- Embelleze, Tratamientos de alisado  
+- Embelleze, Keratina  
+- Embelleze, Productos para cuidado capilar  
+
+la lista es la siguiente:
 
 ### **1. Tratamientos de Keratina y Alisado**
 - **Marcas destacadas**: **Embelleze**, **Cadiveu**, **Soukai**.

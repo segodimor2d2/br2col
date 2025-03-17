@@ -1,5 +1,23 @@
 
 
+### Brainstorm
+
+- revisar filtro en la url mejores vendedores (en la url de ML la requisición puede contener un filtro tipo #D[A:rating_average])
+    - Ex. https://listado.mercadolibre.com.co/esp32#D[A:rating_average]
+
+- encontrar productos agotados en ML 
+- hacer una encuesta sobre productos de brasil en las peluquerías para saber la vos de cliente
+
+---
+
+## OLD VERSIÓN (referencia)
+
+- Después de analizar la búsqueda, va a generar una lista ordenada por el número de opiniones/comentarios en pandas.
+- A continuación, si el número de total_reviews > 10 va a pedir hasta qué línea se quieren obtener los datos de vendidos e imprime uno a uno los productos consultados
+- el programa va a generar un archivo CSV en la carpeta outcsv con los datos colectados ej. 20250226110058_co.csv
+- e adiciona en el archivo info.md la consulta e el nombre de archivo así: 20250226110058_co, res: 61: search: esp32s3
+---
+
 #D[A:rating_average]
 
 url = f"https://www.mercadolibre.com.br/jm/search?as_word={query}&sort=rating_desc"
